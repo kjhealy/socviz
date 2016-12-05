@@ -35,3 +35,28 @@
 #' @format A (tibble) data frame with 237 rows and 21 variables.
 #' @source Macro-economic and spending data: OECD. Other data: Kieran Healy.
 "organdata"
+
+#' An untidy table of data
+#'
+#' A table of data from Wickham (2014).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name preg
+#' @usage data(preg)
+#' @format "An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) with 3 rows and 3 columns."
+#' @source Hadley Wickham (2014).
+"preg"
+
+
+#' A wider table of untidy data
+#'
+#' A second table of data from Wickham (2014).
+#'
+#' @docType data
+#' @keywords datasets
+#' @name preg2
+#' @usage data(preg2)
+#' @format "An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) with 2 rows and 4 columns."
+#' @source Hadley Wickham (2014).
+"preg2"
