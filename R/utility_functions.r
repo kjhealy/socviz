@@ -41,3 +41,43 @@ int_to_year <- function(x, month="01", day="01") {
     as.Date(strptime(d_string, format="%Y-%m-%d"))
   }
 }
+
+##' Use in inline R expressions to write a margin note for tufte-latex documents
+##'
+##' Borrowed from Dirk Eddelbuettel's tint package.
+##' @title margin_textnote
+##' @param text The text of the note
+##' @param icon An icon
+##' @return A marginal note
+##' @author Kieran Healy (but really Dirk Eddelbuettel)
+##' @export
+margin_textnote <- function(text, icon = '&#8853;') {
+  if (knitr:::is_html_output()) {
+    marginnote_html(sprintf('<span class="marginnote">%s</span>', text), icon)
+  } else if (knitr:::is_latex_output()) {
+    sprintf('\\marginnote{%s}', text)
+  } else {
+    warning('margin_textnote() only works for HTML and LaTeX output', call. = FALSE)
+    text
+  }
+}
+
+##' Use in inline R expressions to write a monospaced margin note for tufte-latex documents
+##'
+##' Adapted from Dirk Eddelbuettel's tint package.
+##' @title margin_codenote
+##' @param text The text of the note
+##' @param icon An icon
+##' @return A marginal note in monospace font
+##' @author Kieran Healy
+##' @export
+margin_codenote <- function(text, icon = '&#8853;') {
+  if (knitr:::is_html_output()) {
+    marginnote_html(sprintf('<span class="codenote">%s</span>', text), icon)
+  } else if (knitr:::is_latex_output()) {
+    sprintf('\\marginnote{\\texttt %s}', text)
+  } else {
+    warning('margin_codenote() only works for HTML and LaTeX output', call. = FALSE)
+    text
+  }
+}
