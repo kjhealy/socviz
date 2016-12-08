@@ -34,10 +34,12 @@
 ##' @author Kieran Healy
 ##' @export
 int_to_year <- function(x, month="01", day="01") {
-  if(any(x%%1!=0)){
+  values <- !is.na(x) ## non-NA values
+  if(any(x[values]%%1!=0)){
     message("Input contains non-integers.")
   } else {
-      d_string <- paste0(x, "-", month, "-", day)
+    d_string <- rep(NA, length(x))
+    d_string[values] <- paste0(x[values], "-", month, "-", day)
     as.Date(strptime(d_string, format="%Y-%m-%d"))
   }
 }
