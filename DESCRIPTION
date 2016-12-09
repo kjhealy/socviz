@@ -8,6 +8,7 @@ Description: This package contains supporting materials for a short course in
     data visualization using R and ggplot, and accompanies the book of notes for
     that course. It contains some utility functions and several sample datasets.
 License: MIT
+Imports: knitr
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 5.0.1

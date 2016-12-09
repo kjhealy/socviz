@@ -2,3 +2,5 @@
 
 export("%nin%")
 export(int_to_year)
+export(margin_codenote)
+export(margin_textnote)
