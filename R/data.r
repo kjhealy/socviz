@@ -102,3 +102,14 @@
 #' @format "An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) with 2 rows and 4 columns."
 #' @source Hadley Wickham (2014).
 "preg2"
+
+##' A table of survival rates from the Titanic
+##'
+##' A small table of survival rates from the Titanic, by sex
+##'
+##' @docType data
+##' @keywords datasets
+##' @name titanic
+##' @format "A data frame with four rows and four columns."
+##' @source Titanic data
+"titanic"
