@@ -113,3 +113,16 @@
 ##' @format "A data frame with four rows and four columns."
 ##' @source Titanic data
 "titanic"
+
+
+##' Mauna Loa Atmospheric CO2 Concentration
+##'
+##' A subset of the co2 data in base R's [datasets] package, in
+##' a ggplot2-friendly format.
+##'
+##' @docType data
+##' @keywords datasets
+##' @name maunaloa
+##' @format "A data frame with 4 columns and 271 rows."
+##' @source R base datasets; Cleveland (1993).
+"maunaloa"
