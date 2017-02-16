@@ -83,3 +83,36 @@ margin_codenote <- function(text, icon = '&#8853;') {
     text
   }
 }
+
+##' Arrange ggplot2 plots in an arbitrary grid
+##'
+##' The function takes arguments of the form `list(plot, row(s),
+##'     column(s))` where `plot` is a ggplot2 plot object, and the
+##'     rows and columns identify an area of the grid that you want
+##'     that plot object to occupy. See http://stackoverflow.com/questions/18427455/multiple-ggplots-of-different-sizes
+##' @title lay_out
+##' @return A grid of ggplot2 plots
+##' @author Extracted from the [wq] package
+##' @examples
+##' p1 <- qplot(x=wt,y=mpg,geom="point",main="Scatterplot of wt vs.
+##'     mpg", data=mtcars)
+##' p2 <- qplot(x=wt,y=disp,geom="point",main="Scatterplot of wt vs
+##'     disp", data=mtcars)
+##' p3 <- qplot(wt,data=mtcars)
+##' lay_out(list(p1, 1:2, 1:4),
+##'       list(p2, 3:4, 1:2),
+##'       list(p3, 3:4, 3:4))
+##' apples %nin% fruit
+##' pears %nin% fruit
+##' @export
+lay_out = function(...) {
+    x <- list(...)
+    n <- max(sapply(x, function(x) max(x[[2]])))
+    p <- max(sapply(x, function(x) max(x[[3]])))
+    grid::pushViewport(grid::viewport(layout = grid::grid.layout(n, p)))
+
+    for (i in seq_len(length(x))) {
+        print(x[[i]][[1]], vp = grid::viewport(layout.pos.row = x[[i]][[2]],
+            layout.pos.col = x[[i]][[3]]))
+    }
+}
