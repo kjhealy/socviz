@@ -1,3 +1,44 @@
+#' General Social Survey data, 2014
+#'
+#' A dataset containing an extract from the 2014 General Social
+#' Survey. See http://gss.norc.org/Get-Documentation for full
+#' documentation of the variables.
+#'
+#' \itemize{
+#' \item year. gss year for this respondent.
+#' \item id. respondnt id number.
+#' \item ballot. ballot used for interview.
+#' \item age. age of respondent.
+#' \item childs. number of children.
+#' \item sibs. number of brothers and sisters.
+#' \item degree. rs highest degree.
+#' \item race. race of respondent.
+#' \item sex. respondents sex.
+#' \item region. region of interview.
+#' \item income06. total family income.
+#' \item relig. rs religious preference.
+#' \item marital. marital status.
+#' \item padeg. fathers highest degree.
+#' \item madeg. mothers highest degree.
+#' \item partyid. political party affiliation.
+#' \item polviews. think of self as liberal or conservative.
+#' \item happy. general happiness.
+#' \item wtssall. weight variable.
+#' \item income_rc. Recoded income variable.
+#' \item agegrp. Age variable recoded into age categories
+#' \item ageq. Age recoded into quartiles.
+#' \item siblings. Top-coded sibs variable.
+#' \item kids. Top-coded childs variable.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name gss_sm
+#' @usage data(gss_sm)
+#' @format A data frame with 2538 rows and 24 variables.
+#' @source National Opinion Research Center, http://gss.norc.org.
+"gss_sm"
+
 #' US Presidential Election vote shares
 #'
 #' A dataset of US presidential elections from 1824 to 2016, with
