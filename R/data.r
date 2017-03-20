@@ -23,12 +23,15 @@
 #' \item partyid. political party affiliation.
 #' \item polviews. think of self as liberal or conservative.
 #' \item happy. general happiness.
+#' \item grass. should marijuana be made legal.
+#' \item zodiac. respondents astrological sign.
 #' \item wtssall. weight variable.
 #' \item income_rc. Recoded income variable.
 #' \item agegrp. Age variable recoded into age categories
 #' \item ageq. Age recoded into quartiles.
 #' \item siblings. Top-coded sibs variable.
 #' \item kids. Top-coded childs variable.
+#' \item relig_rc. relig variable recoded to six categories
 #' }
 #'
 #' @docType data
