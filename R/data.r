@@ -23,6 +23,7 @@
 #' \item partyid. political party affiliation.
 #' \item polviews. think of self as liberal or conservative.
 #' \item happy. general happiness.
+#' \item partners. how many sex partners r had in last year.
 #' \item grass. should marijuana be made legal.
 #' \item zodiac. respondents astrological sign.
 #' \item wtssall. weight variable.
@@ -31,7 +32,9 @@
 #' \item ageq. Age recoded into quartiles.
 #' \item siblings. Top-coded sibs variable.
 #' \item kids. Top-coded childs variable.
+#' \item region_rc. region variable (divisions) recoded to four Census regions
 #' \item relig_rc. relig variable recoded to six categories
+#' \item partners_rc. partners variable recoded to five categories
 #' }
 #'
 #' @docType data
