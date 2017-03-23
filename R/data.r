@@ -32,9 +32,9 @@
 #' \item ageq. Age recoded into quartiles.
 #' \item siblings. Top-coded sibs variable.
 #' \item kids. Top-coded childs variable.
-#' \item region_rc. region variable (divisions) recoded to four Census regions
-#' \item relig_rc. relig variable recoded to six categories
-#' \item partners_rc. partners variable recoded to five categories
+#' \item bigregion. Region variable (Census divisions) recoded to four Census regions.
+#' \item religion. relig variable recoded to six categories.
+#' \item partners_rc. partners variable recoded to five categories.
 #' }
 #'
 #' @docType data
