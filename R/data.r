@@ -6,16 +6,16 @@
 #'
 #' \itemize{
 #' \item year. gss year for this respondent.
-#' \item id. respondnt id number.
+#' \item id. respondent id number.
 #' \item ballot. ballot used for interview.
 #' \item age. age of respondent.
 #' \item childs. number of children.
 #' \item sibs. number of brothers and sisters.
-#' \item degree. rs highest degree.
+#' \item degree. Rs highest degree.
 #' \item race. race of respondent.
-#' \item sex. respondents sex.
+#' \item sex. respondent's sex.
 #' \item region. region of interview.
-#' \item income06. total family income.
+#' \item income16. total family income.
 #' \item relig. rs religious preference.
 #' \item marital. marital status.
 #' \item padeg. fathers highest degree.
