@@ -116,3 +116,27 @@ lay_out = function(...) {
             layout.pos.col = x[[i]][[3]]))
     }
 }
+
+
+##' Quickly make a two-way table of proportions (percentages)
+##'
+##' A wrapper for `table` and `prop.table` with the margin labels set
+##'     by default to NULL and the cells rounded to percents at 1
+##'     decimal place.
+##' @title tw_tab
+##' @param x Row variable
+##' @param y Column variable
+##' @param margin See `prop.table`. Default is joint distribution (all
+##'     cells sum to 100), 1 for row margins (rows sum to 1), 2 for
+##'     column margins (columns sum to 1)
+##' @param digs Number of rigits to round percentages to. Defaults to 1.
+##' @param dnn See `table`. the names to be given to the dimensions in
+##'     the result (the dimnames names). Defaults to NULL for none.
+##' @param ... Other arguments to be passed to `table`.
+##' @return A contingency table of percentage values.
+##' @author Kieran Healy
+##' @export
+tw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
+    out <- round(prop.table(table(x, y, ...), margin = margin)*100, digits = digs)
+    out
+}
