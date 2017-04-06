@@ -173,3 +173,16 @@
 ##' @format "A data frame with 4 columns and 271 rows."
 ##' @source R base datasets; Cleveland (1993).
 "maunaloa"
+
+
+##' Monetary Base and S&P 500 series
+##'
+##' Two time series of financial data from FRED, the _i means indexed
+##' to 100 in the base observation.
+##'
+##' @docType data
+##' @keywords datasets
+##' @name fredts
+##' @format "A data frame with 5 columns and 357 rows."
+##' @source FRED data.
+"fredts"
