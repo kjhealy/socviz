@@ -209,7 +209,21 @@
 ##'
 ##' @docType data
 ##' @keywords datasets
-##' @name student
+##' @name studebt
 ##' @format "A tibble with 16 rows and 4 columns."
 ##' @source Federal Reserve Bank of New York
 "studebt"
+
+
+##' American Sociological Association Section Membership
+##'
+##' Membership (2005-2015) and some financial information for sections
+##' of the American Sociolgical Association
+##'
+##'
+##' @docType data
+##' @keywords datasets
+##' @name asasec
+##' @format "A data frame with 572 rows and 9 columns."
+##' @source ASA Annual Report 2016
+"asasec"
