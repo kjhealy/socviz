@@ -186,3 +186,30 @@
 ##' @format "A data frame with 5 columns and 357 rows."
 ##' @source FRED data.
 "fredts"
+
+
+
+##' Yahoo Revenue and Employees
+##'
+##' Data on Revenue and Employees at Yahoo before and during Marissa
+##' Mayer's tenure as CEO.
+##'
+##' @docType data
+##' @keywords datasets
+##' @name yahoo
+##' @format "A data frame with 4 columns and 11 rows."
+##' @source QZ.com
+"yahoo"
+
+
+##' Student debt data
+##'
+##' Outstanding student debts in 2016 across 8 income categories, by
+##' percent of all borrowers and percent of all balances.
+##'
+##' @docType data
+##' @keywords datasets
+##' @name student
+##' @format "A tibble with 16 rows and 4 columns."
+##' @source Federal Reserve Bank of New York
+"studebt"

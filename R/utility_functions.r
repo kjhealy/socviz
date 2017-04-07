@@ -89,7 +89,8 @@ margin_codenote <- function(text, icon = '&#8853;') {
 ##' The function takes arguments of the form `list(plot, row(s),
 ##'     column(s))` where `plot` is a ggplot2 plot object, and the
 ##'     rows and columns identify an area of the grid that you want
-##'     that plot object to occupy. See http://stackoverflow.com/questions/18427455/multiple-ggplots-of-different-sizes
+##'     that plot object to occupy. See
+##'     http://stackoverflow.com/questions/18427455/multiple-ggplots-of-different-sizes
 ##' @title lay_out
 ##' @return A grid of ggplot2 plots
 ##' @author Extracted from the [wq] package
@@ -139,4 +140,55 @@ lay_out = function(...) {
 tw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
     out <- round(prop.table(table(x, y, ...), margin = margin)*100, digits = digs)
     out
+}
+
+##' Arrange ggplot objects on an arbitrary page grid
+##'
+##' ggplot objects can be passed in ..., or to plotlist (as a list of
+##'     ggplot objects). If the layout is something like matrix(c(1,2,3,3), nrow=2,
+##'     byrow=TRUE), then plot 1 will go in the upper left, 2 will go
+##'     in the upper right, and 3 will go all the way across the bottom.
+##' @title multiplot
+##' @param ... ggplot objects
+##' @param plotlist ggplot objects
+##' @param file .
+##' @param cols Number of columns in the layout. Ignored if layout is present.
+##' @param layout A matrix specifying the layout. If present, 'cols' is ignored.
+##' @return Prints a grid of plot objects
+##' @author Winston Chang
+##' @export
+multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
+  library(grid)
+
+  # Make a list from the ... arguments and plotlist
+  plots <- c(list(...), plotlist)
+
+  numPlots = length(plots)
+
+  # If layout is NULL, then use 'cols' to determine layout
+  if (is.null(layout)) {
+    # Make the panel
+    # ncol: Number of columns of plots
+    # nrow: Number of rows needed, calculated from # of cols
+    layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),
+                    ncol = cols, nrow = ceiling(numPlots/cols))
+  }
+
+ if (numPlots==1) {
+    print(plots[[1]])
+
+  } else {
+    # Set up the page
+    grid.newpage()
+    pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))
+
+    # Make each plot, in the correct location
+    for (i in 1:numPlots) {
+      # Get the i,j matrix positions of the regions that contain this subplot
+      matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))
+
+      print(plots[[i]], vp = viewport(layout.pos.row = matchidx$row,
+                                      layout.pos.col = matchidx$col))
+    }
+  }
 }
