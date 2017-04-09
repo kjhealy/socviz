@@ -2,10 +2,11 @@ Package: socviz
 Type: Package
 Title: Utility Functions and Datasets for a Short Course in Data Visualization
 Version: 0.1.0
-Author: Kieran Healy
+Authors@R: person("Kieran", "Healy", email = "kjhealy@gmail.com",
+                      role = c("aut", "cre"))
 Maintainer: Kieran Healy <kjhealy@gmail.com>
 Description: This package contains supporting materials for a short course in
-    data visualization using R and ggplot, and accompanies the book of notes for
+    data visualization using R and ggplot, and accompanies the book for
     that course. It contains some utility functions and several sample datasets.
 License: MIT
 Imports:

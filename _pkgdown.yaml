@@ -1,0 +1,7 @@
+authors:
+  Kieran Healy:
+    href: http://kieranhealy.org
+    
+template:
+  params:
+    bootswatch: flatly
