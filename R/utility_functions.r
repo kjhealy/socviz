@@ -9,8 +9,8 @@
 ##' @rdname nin
 ##' @examples
 ##' fruit <- c("apples", "oranges", "banana")
-##' apples %nin% fruit
-##' pears %nin% fruit
+##' "apples" %nin% fruit
+##' "pears" %nin% fruit
 ##' @export
 "%nin%" <- function(x, y) {
   return( !(x %in% y) )
@@ -103,8 +103,6 @@ margin_codenote <- function(text, icon = '&#8853;') {
 ##' lay_out(list(p1, 1:2, 1:4),
 ##'       list(p2, 3:4, 1:2),
 ##'       list(p3, 3:4, 3:4))
-##' apples %nin% fruit
-##' pears %nin% fruit
 ##' @export
 lay_out = function(...) {
     x <- list(...)
