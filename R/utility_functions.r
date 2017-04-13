@@ -190,16 +190,37 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
     }
   }
 }
-##' Round numeric columns of a data frame
+##' Round numeric columns of a data frame or tibble
 ##'
-##' Takes a data frame df as input, rounds the numeric columns to the
+##' Takes a data frame or tibble as input, rounds the numeric columns to the
 ##'     specified number of digits.
 ##' @title round_df
-##' @param data A data frame
+##' @param data A data frame or tibble
 ##' @param dig The number of digits to round to
-##' @return A data frame with the numeric columns rounded off
+##' @return An object of the same class as `data`, with the numeric
+##'     columns rounded off to `dig`
 ##' @author Kieran Healy
 ##' @export
 round_df <- function(data, dig=2) {
-    data.frame(lapply(data, function(y) if(is.numeric(y)) round(y, dig) else y))
+    obj_class <- class(data)
+    tibs <- c("grouped_df", "tbl_df", "tbl")
+    all.c <- c("data.frame", tibs)
+
+    ## Is `data` a valid class
+    right.class <- any(obj_class %in% all.c)
+    if(!right.class) return(message("Object is not a data frame or tibble."))
+
+    ## Is `data` a tibble or df
+    is.tib <- any(obj_class %in% tibs)
+    if(is.tib) {
+        cl <- "tbl"
+    } else {
+        cl <- "df"
+    }
+
+    ## Choose which function to use
+    f.list <- list(df = data.frame, tbl = as_tibble)
+    fx <- get(cl, f.list)
+
+    fx(lapply(data, function(y) if(is.numeric(y)) round(y, dig) else y))
 }
