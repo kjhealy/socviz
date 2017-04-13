@@ -190,3 +190,16 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
     }
   }
 }
+##' Round numeric columns of a data frame
+##'
+##' Takes a data frame df as input, rounds the numeric columns to the
+##'     specified number of digits.
+##' @title round_df
+##' @param data A data frame
+##' @param dig The number of digits to round to
+##' @return A data frame with the numeric columns rounded off
+##' @author Kieran Healy
+##' @export
+round_df <- function(data, dig=2) {
+    data.frame(lapply(data, function(y) if(is.numeric(y)) round(y, dig) else y))
+}
