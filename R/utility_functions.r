@@ -224,3 +224,42 @@ round_df <- function(data, dig=2) {
 
     fx(lapply(data, function(y) if(is.numeric(y)) round(y, dig) else y))
 }
+
+##' Scale and/or center the numeric columns of a data frame or tibble
+##'
+##' Takes a data frame or tibble as input and scales and/or centers
+##'     the numeric columns. By default, centers but doesn't scale
+##' @title center_df
+##' @param data A data frame or tibble
+##' @param scale Scale the variables (default FALSE)
+##' @param center Center the variables on their means (default TRUE)
+##' @return An object of the same class as `data`, with the numeric
+##'     columns scaled or centered as requested
+##' @author Kieran Healy
+##' @export
+center_df <- function(data, sc = FALSE, cen = TRUE) {
+    obj_class <- class(data)
+    tibs <- c("grouped_df", "tbl_df", "tbl")
+    all.c <- c("data.frame", tibs)
+
+    ## Is `data` a valid class
+    right.class <- any(obj_class %in% all.c)
+    if(!right.class) return(message("Object is not a data frame or tibble."))
+
+    ## Is `data` a tibble or df
+    is.tib <- any(obj_class %in% tibs)
+    if(is.tib) {
+        cl <- "tbl"
+    } else {
+        cl <- "df"
+    }
+
+    ## Choose which function to use
+    f.list <- list(df = data.frame, tbl = as_tibble)
+    fx <- get(cl, f.list)
+
+    ind <- sapply(data, is.numeric)
+    data[ind] <- lapply(data[ind], scale, scale=sc, center=cen)
+    data <- fx(data)
+    data
+}
