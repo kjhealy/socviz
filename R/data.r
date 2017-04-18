@@ -1,6 +1,6 @@
-#' General Social Survey data, 2014
+#' General Social Survey data, 2016
 #'
-#' A dataset containing an extract from the 2014 General Social
+#' A dataset containing an extract from the 2016 General Social
 #' Survey. See http://gss.norc.org/Get-Documentation for full
 #' documentation of the variables.
 #'
@@ -41,9 +41,60 @@
 #' @keywords datasets
 #' @name gss_sm
 #' @usage data(gss_sm)
-#' @format A data frame with 2538 rows and 24 variables.
+#' @format A data frame with 2538 rows and 26 variables.
 #' @source National Opinion Research Center, http://gss.norc.org.
 "gss_sm"
+
+
+#' General Social Survey data, 1972-2016
+#'
+#' A dataset containing an extract from the General Social
+#' Survey. See http://gss.norc.org/Get-Documentation for full
+#' documentation of the variables. This data contains the same
+#' variables as `gss_sm`, but for all available years from 1972-2016.
+#'
+#' \itemize{
+#' \item year. gss year for this respondent.
+#' \item id. respondent id number.
+#' \item ballot. ballot used for interview.
+#' \item age. age of respondent.
+#' \item childs. number of children.
+#' \item sibs. number of brothers and sisters.
+#' \item degree. Rs highest degree.
+#' \item race. race of respondent.
+#' \item sex. respondent's sex.
+#' \item region. region of interview.
+#' \item income16. total family income.
+#' \item relig. rs religious preference.
+#' \item marital. marital status.
+#' \item padeg. fathers highest degree.
+#' \item madeg. mothers highest degree.
+#' \item partyid. political party affiliation.
+#' \item polviews. think of self as liberal or conservative.
+#' \item happy. general happiness.
+#' \item partners. how many sex partners r had in last year.
+#' \item grass. should marijuana be made legal.
+#' \item zodiac. respondents astrological sign.
+#' \item wtssall. weight variable.
+#' \item income_rc. Recoded income variable.
+#' \item agegrp. Age variable recoded into age categories
+#' \item ageq. Age recoded into quartiles.
+#' \item siblings. Top-coded sibs variable.
+#' \item kids. Top-coded childs variable.
+#' \item bigregion. Region variable (Census divisions) recoded to four Census regions.
+#' \item religion. relig variable recoded to six categories.
+#' \item partners_rc. partners variable recoded to five categories.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name gss_lon
+#' @usage data(gss_lon)
+#' @format A data frame with 62,366 rows and 26 variables.
+#' @source National Opinion Research Center, http://gss.norc.org.
+"gss_lon"
+
+
 
 #' US Presidential Election vote shares
 #'
