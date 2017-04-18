@@ -44,6 +44,67 @@ int_to_year <- function(x, month="01", day="01") {
   }
 }
 
+
+##' check if is html output
+##'
+##' internal knitr function
+##' @title is_html_output
+##' @param fmt format
+##' @param excludes excludes
+##' @return html flag
+##' @author Yihui Xie
+is_html_output <- function (fmt = pandoc_to(), excludes = NULL)
+{
+    if (length(fmt) == 0)
+        return(FALSE)
+    if (grepl("^markdown", fmt))
+        fmt = "markdown"
+    if (fmt == "epub3")
+        fmt = "epub"
+    fmts = c("markdown", "epub", "html", "html5", "revealjs",
+        "s5", "slideous", "slidy")
+    fmt %in% setdiff(fmts, excludes)
+}
+##' pandoc_to
+##'
+##' what are we converting to
+##' @title pandoc_to
+##' @param x fmt
+##' @return opt_knit element
+##' @author Yihui Xie
+pandoc_to <- function (x)
+{
+    fmt = knitr::opts_knit$get("rmarkdown.pandoc.to")
+    if (missing(x))
+        fmt
+    else !is.null(fmt) && (fmt %in% x)
+}
+##' out_format
+##'
+##' internal knitr function
+##' @title out_format
+##' @param x x
+##' @return format
+##' @author Yihui Xie
+out_format <- function (x)
+{
+    fmt = knitr::opts_knit$get("out.format")
+    if (missing(x))
+        fmt
+    else !is.null(fmt) && (fmt %in% x)
+}
+
+##' is_latex_output
+##'
+##' is latex output
+##' @title is_latex_output
+##' @return the format
+##' @author Yihui Xie
+is_latex_output <- function ()
+{
+    out_format("latex") || pandoc_to(c("latex", "beamer"))
+}
+
 ##' marginal note for tufte html output
 ##'
 ##' Make a html margin note
@@ -73,9 +134,9 @@ marginnote_html <- function (text = "", icon = "&#8853;")
 ##' @author Kieran Healy (but really Dirk Eddelbuettel)
 ##' @export
 margin_textnote <- function(text, icon = '&#8853;') {
-  if (knitr:::is_html_output()) {
+  if (is_html_output()) {
     marginnote_html(sprintf('<span class="marginnote">%s</span>', text), icon)
-  } else if (knitr:::is_latex_output()) {
+  } else if (is_latex_output()) {
     sprintf('\\marginnote{%s}', text)
   } else {
     warning('margin_textnote() only works for HTML and LaTeX output', call. = FALSE)
@@ -93,9 +154,9 @@ margin_textnote <- function(text, icon = '&#8853;') {
 ##' @author Kieran Healy
 ##' @export
 margin_codenote <- function(text, icon = '&#8853;') {
-  if (knitr:::is_html_output()) {
+  if (is_html_output()) {
     marginnote_html(sprintf('<span class="codenote">%s</span>', text), icon)
-  } else if (knitr:::is_latex_output()) {
+  } else if (is_latex_output()) {
     sprintf('\\marginnote{\\texttt %s}', text)
   } else {
     warning('margin_codenote() only works for HTML and LaTeX output', call. = FALSE)
@@ -210,6 +271,8 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
     }
   }
 }
+
+
 ##' Round numeric columns of a data frame or tibble
 ##'
 ##' Takes a data frame or tibble as input, rounds the numeric columns to the
