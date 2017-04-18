@@ -218,7 +218,7 @@ lay_out = function(...) {
 ##' @return A contingency table of percentage values.
 ##' @author Kieran Healy
 ##' @export
-otw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
+tw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
     out <- round(prop.table(table(x, y, ...), margin = margin)*100, digits = digs)
     out
 }
