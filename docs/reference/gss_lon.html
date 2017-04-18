@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Monetary Base and S&amp;P 500 series — fredts • socviz</title>
+<title>General Social Survey data, 1972-2016 — gss_lon • socviz</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -68,23 +68,60 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Monetary Base and S&amp;P 500 series</h1>
+    <h1>General Social Survey data, 1972-2016</h1>
     </div>
 
     
-    <p>Two time series of financial data from FRED, the _i means indexed
-to 100 in the base observation.</p>
+    <p>A dataset containing an extract from the General Social
+Survey. See http://gss.norc.org/Get-Documentation for full
+documentation of the variables. This data contains the same
+variables as `gss_sm`, but for all available years from 1972-2016.</p>
     
 
-    <pre class="usage"><span class='no'>fredts</span></pre>
+    <pre class="usage"><span class='fu'>data</span>(<span class='no'>gss_lon</span>)</pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>"A data frame with 5 columns and 357 rows."</p>
+    <p>A data frame with 62,366 rows and 26 variables.</p>
     
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>FRED data.</p>
+    <p>National Opinion Research Center, http://gss.norc.org.</p>
+    
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <ul>
+<li><p>year. gss year for this respondent.</p></li>
+<li><p>id. respondent id number.</p></li>
+<li><p>ballot. ballot used for interview.</p></li>
+<li><p>age. age of respondent.</p></li>
+<li><p>childs. number of children.</p></li>
+<li><p>sibs. number of brothers and sisters.</p></li>
+<li><p>degree. Rs highest degree.</p></li>
+<li><p>race. race of respondent.</p></li>
+<li><p>sex. respondent's sex.</p></li>
+<li><p>region. region of interview.</p></li>
+<li><p>income16. total family income.</p></li>
+<li><p>relig. rs religious preference.</p></li>
+<li><p>marital. marital status.</p></li>
+<li><p>padeg. fathers highest degree.</p></li>
+<li><p>madeg. mothers highest degree.</p></li>
+<li><p>partyid. political party affiliation.</p></li>
+<li><p>polviews. think of self as liberal or conservative.</p></li>
+<li><p>happy. general happiness.</p></li>
+<li><p>partners. how many sex partners r had in last year.</p></li>
+<li><p>grass. should marijuana be made legal.</p></li>
+<li><p>zodiac. respondents astrological sign.</p></li>
+<li><p>wtssall. weight variable.</p></li>
+<li><p>income_rc. Recoded income variable.</p></li>
+<li><p>agegrp. Age variable recoded into age categories</p></li>
+<li><p>ageq. Age recoded into quartiles.</p></li>
+<li><p>siblings. Top-coded sibs variable.</p></li>
+<li><p>kids. Top-coded childs variable.</p></li>
+<li><p>bigregion. Region variable (Census divisions) recoded to four Census regions.</p></li>
+<li><p>religion. relig variable recoded to six categories.</p></li>
+<li><p>partners_rc. partners variable recoded to five categories.</p></li>
+</ul>
     
 
   </div>
@@ -95,6 +132,8 @@ to 100 in the base observation.</p>
       <li><a href="#format">Format</a></li>
 
       <li><a href="#source">Source</a></li>
+
+      <li><a href="#details">Details</a></li>
           </ul>
 
   </div>
