@@ -94,6 +94,7 @@ margin_codenote <- function(text, icon = '&#8853;') {
 ##' @title lay_out
 ##' @return A grid of ggplot2 plots
 ##' @author Extracted from the [wq] package
+##' @param ... A series lists of of ggplot objects
 ##' @examples
 ##' p1 <- qplot(x=wt,y=mpg,geom="point",main="Scatterplot of wt vs.
 ##'     mpg", data=mtcars)
@@ -135,7 +136,7 @@ lay_out = function(...) {
 ##' @return A contingency table of percentage values.
 ##' @author Kieran Healy
 ##' @export
-tw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
+otw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
     out <- round(prop.table(table(x, y, ...), margin = margin)*100, digits = digs)
     out
 }
@@ -231,8 +232,8 @@ round_df <- function(data, dig=2) {
 ##'     the numeric columns. By default, centers but doesn't scale
 ##' @title center_df
 ##' @param data A data frame or tibble
-##' @param scale Scale the variables (default FALSE)
-##' @param center Center the variables on their means (default TRUE)
+##' @param sc Scale the variables (default FALSE)
+##' @param cen Center the variables on their means (default TRUE)
 ##' @return An object of the same class as `data`, with the numeric
 ##'     columns scaled or centered as requested
 ##' @author Kieran Healy
