@@ -53,7 +53,7 @@ int_to_year <- function(x, month="01", day="01") {
 ##' @return An HTML note
 ##' @author Dirk Eddelbuettel
 ##' @examples
-##' \donotrun{
+##' \dontrun{
 ##' marginnote_html("Hello")
 ##' }
 marginnote_html <- function (text = "", icon = "&#8853;")
