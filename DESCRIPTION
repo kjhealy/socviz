@@ -8,7 +8,7 @@ Maintainer: Kieran Healy <kjhealy@gmail.com>
 Description: This package contains supporting materials for a short course in
     data visualization using R and ggplot, and accompanies the book for
     that course. It contains some utility functions and several sample datasets.
-License: MIT
+License: MIT + file LICENSE
 Depends: R (>= 2.10)
 Imports:
     knitr
