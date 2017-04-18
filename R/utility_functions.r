@@ -96,6 +96,7 @@ margin_codenote <- function(text, icon = '&#8853;') {
 ##' @author Extracted from the [wq] package
 ##' @param ... A series lists of of ggplot objects
 ##' @examples
+#'\dontrun{
 ##' p1 <- qplot(x=wt,y=mpg,geom="point",main="Scatterplot of wt vs.
 ##'     mpg", data=mtcars)
 ##' p2 <- qplot(x=wt,y=disp,geom="point",main="Scatterplot of wt vs
@@ -104,6 +105,7 @@ margin_codenote <- function(text, icon = '&#8853;') {
 ##' lay_out(list(p1, 1:2, 1:4),
 ##'       list(p2, 3:4, 1:2),
 ##'       list(p3, 3:4, 3:4))
+##' }
 ##' @export
 lay_out = function(...) {
     x <- list(...)
@@ -157,8 +159,6 @@ otw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
 ##' @author Winston Chang
 ##' @export
 multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
-  library(grid)
-
   # Make a list from the ... arguments and plotlist
   plots <- c(list(...), plotlist)
 
@@ -178,8 +178,8 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
 
   } else {
     # Set up the page
-    grid.newpage()
-    pushViewport(viewport(layout = grid.layout(nrow(layout), ncol(layout))))
+    grid::grid.newpage()
+    grid::pushViewport(viewport(layout = grid::grid.layout(nrow(layout), ncol(layout))))
 
     # Make each plot, in the correct location
     for (i in 1:numPlots) {
@@ -220,7 +220,7 @@ round_df <- function(data, dig=2) {
     }
 
     ## Choose which function to use
-    f.list <- list(df = data.frame, tbl = as_tibble)
+    f.list <- list(df = data.frame, tbl = tibble::as_tibble)
     fx <- get(cl, f.list)
 
     fx(lapply(data, function(y) if(is.numeric(y)) round(y, dig) else y))
@@ -256,7 +256,7 @@ center_df <- function(data, sc = FALSE, cen = TRUE) {
     }
 
     ## Choose which function to use
-    f.list <- list(df = data.frame, tbl = as_tibble)
+    f.list <- list(df = data.frame, tbl = tibble::as_tibble)
     fx <- get(cl, f.list)
 
     ind <- sapply(data, is.numeric)
