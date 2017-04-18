@@ -44,6 +44,25 @@ int_to_year <- function(x, month="01", day="01") {
   }
 }
 
+##' marginal note for tufte html output
+##'
+##' Make a html margin note
+##' @title marginnote_html
+##' @param text The text of the note
+##' @param icon An icon
+##' @return An HTML note
+##' @author Dirk Eddelbuettel
+##' @examples
+##' \donotrun{
+##' marginnote_html("Hello")
+##' }
+marginnote_html <- function (text = "", icon = "&#8853;")
+{
+    sprintf(paste0("<label for=\"tufte-mn-\" class=\"margin-toggle\">%s</label>",
+        "<input type=\"checkbox\" id=\"tufte-mn-\" class=\"margin-toggle\">%s"),
+        icon, text)
+}
+
 ##' Use in inline R expressions to write a margin note for tufte-latex documents
 ##'
 ##' Borrowed from Dirk Eddelbuettel's tint package.
