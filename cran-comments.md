@@ -1,5 +1,5 @@
 ## First Submission
-This is the first submission of this package
+This is the first submission of this package.
 
 ## Test environments
 
