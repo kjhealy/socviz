@@ -5,8 +5,7 @@ Version: 0.2.0
 Authors@R: person("Kieran", "Healy", email = "kjhealy@gmail.com",
                       role = c("aut", "cre"))
 Maintainer: Kieran Healy <kjhealy@gmail.com>
-Description: This package contains supporting materials for a short course in
-    data visualization using R and an accompanying book by the package author. It contains utility functions for graphs and several sample data sets.
+Description: Supporting materials for a short course and book on data visualization using R. It contains utility functions for graphs and several sample data sets.
 License: MIT + file LICENSE
 Depends: R (>= 2.10)
 Imports:
