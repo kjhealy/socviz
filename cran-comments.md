@@ -1,3 +1,6 @@
+## First Submission
+This is the first submission of this package
+
 ## Test environments
 
 * Local MacOS install, R 3.3.3 on Serra 10.12.4
