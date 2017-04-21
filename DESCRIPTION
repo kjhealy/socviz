@@ -1,6 +1,6 @@
 Package: socviz
 Type: Package
-Title: Utility Functions and Data sets for a Short Course in Data Visualization
+Title: Utility Functions and Data Sets for a Short Course in Data Visualization
 Version: 0.2.0
 Authors@R: person("Kieran", "Healy", email = "kjhealy@gmail.com",
                       role = c("aut", "cre"))
