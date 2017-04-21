@@ -1,1 +1,5 @@
 ^docs$
+.travis.yml
+README.Rmd
+_pkgdown.yaml
+socviz.Rproj

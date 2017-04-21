@@ -1,7 +1,7 @@
 Package: socviz
 Type: Package
 Title: Utility Functions and Datasets for a Short Course in Data Visualization
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: person("Kieran", "Healy", email = "kjhealy@gmail.com",
                       role = c("aut", "cre"))
 Maintainer: Kieran Healy <kjhealy@gmail.com>
