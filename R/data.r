@@ -108,26 +108,26 @@
 #' presidential election. 1824 is the 10th election.
 #' \item year. Year.
 #' \item winner. Full name of winner.
-#' \item win.party. Party affiliation of winner.
-#' \item ec.pect. Winner's share of electoral college vote.
+#' \item win_party. Party affiliation of winner.
+#' \item ec_pct. Winner's share of electoral college vote.
 #' (Range is 0 to 1.)
-#' \item popular.pct. Winner's share of popular vote. (Range is 0 to 1.)
-#' \item popular.margin. Winner's point margin in the popular vote.
+#' \item popular_pct. Winner's share of popular vote. (Range is 0 to 1.)
+#' \item popular_margin. Winner's point margin in the popular vote.
 #' Can be positive or negative.
 #' \item votes. Total votes cast in the election.
 #' \item margin. Winner's vote margin in the popular vote.
-#' \item runner.up. Runner up candidate.
-#' \item ru.part. Party affiliation of runner up candidate.
-#' \item turnout.pct. Voter turnout as a proportion of eligible
+#' \item runner_up. Runner up candidate.
+#' \item ru_part. Party affiliation of runner up candidate.
+#' \item turnout_pct. Voter turnout as a proportion of eligible
 #' voters. (Rate is 0 to 1.)
-#' \item winner.lname Last name of winner.
-#' \item winner.label Winner's last name and election year.
-#' \item ru.lastname. Runner up's last name.
-#' \item ru.label. Runner up's last name and election year.
-#' \item two.term. Is this a two term presidency? (TRUE/FALSE.) Note
+#' \item winner_lname Last name of winner.
+#' \item winner_label Winner's last name and election year.
+#' \item ru_lastname. Runner up's last name.
+#' \item ru_label. Runner up's last name and election year.
+#' \item two_term. Is this a two term presidency? (TRUE/FALSE.) Note
 #' that F.D. Roosevelt was elected four times.
-#' \item ec.votes. Electoral college votes cast for winner.
-#' \item ec.denom. Total number of electoral college votes.
+#' \item ec_votes. Electoral college votes cast for winner.
+#' \item ec_denom. Total number of electoral college votes.
 #' }
 #'
 #' @docType data
