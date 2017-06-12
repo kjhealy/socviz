@@ -9,7 +9,7 @@
 Macro-economic and spending data: OECD. Other data: Kieran Healy.
 }
 \usage{
-data(organdata)
+organdata
 }
 \description{
 A dataset containing data on rates of organ donation for seventeen OECD

@@ -9,7 +9,7 @@
 https://en.wikipedia.org/wiki/List_of_United_States_presidential_elections_by_popular_vote_margin.
 }
 \usage{
-data(elections_historic)
+elections_historic
 }
 \description{
 A dataset of US presidential elections from 1824 to 2016, with

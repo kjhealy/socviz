@@ -40,7 +40,6 @@
 #' @docType data
 #' @keywords datasets
 #' @name gss_sm
-#' @usage data(gss_sm)
 #' @format A data frame with 2538 rows and 26 variables.
 #' @source National Opinion Research Center, http://gss.norc.org.
 "gss_sm"
@@ -89,7 +88,6 @@
 #' @docType data
 #' @keywords datasets
 #' @name gss_lon
-#' @usage data(gss_lon)
 #' @format A data frame with 62,366 rows and 26 variables.
 #' @source National Opinion Research Center, http://gss.norc.org.
 "gss_lon"
@@ -133,7 +131,6 @@
 #' @docType data
 #' @keywords datasets
 #' @name elections_historic
-#' @usage data(elections_historic)
 #' @format A (tibble) data frame with 237 rows and 21 variables.
 #' @source https://en.wikipedia.org/wiki/List_of_United_States_presidential_elections_by_popular_vote_margin.
 "elections_historic"
@@ -171,7 +168,6 @@
 #' @docType data
 #' @keywords datasets
 #' @name organdata
-#' @usage data(organdata)
 #' @format A (tibble) data frame with 237 rows and 21 variables.
 #' @source Macro-economic and spending data: OECD. Other data: Kieran Healy.
 "organdata"
@@ -183,8 +179,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name preg
-#' @usage data(preg)
-#' @format "An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) with 3 rows and 3 columns."
+#' @format "A tbl_df with 3 rows and 3 columns."
 #' @source Hadley Wickham (2014).
 "preg"
 
@@ -196,7 +191,6 @@
 #' @docType data
 #' @keywords datasets
 #' @name preg2
-#' @usage data(preg2)
 #' @format "An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) with 2 rows and 4 columns."
 #' @source Hadley Wickham (2014).
 "preg2"

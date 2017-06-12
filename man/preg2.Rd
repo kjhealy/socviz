@@ -9,7 +9,7 @@
 Hadley Wickham (2014).
 }
 \usage{
-data(preg2)
+preg2
 }
 \description{
 A second table of data from Wickham (2014).

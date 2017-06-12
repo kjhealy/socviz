@@ -7,8 +7,8 @@ template:
 reference:
   - title: "Datasets"
     desc: >
-      "Included datasets."
-    contents: 
+      Included datasets.
+    contents:
       - asasec
       - elections_historic
       - fredts
@@ -23,9 +23,9 @@ reference:
       - titanic
       - yahoo
   - title: "Functions"
-    desc: "Utility functions."
+    desc: Utility functions.
     contents:
-      - "%nin%"
+      - starts_with("%")
       - center_df
       - int_to_year
       - is_html_output

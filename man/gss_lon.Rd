@@ -9,7 +9,7 @@
 National Opinion Research Center, http://gss.norc.org.
 }
 \usage{
-data(gss_lon)
+gss_lon
 }
 \description{
 A dataset containing an extract from the General Social

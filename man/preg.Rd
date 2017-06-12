@@ -4,12 +4,12 @@
 \name{preg}
 \alias{preg}
 \title{An untidy table of data}
-\format{"An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) with 3 rows and 3 columns."}
+\format{"A tbl_df with 3 rows and 3 columns."}
 \source{
 Hadley Wickham (2014).
 }
 \usage{
-data(preg)
+preg
 }
 \description{
 A table of data from Wickham (2014).
