@@ -4,3 +4,38 @@ authors:
 template:
   params:
     bootswatch: flatly
+reference:
+  - title: "Datasets"
+    desc: >
+      "Included datasets."
+    contents: 
+      - asasec
+      - elections_historic
+      - fredts
+      - gss_sm
+      - gss_lon
+      - maunaloa
+      - opiates
+      - organdata
+      - preg
+      - preg2
+      - studebt      
+      - titanic
+      - yahoo
+  - title: "Functions"
+    desc: "Utility functions."
+    contents:
+      - "%nin%"
+      - center_df
+      - int_to_year
+      - is_html_output
+      - is_latex_output
+      - lay_out
+      - marginnote_html
+      - margin_codenote
+      - margin_textnote
+      - multiplot
+      - out_format
+      - round_df
+      - pandoc_to
+      - tw_tab      
