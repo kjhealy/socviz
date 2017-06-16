@@ -283,7 +283,9 @@
 ##' \item state. State abbreviation
 ##' \item census_region. Census region
 ##' \item pop_dens. Population density per square mile, 2014 estimate
-##' \item pct_black. Percent black population, 2014 estimate
+##' (five category factor)
+##' \item pct_black. Percent black population, 2014 estimate (seven
+##' category factor)
 ##' \item pop. Population, 2014 estimate
 ##' \item female. Female persons, percent, 2013
 ##' \item white. White alone, percent, 2013
