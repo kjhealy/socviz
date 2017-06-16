@@ -273,6 +273,57 @@
 ##' @source ASA Annual Report 2016
 "asasec"
 
+
+##' Census Data on US Counties
+##'
+##' Selected county data (including state-level observations)
+##' \itemize{
+##' \item id. FIPS State and County code
+##' \item name. State or County Name
+##' \item state. State abbreviation
+##' \item census_region. Census region
+##' \item pop_dens. Population density per square mile, 2014 estimate
+##' \item pct_black. Percent black population, 2014 estimate
+##' \item pop. Population, 2014 estimate
+##' \item female. Female persons, percent, 2013
+##' \item white. White alone, percent, 2013
+##' \item black. Black alone, percent, 2013
+##' \item travel_time. Mean travel time to work (minutes), workers age 16+, 2009-2013
+##' \item land_area. Land area in square miles, 2010
+##' \item hh_income. Median household income, 2009-2013
+##' }
+##'
+##' @docType data
+##' @keywords datasets
+##' @name county_data
+##' @format "A data frame with 3195 rows and 13 columns."
+##' @source US Census Bureau
+"county_data"
+
+
+##' US County map file
+##'
+##' US county map data
+##'
+##' \itemize{
+##' \item long. Longitude
+##' \item lat. Latitude
+##' \item order. Order
+##' \item hole. Hole (true/false)
+##' \item piece. Piece
+##' \item group. Group
+##' \item id. FIPS code
+##' }
+##'
+##' @docType data
+##' @keywords datasets
+##' @name county_map
+##' @format "A data frame with 191,372 rows and 7 columns."
+##' @source Eric Celeste
+"county_map"
+
+
+
 ##' Opiate-Related Deaths in the United States, 1999-2014
 ##'
 ##' State-level data on optiate related deaths in the US, from the CDC
