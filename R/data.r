@@ -283,7 +283,8 @@
 ##' \item state. State abbreviation
 ##' \item census_region. Census region
 ##' \item pop_dens. Population density per square mile, 2014 estimate
-##' (five category factor)
+##' (five category factor).
+##' \item pop_dens4. Population density per square mile, 2014 estimate (quartiles)
 ##' \item pct_black. Percent black population, 2014 estimate (seven
 ##' category factor)
 ##' \item pop. Population, 2014 estimate
@@ -293,13 +294,15 @@
 ##' \item travel_time. Mean travel time to work (minutes), workers age 16+, 2009-2013
 ##' \item land_area. Land area in square miles, 2010
 ##' \item hh_income. Median household income, 2009-2013
+##' \item su_gun. Firearm-related suicides per 100,000 population,
+##' 1999-2015. Factor variable cut into quartiles.
 ##' }
 ##'
 ##' @docType data
 ##' @keywords datasets
 ##' @name county_data
 ##' @format "A data frame with 3195 rows and 13 columns."
-##' @source US Census Bureau
+##' @source US Census Bureau, Centers for Disease Control
 "county_data"
 
 
