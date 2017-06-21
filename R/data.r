@@ -285,8 +285,8 @@
 ##' \item pop_dens. Population density per square mile, 2014 estimate
 ##' (five category factor).
 ##' \item pop_dens4. Population density per square mile, 2014 estimate (quartiles)
-##' \item pop_dens8. Poptulation density per square mile, 2014
-##' estimate (eight categories)
+##' \item pop_dens6. Poptulation density per square mile, 2014
+##' estimate (six categories)
 ##' \item pct_black. Percent black population, 2014 estimate (seven
 ##' category factor)
 ##' \item pop. Population, 2014 estimate
@@ -301,8 +301,8 @@
 ##' values in this variable contain an inaccurate bottom-quartile
 ##' coding by construction. Do not present this variable as an
 ##' accurate measure of the firearm-related suicide rate.
-##' \item su_gun8. Firearm-related suicides per 100,000 population,
-##' 1999-2015. Factor variable cut into eight categories. Note that the
+##' \item su_gun6. Firearm-related suicides per 100,000 population,
+##' 1999-2015. Factor variable cut into six categories. Note that the
 ##' values in this variable contain an inaccurate bottom-quartile
 ##' coding by construction. Do not present this variable as an
 ##' accurate measure of the firearm-related suicide rate.
