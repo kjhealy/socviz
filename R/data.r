@@ -285,6 +285,8 @@
 ##' \item pop_dens. Population density per square mile, 2014 estimate
 ##' (five category factor).
 ##' \item pop_dens4. Population density per square mile, 2014 estimate (quartiles)
+##' \item pop_dens8. Poptulation density per square mile, 2014
+##' estimate (eight categories)
 ##' \item pct_black. Percent black population, 2014 estimate (seven
 ##' category factor)
 ##' \item pop. Population, 2014 estimate
@@ -294,8 +296,16 @@
 ##' \item travel_time. Mean travel time to work (minutes), workers age 16+, 2009-2013
 ##' \item land_area. Land area in square miles, 2010
 ##' \item hh_income. Median household income, 2009-2013
-##' \item su_gun. Firearm-related suicides per 100,000 population,
-##' 1999-2015. Factor variable cut into quartiles.
+##' \item su_gun4. Firearm-related suicides per 100,000 population,
+##' 1999-2015. Factor variable cut into quartiles. Note that the
+##' values in this variable contain an inaccurate bottom-quartile
+##' coding by construction. Do not present this variable as an
+##' accurate measure of the firearm-related suicide rate.
+##' \item su_gun8. Firearm-related suicides per 100,000 population,
+##' 1999-2015. Factor variable cut into eight categories. Note that the
+##' values in this variable contain an inaccurate bottom-quartile
+##' coding by construction. Do not present this variable as an
+##' accurate measure of the firearm-related suicide rate.
 ##' }
 ##'
 ##' @docType data
