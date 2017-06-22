@@ -93,6 +93,45 @@
 "gss_lon"
 
 
+#' US Presidential Election 2016, State-level results
+#'
+#' State-level vote totals and shares for the 2016 US Presidential election.
+#'  The variables are as follows:
+#' \itemize{
+#' \item state. State name.
+#' \item st. State abbreviation.
+#' \item fips. State FIPS code
+#' \item total_vote. Total votes cast.
+#' \item vote_margin. Winner's vote margin
+#' \item winner. Winning candidate.
+#' \item party. Winning party.
+#' \item pct_margin. Winner's percentage margin (of total vote)
+#' \item r_points. Percentage point difference between Trump % vote
+#'  share and Clinton % vote share
+#' \item d_points. Percentage point difference between Clinton % vote
+#'  share and Trump % vote share.
+#' \item pct_clinton. Clinton vote share (%)
+#' \item pct_trump. Trump vote share (%)
+#' \item pct_johnson. Johnson vote share (%)
+#' \item pct_other. Other vote share (%)
+#' \item clinton_vote. Clinton vote total
+#' \item trump_vote. Trump vote total
+#' \item johnson_vote. Johnson vote total
+#' \item other_vote. Other vote total
+#' \item ev_dem. Electoral votes for Clinton
+#' \item ev_rep. Electoral votes for Trump
+#' \item ev_oth. Electoral votes for Other
+#' \item census. Census region.
+#'}
+#'
+#' @docType data
+#' @keywords datasets
+#' @name election
+#' @format A (tibble) data frame with 51 rows and 22 variables.
+#' @source Vote data from Dave Leip, US Election Atlas, http://uselectionatlas.org.
+"election"
+
+
 
 #' US Presidential Election vote shares
 #'
@@ -283,7 +322,7 @@
 ##' \item state. State abbreviation
 ##' \item census_region. Census region
 ##' \item pop_dens. Population density per square mile, 2014 estimate
-##' (five category factor).
+##' (seven categories).
 ##' \item pop_dens4. Population density per square mile, 2014 estimate (quartiles)
 ##' \item pop_dens6. Poptulation density per square mile, 2014
 ##' estimate (six categories)

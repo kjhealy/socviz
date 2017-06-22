@@ -19,7 +19,7 @@ Selected county data (including state-level observations)
 \item state. State abbreviation
 \item census_region. Census region
 \item pop_dens. Population density per square mile, 2014 estimate
-(five category factor).
+(seven categories).
 \item pop_dens4. Population density per square mile, 2014 estimate (quartiles)
 \item pop_dens6. Poptulation density per square mile, 2014
 estimate (six categories)
