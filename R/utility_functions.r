@@ -355,16 +355,45 @@ center_df <- function(data, sc = FALSE, cen = TRUE) {
 ##'     variable added by R when creating model terms) and strips the
 ##'     latter away from the former. Useful for quickly cleaning
 ##'     variable names for a plot.
-##' @title strip_prefix
-##' @param var_name A character vector, usually variable names
+##' @title prefix_strip
+##' @param var_string A character vector, usually variable names
 ##' @param prefixes A character vector, usually variable prefixes
 ##' @param toTitle Convert results to Title Case? Defaults to TRUE.
+##' @param ... Other arguments to `gsub`
 ##' @return A character vector with `prefixes` terms stripped from the
 ##'     beginning of `var_name` terms.
 ##' @author Kieran Healy
 ##' @export
-strip_prefix <- function(var_name, prefixes, toTitle = TRUE) {
+prefix_strip <- function(var_string, prefixes, toTitle = TRUE, ...) {
     pre_terms <- paste0("^", prefixes, collapse = "|")
-    new_labs <- gsub(pre_terms, "", var_name)
+    new_labs <- gsub(pre_terms, "", var_name, ...)
     if(toTitle) tools::toTitleCase(new_labs) else new_labs
+}
+
+
+##' Replace series of characters (usually variable names) at the beginning of a character vector.
+##'
+##' Takes a character vector (usually vector of variable names from a
+##'     summarized or tidied model object), along with a vector of
+##'     character terms (usually the prefix of a dummy or categorical
+##'     variable added by R when creating model terms) and strips the
+##'     latter away from the former. Useful for quickly cleaning
+##'     variable names for a plot.
+##' @title prefix_replace
+##' @param var_names A character vector, usually variable names
+##' @param prefixes A character vector, usually variable prefixes
+##' @param replacements A character vector of replacements for the
+##'     `prefixes`, in the same order as them.
+##' @param toTitle Convert results to Title Case? Defaults to TRUE.
+##' @param ... Other arguments to `gsub`
+##' @return A character vector with `prefixes` terms in `var_names`
+##'     replaced with the content of the `replacement` terms.
+##' @author Kieran Healy
+##' @export
+prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ...) {
+    out <- var_names
+    for (i in seq_along(prefixes)) {
+    out <- gsub(prefixes[i], replacements[i], out, ...)
+  }
+  if(toTitle) tools::toTitleCase(out) else out
 }

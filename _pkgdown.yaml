@@ -40,4 +40,6 @@ reference:
       - out_format
       - round_df
       - pandoc_to
+      - prefix_replace
+      - prefix_strip
       - tw_tab      
