@@ -346,3 +346,25 @@ center_df <- function(data, sc = FALSE, cen = TRUE) {
     data <- fx(data)
     data
 }
+
+##' Strip a series of characters from the beginning of a character vector.
+##'
+##' Takes a character vector (usually vector of variable names from a
+##'     summarized or tidied model object), along with a vector of
+##'     character terms (usually the prefix of a dummy or categorical
+##'     variable added by R when creating model terms) and strips the
+##'     latter away from the former. Useful for quickly cleaning
+##'     variable names for a plot.
+##' @title strip_prefix
+##' @param var_name A character vector, usually variable names
+##' @param prefixes A character vector, usually variable prefixes
+##' @param toTitle Convert results to Title Case? Defaults to TRUE.
+##' @return A character vector with `prefixes` terms stripped from the
+##'     beginning of `var_name` terms.
+##' @author Kieran Healy
+##' @export
+strip_prefix <- function(var_name, prefixes, toTitle = TRUE) {
+    pre_terms <- paste0("^", prefixes, collapse = "|")
+    new_labs <- gsub(pre_terms, "", var_name)
+    if(toTitle) tools::toTitleCase(new_labs) else new_labs
+}

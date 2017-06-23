@@ -48,6 +48,9 @@ documentation of the variables.
 \item bigregion. Region variable (Census divisions) recoded to four Census regions.
 \item religion. relig variable recoded to six categories.
 \item partners_rc. partners variable recoded to five categories.
+\item obama. Respondent says the voted for Obama in 2012. 1 = yes;
+0 = all other non-design options (Romney, other candidate, did not
+vote, refused, etc.)
 }
 }
 \keyword{datasets}
