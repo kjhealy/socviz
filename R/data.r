@@ -214,6 +214,20 @@
 #' @source Macro-economic and spending data: OECD. Other data: Kieran Healy.
 "organdata"
 
+
+#' Dates in character form
+#'
+#' A table of dates and observations with the date column stored as a
+#' character string.
+#'
+#' @docType data
+#' @keywords datasets
+#' @name bad_date
+#' @format "A tibble with 10 rows and two columns."
+#' @source Chris Delcher.
+"bad_date"
+
+
 #' An untidy table of data
 #'
 #' A table of data from Wickham (2014).

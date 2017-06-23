@@ -366,7 +366,7 @@ center_df <- function(data, sc = FALSE, cen = TRUE) {
 ##' @export
 prefix_strip <- function(var_string, prefixes, toTitle = TRUE, ...) {
     pre_terms <- paste0("^", prefixes, collapse = "|")
-    new_labs <- gsub(pre_terms, "", var_name, ...)
+    new_labs <- gsub(pre_terms, "", var_string, ...)
     if(toTitle) tools::toTitleCase(new_labs) else new_labs
 }
 

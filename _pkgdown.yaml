@@ -10,6 +10,7 @@ reference:
       Included datasets.
     contents:
       - asasec
+      - bad_date
       - county_data
       - county_map
       - elections_historic
