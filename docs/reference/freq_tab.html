@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Census Data on US Counties — county_data • socviz</title>
+<title>freq_tab — freq_tab • socviz</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -68,62 +68,59 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Census Data on US Counties</h1>
+    <h1>freq_tab</h1>
     </div>
 
     
-    <p>Selected county data (including state-level observations)</p><ul>
-<li><p>id. FIPS State and County code</p></li>
-<li><p>name. State or County Name</p></li>
-<li><p>state. State abbreviation</p></li>
-<li><p>census_region. Census region</p></li>
-<li><p>pop_dens. Population density per square mile, 2014 estimate
-(seven categories).</p></li>
-<li><p>pop_dens4. Population density per square mile, 2014 estimate (quartiles)</p></li>
-<li><p>pop_dens6. Poptulation density per square mile, 2014
-estimate (six categories)</p></li>
-<li><p>pct_black. Percent black population, 2014 estimate (seven
-category factor)</p></li>
-<li><p>pop. Population, 2014 estimate</p></li>
-<li><p>female. Female persons, percent, 2013</p></li>
-<li><p>white. White alone, percent, 2013</p></li>
-<li><p>black. Black alone, percent, 2013</p></li>
-<li><p>travel_time. Mean travel time to work (minutes), workers age 16+, 2009-2013</p></li>
-<li><p>land_area. Land area in square miles, 2010</p></li>
-<li><p>hh_income. Median household income, 2009-2013</p></li>
-<li><p>su_gun4. Firearm-related suicides per 100,000 population,
-1999-2015. Factor variable cut into quartiles. Note that the
-values in this variable contain an inaccurate bottom-quartile
-coding by construction. Do not present this variable as an
-accurate measure of the firearm-related suicide rate.</p></li>
-<li><p>su_gun6. Firearm-related suicides per 100,000 population,
-1999-2015. Factor variable cut into six categories. Note that the
-values in this variable contain an inaccurate bottom-quartile
-coding by construction. Do not present this variable as an
-accurate measure of the firearm-related suicide rate.</p></li>
-</ul>
+    <p>Generate an n-way frequency table</p>
     
 
-    <pre class="usage"><span class='no'>county_data</span></pre>
-        
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
-
-    <p>"A data frame with 3195 rows and 13 columns."</p>
+    <pre class="usage"><span class='fu'>freq_tab</span>(<span class='no'>df</span>, <span class='no'>...</span>)</pre>
     
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>df</th>
+      <td><p>tibble or data frame (implicit within pipline)</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>grouping, as with group_by()</p></td>
+    </tr>
+    </table>
+    
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>US Census Bureau, Centers for Disease Control</p>
+    <p>A tibble with the grouping variables, the n per group, and
+    the proportion (prop) of each group, calculated with respect to the
+    outermost grouping variable.</p>
+    
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>tidyverse, pipeline, and dplyr-friendly frequency tables</p>
     
 
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>not_run</span>({
+  <span class='no'>mtcars</span> <span class='kw'>%&gt;%</span> <span class='fu'>freq_tab</span>(<span class='no'>vs</span>, <span class='no'>gear</span>, <span class='no'>carb</span>)
+})</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
+      <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#format">Format</a></li>
+      <li><a href="#value">Value</a></li>
 
-      <li><a href="#source">Source</a></li>
-          </ul>
+      <li><a href="#details">Details</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
+    </ul>
+
+    <h2>Author</h2>
+    
+Kieran Healy
 
   </div>
 </div>

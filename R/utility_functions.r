@@ -44,6 +44,31 @@ int_to_year <- function(x, month="01", day="01") {
   }
 }
 
+##' Generate an n-way frequency table
+##'
+##' tidyverse, pipeline, and dplyr-friendly frequency tables
+##' @title freq_tab
+##' @param df tibble or data frame (implicit within pipline)
+##' @param ... grouping, as with group_by()
+##' @return A tibble with the grouping variables, the n per group, and
+##'     the proportion (prop) of each group, calculated with respect to the
+##'     outermost grouping variable.
+##' @author Kieran Healy
+##' @examples
+##' \dontrun{
+##' mtcars %>% freq_tab(vs, gear, carb)
+##' }
+
+##' @export
+freq_tab <- function(df, ...) {
+    group_by <- quos(...)
+    outer_group <- group_by[[1]]
+
+    df %>%
+        count(!!!group_by) %>%
+        group_by(!!outer_group) %>%
+        mutate(prop = prop.table(n))
+}
 
 ##' check if is html output
 ##'

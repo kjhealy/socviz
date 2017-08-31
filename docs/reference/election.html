@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Census Data on US Counties — county_data • socviz</title>
+<title>US Presidential Election 2016, State-level results — election • socviz</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -68,51 +68,48 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Census Data on US Counties</h1>
+    <h1>US Presidential Election 2016, State-level results</h1>
     </div>
 
     
-    <p>Selected county data (including state-level observations)</p><ul>
-<li><p>id. FIPS State and County code</p></li>
-<li><p>name. State or County Name</p></li>
-<li><p>state. State abbreviation</p></li>
-<li><p>census_region. Census region</p></li>
-<li><p>pop_dens. Population density per square mile, 2014 estimate
-(seven categories).</p></li>
-<li><p>pop_dens4. Population density per square mile, 2014 estimate (quartiles)</p></li>
-<li><p>pop_dens6. Poptulation density per square mile, 2014
-estimate (six categories)</p></li>
-<li><p>pct_black. Percent black population, 2014 estimate (seven
-category factor)</p></li>
-<li><p>pop. Population, 2014 estimate</p></li>
-<li><p>female. Female persons, percent, 2013</p></li>
-<li><p>white. White alone, percent, 2013</p></li>
-<li><p>black. Black alone, percent, 2013</p></li>
-<li><p>travel_time. Mean travel time to work (minutes), workers age 16+, 2009-2013</p></li>
-<li><p>land_area. Land area in square miles, 2010</p></li>
-<li><p>hh_income. Median household income, 2009-2013</p></li>
-<li><p>su_gun4. Firearm-related suicides per 100,000 population,
-1999-2015. Factor variable cut into quartiles. Note that the
-values in this variable contain an inaccurate bottom-quartile
-coding by construction. Do not present this variable as an
-accurate measure of the firearm-related suicide rate.</p></li>
-<li><p>su_gun6. Firearm-related suicides per 100,000 population,
-1999-2015. Factor variable cut into six categories. Note that the
-values in this variable contain an inaccurate bottom-quartile
-coding by construction. Do not present this variable as an
-accurate measure of the firearm-related suicide rate.</p></li>
+    <p>State-level vote totals and shares for the 2016 US Presidential election.
+ The variables are as follows:</p><ul>
+<li><p>state. State name.</p></li>
+<li><p>st. State abbreviation.</p></li>
+<li><p>fips. State FIPS code</p></li>
+<li><p>total_vote. Total votes cast.</p></li>
+<li><p>vote_margin. Winner's vote margin</p></li>
+<li><p>winner. Winning candidate.</p></li>
+<li><p>party. Winning party.</p></li>
+<li><p>pct_margin. Winner's percentage margin (of total vote)</p></li>
+<li><p>r_points. Percentage point difference between Trump <!-- % vote -->
+ share and Clinton <!-- % vote share --></p></li>
+<li><p>d_points. Percentage point difference between Clinton <!-- % vote -->
+ share and Trump <!-- % vote share. --></p></li>
+<li><p>pct_clinton. Clinton vote share (<!-- %) --></p></li>
+<li><p>pct_trump. Trump vote share (<!-- %) --></p></li>
+<li><p>pct_johnson. Johnson vote share (<!-- %) --></p></li>
+<li><p>pct_other. Other vote share (<!-- %) --></p></li>
+<li><p>clinton_vote. Clinton vote total</p></li>
+<li><p>trump_vote. Trump vote total</p></li>
+<li><p>johnson_vote. Johnson vote total</p></li>
+<li><p>other_vote. Other vote total</p></li>
+<li><p>ev_dem. Electoral votes for Clinton</p></li>
+<li><p>ev_rep. Electoral votes for Trump</p></li>
+<li><p>ev_oth. Electoral votes for Other</p></li>
+<li><p>census. Census region.</p></li>
 </ul>
     
 
-    <pre class="usage"><span class='no'>county_data</span></pre>
+    <pre class="usage"><span class='no'>election</span></pre>
         
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>"A data frame with 3195 rows and 13 columns."</p>
+    <p>A (tibble) data frame with 51 rows and 22 variables.</p>
     
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>US Census Bureau, Centers for Disease Control</p>
+    <p>Vote data from Dave Leip, US Election Atlas, http://uselectionatlas.org.</p>
     
 
   </div>

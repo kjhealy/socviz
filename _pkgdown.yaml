@@ -13,6 +13,7 @@ reference:
       - bad_date
       - county_data
       - county_map
+      - election
       - elections_historic
       - fredts
       - gss_sm
@@ -30,6 +31,7 @@ reference:
     contents:
       - starts_with("%")
       - center_df
+      - freq_tab
       - int_to_year
       - is_html_output
       - is_latex_output
