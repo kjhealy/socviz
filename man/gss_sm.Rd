@@ -39,6 +39,8 @@ documentation of the variables.
 \item partners. how many sex partners r had in last year.
 \item grass. should marijuana be made legal.
 \item zodiac. respondents astrological sign.
+\item pres12. raw variable for whether the Respondent voted for
+Obama. Recoded to obama in this dataset.
 \item wtssall. weight variable.
 \item income_rc. Recoded income variable.
 \item agegrp. Age variable recoded into age categories
