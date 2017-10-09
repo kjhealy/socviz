@@ -62,32 +62,28 @@
 #' \item id. respondent id number.
 #' \item ballot. ballot used for interview.
 #' \item age. age of respondent.
-#' \item childs. number of children.
-#' \item sibs. number of brothers and sisters.
 #' \item degree. Rs highest degree.
 #' \item race. race of respondent.
 #' \item sex. respondent's sex.
-#' \item region. region of interview.
+#' \item siblings. Number of brothers and sisters (recoded from SIBS).
+#' \item kids. Number of children (recoded from CHILDS).
+#' \item bigregion. region of interview (recoded from REGION).
 #' \item income16. total family income.
-#' \item relig. rs religious preference.
+#' \item religion. rs religious preference (recoded from RELIGION)
 #' \item marital. marital status.
 #' \item padeg. fathers highest degree.
 #' \item madeg. mothers highest degree.
 #' \item partyid. political party affiliation.
 #' \item polviews. think of self as liberal or conservative.
 #' \item happy. general happiness.
-#' \item partners. how many sex partners r had in last year.
+#' \item partners_rc. how many sex partners r had in last year.
+#' (Recoded from PARTNERS)
 #' \item grass. should marijuana be made legal.
 #' \item zodiac. respondents astrological sign.
+#' \item pres12. R's stated vote in the 2012 Presidential election
 #' \item wtssall. weight variable.
-#' \item income_rc. Recoded income variable.
-#' \item agegrp. Age variable recoded into age categories
-#' \item ageq. Age recoded into quartiles.
-#' \item siblings. Top-coded sibs variable.
-#' \item kids. Top-coded childs variable.
-#' \item bigregion. Region variable (Census divisions) recoded to four Census regions.
-#' \item religion. relig variable recoded to six categories.
-#' \item partners_rc. partners variable recoded to five categories.
+#' \item vpsu. Sampling unit
+#' \item vstrat. Stratification unit
 #' }
 #'
 #' @docType data
@@ -97,6 +93,30 @@
 #' @source National Opinion Research Center, http://gss.norc.org.
 "gss_lon"
 
+
+#' General Social Survey data, 1972-2016
+#'
+#' A dataset containing an extract from the General Social
+#' Survey. See http://gss.norc.org/Get-Documentation for full
+#' documentation of the variables. This data contains seven
+#' variables from `gss_lon` with all NA values omitted.
+#'
+#' \itemize{
+#' \item year. gss year for this respondent.
+#' \item id. respondent id number.
+#' \item age. age of respondent.
+#' \item race. race of respondent.
+#' \item sex. respondent's sex.
+#' \item siblings. Number of brothers and sisters (recoded from SIBS).
+#' \item kids. Number of children (recoded from CHILDS).
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name gss_sib
+#' @format A data frame with 60,423 rows and 7 variables.
+#' @source National Opinion Research Center, http://gss.norc.org.
+"gss_sib"
 
 #' US Presidential Election 2016, State-level results
 #'

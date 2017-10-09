@@ -23,32 +23,28 @@ variables as `gss_sm`, but for all available years from 1972-2016.
 \item id. respondent id number.
 \item ballot. ballot used for interview.
 \item age. age of respondent.
-\item childs. number of children.
-\item sibs. number of brothers and sisters.
 \item degree. Rs highest degree.
 \item race. race of respondent.
 \item sex. respondent's sex.
-\item region. region of interview.
+\item siblings. Number of brothers and sisters (recoded from SIBS).
+\item kids. Number of children (recoded from CHILDS).
+\item bigregion. region of interview (recoded from REGION).
 \item income16. total family income.
-\item relig. rs religious preference.
+\item religion. rs religious preference (recoded from RELIGION)
 \item marital. marital status.
 \item padeg. fathers highest degree.
 \item madeg. mothers highest degree.
 \item partyid. political party affiliation.
 \item polviews. think of self as liberal or conservative.
 \item happy. general happiness.
-\item partners. how many sex partners r had in last year.
+\item partners_rc. how many sex partners r had in last year.
+(Recoded from PARTNERS)
 \item grass. should marijuana be made legal.
 \item zodiac. respondents astrological sign.
+\item pres12. R's stated vote in the 2012 Presidential election
 \item wtssall. weight variable.
-\item income_rc. Recoded income variable.
-\item agegrp. Age variable recoded into age categories
-\item ageq. Age recoded into quartiles.
-\item siblings. Top-coded sibs variable.
-\item kids. Top-coded childs variable.
-\item bigregion. Region variable (Census divisions) recoded to four Census regions.
-\item religion. relig variable recoded to six categories.
-\item partners_rc. partners variable recoded to five categories.
+\item vpsu. Sampling unit
+\item vstrat. Stratification unit
 }
 }
 \keyword{datasets}
