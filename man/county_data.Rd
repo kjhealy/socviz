@@ -12,9 +12,9 @@ US Census Bureau, Centers for Disease Control
 county_data
 }
 \description{
-Selected county data (including state-level observations)
+Selected county data (including state-level observations on some variables)
 \itemize{
-\item id. FIPS State and County code
+\item id. FIPS State and County code (character)
 \item name. State or County Name
 \item state. State abbreviation
 \item census_region. Census region
@@ -42,6 +42,32 @@ accurate measure of the firearm-related suicide rate.
 values in this variable contain an inaccurate bottom-quartile
 coding by construction. Do not present this variable as an
 accurate measure of the firearm-related suicide rate.
+\item fips. FIPS code (integer).
+\item votes_dem_2016. Provisional count of Democratic votes in the
+2016 Presidential election.
+\item votes_gop_2016. Provisional count of Republican votes in the
+2016 Presidential election.
+\item total_votes_2016. Provitional count of votes cast in the
+2016 Presidential election.
+\item per_dem_2016. Democratic Presidential vote, percent.
+\item per_gop_2016. Republican Presidental vote, percent.
+\item diff_2016. Difference between Democratic and Republican
+Presidental vote.
+\item votes_dem_2012. Provisional count of Democratic votes in the
+2012 Presidential election.
+\item votes_gop_2012. Provisional count of Republican votes in the
+2012 Presidential election.
+\item total_votes_2012. Provitional count of votes cast in the
+2012 Presidential election.
+\item per_dem_2012. Democratic Presidential vote, percent.
+\item per_gop_2012. Republican Presidental vote, percent.
+\item diff_2012. Difference between Democratic and Republican
+Presidental vote.
+\item winner. Winning candidate, 2016 Presidental Election.
+\item partywinner16. Winning party, 2016 Presidental Election.
+\item winner12. Winning candidate, 2012 Presidental Election.
+\item partywinner12. Winning party, 2012 Presidental Election.
+\item fipped. Did the area flip parties from 2012 to 2016.
 }
 }
 \keyword{datasets}
