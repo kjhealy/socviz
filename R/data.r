@@ -505,3 +505,31 @@
 ##' @format "A tibble with 800 rows and 10 columns."
 ##' @source Centers for Disease Control CDC WONDER data
 "opiates"
+
+
+##' US Law School Enrollments 1963-2015
+##'
+##' Annual enrollments in US Law Schools.
+##'
+##' The variables are as follows:
+#'
+#' \itemize{
+#' \item  ay. Academic year. character.
+#' \item  year. Year. integer.
+#' \item  n_schools. Number of law schools. integer.
+#' \item  fy_enrollment. First year enrollment. integer.
+#' \item  fy_male. First year enrollment, men. integer.
+#' \item  fy_female. First year enrollment, women. integer.
+#' \item  jd_total. Total JD enrollment. integer.
+#' \item  jd_male. Total JD enrollment, men. integer.
+#' \item  jd_female. Total JD enrollment, women. integer.
+#' \item  tot_enrolled. Total enrolled. integer.
+#' \item  jd_llb_awarded. JD/LLB degrees awarded. integer.
+#' }
+##'
+##' @docType data
+##' @keywords datasets
+##' @name lawschools
+##' @format "A tibble with 53 rows and 11 columns."
+##' @source American Bar Association
+"lawschools"
