@@ -17,7 +17,7 @@ A tibble with the grouping variables, the N (`n`) per group, and
     outermost grouping variable.
 }
 \description{
-Generate an n-way frequency table
+Generate a tidy n-way frequency table
 }
 \details{
 tidyverse, pipeline, and dplyr-friendly frequency tables
