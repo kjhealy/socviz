@@ -44,7 +44,7 @@ int_to_year <- function(x, month="01", day="01") {
   }
 }
 
-##' Generate an n-way frequency table
+##' Generate a tidy n-way frequency table
 ##'
 ##' tidyverse, pipeline, and dplyr-friendly frequency tables
 ##' @title freq_tab
@@ -61,24 +61,23 @@ int_to_year <- function(x, month="01", day="01") {
 ##' @export
 freq_tab <- function (df, ...)
 {
-    require(rlang)
-    grouping <- quos(...)
+    grouping <- rlang::quos(...)
 
-    if(is_grouped_df(df)) {
-        out_tbl <- df %>% count(!!!grouping)
+    if(dplyr::is_grouped_df(df)) {
+        out_tbl <- df %>% dplyr::count(!!!grouping)
     } else {
-        out_tbl <- df %>% group_by(!!!grouping) %>% count()
+        out_tbl <- df %>% dplyr::group_by(!!!grouping) %>% dplyr::count()
     }
 
     n_groups <- length(group_vars(out_tbl))
 
     if(n_groups == 1) {
-        out_tbl %>% ungroup() %>%
-            mutate(freq = n/sum(n))
+        out_tbl %>% dplyr::ungroup() %>%
+            dplyr::mutate(freq = n/sum(n))
     } else {
-        outer_group <- groups(out_tbl)[[1]]
-        out_tbl %>% group_by(!!outer_group) %>%
-            mutate(prop = prop.table(n))
+        outer_group <- dplyr::groups(out_tbl)[[1]]
+        out_tbl %>% dplyr::group_by(!!outer_group) %>%
+            dplyr::mutate(prop = prop.table(n))
     }
 }
 
