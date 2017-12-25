@@ -50,24 +50,36 @@ int_to_year <- function(x, month="01", day="01") {
 ##' @title freq_tab
 ##' @param df tibble or data frame (implicit within pipline)
 ##' @param ... grouping, as with group_by()
-##' @return A tibble with the grouping variables, the n per group, and
-##'     the proportion (prop) of each group, calculated with respect to the
+##' @return A tibble with the grouping variables, the N (`n`) per group, and
+##'     the proportion (`prop`) of each group, calculated with respect to the
 ##'     outermost grouping variable.
 ##' @author Kieran Healy
 ##' @examples
 ##' \dontrun{
 ##' mtcars %>% freq_tab(vs, gear, carb)
 ##' }
-
 ##' @export
-freq_tab <- function(df, ...) {
-    group_by <- quos(...)
-    outer_group <- group_by[[1]]
+freq_tab <- function (df, ...)
+{
+    require(rlang)
+    grouping <- quos(...)
 
-    df %>%
-        count(!!!group_by) %>%
-        group_by(!!outer_group) %>%
-        mutate(prop = prop.table(n))
+    if(is_grouped_df(df)) {
+        out_tbl <- df %>% count(!!!grouping)
+    } else {
+        out_tbl <- df %>% group_by(!!!grouping) %>% count()
+    }
+
+    n_groups <- length(group_vars(out_tbl))
+
+    if(n_groups == 1) {
+        out_tbl %>% ungroup() %>%
+            mutate(freq = n/sum(n))
+    } else {
+        outer_group <- groups(out_tbl)[[1]]
+        out_tbl %>% group_by(!!outer_group) %>%
+            mutate(prop = prop.table(n))
+    }
 }
 
 ##' check if is html output

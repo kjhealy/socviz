@@ -13,6 +13,7 @@ reference:
       - bad_date
       - county_data
       - county_map
+      - edu
       - election
       - elections_historic
       - fredts

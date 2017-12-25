@@ -12,8 +12,8 @@ freq_tab(df, ...)
 \item{...}{grouping, as with group_by()}
 }
 \value{
-A tibble with the grouping variables, the n per group, and
-    the proportion (prop) of each group, calculated with respect to the
+A tibble with the grouping variables, the N (`n`) per group, and
+    the proportion (`prop`) of each group, calculated with respect to the
     outermost grouping variable.
 }
 \description{
