@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>freq_tab — freq_tab • socviz</title>
+<title>Life Expectancy in the OECD, 1960-2015. — oecd_le • socviz</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -75,59 +75,44 @@
       <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>freq_tab</h1>
+    <h1>Life Expectancy in the OECD, 1960-2015.</h1>
     </div>
 
     
-    <p>Generate a tidy n-way frequency table</p>
+    <p>Life expectancy data for individual countries.</p>
     
 
-    <pre class="usage"><span class='fu'>freq_tab</span>(<span class='no'>df</span>, <span class='no'>...</span>)</pre>
-    
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>df</th>
-      <td><p>tibble or data frame (implicit within pipline)</p></td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td><p>grouping, as with group_by()</p></td>
-    </tr>
-    </table>
-    
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+    <pre class="usage"><span class='no'>oecd_le</span></pre>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A tibble with the grouping variables, the N (`n`) per group, and
-    the proportion (`prop`) of each group, calculated with respect to the
-    outermost grouping variable.</p>
+    <p>"A tibble with 1,746 rows and 4 columns."</p>
+    
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p>OECD</p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>tidyverse, pipeline, and dplyr-friendly frequency tables</p>
+    <p>The variables are as follows:</p><ul>
+<li><p>country. Country. (Character)</p></li>
+<li><p>year. Year. (Integer.)</p></li>
+<li><p>life_exp. Life Expectancy at Birth, measured in years.</p></li>
+<li><p>is_usa. Indicator for USA or Other country.</p></li>
+</ul>
     
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><span class='co'># NOT RUN {</span>
-<span class='no'>mtcars</span> <span class='kw'>%&gt;%</span> <span class='fu'>freq_tab</span>(<span class='no'>vs</span>, <span class='no'>gear</span>, <span class='no'>carb</span>)
-<span class='co'># }</span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#value">Value</a></li>
+      <li><a href="#format">Format</a></li>
+
+      <li><a href="#source">Source</a></li>
 
       <li><a href="#details">Details</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
-
-    <h2>Author</h2>
-    
-Kieran Healy
+          </ul>
 
   </div>
 </div>

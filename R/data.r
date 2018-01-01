@@ -533,3 +533,46 @@
 ##' @format "A tibble with 53 rows and 11 columns."
 ##' @source American Bar Association
 "lawschools"
+
+##' Life Expectancy in the OECD, 1960-2015.
+##'
+##' Life expectancy data for individual countries.
+##'
+##' The variables are as follows:
+#'
+#' \itemize{
+#' \item  country. Country. (Character)
+#' \item  year. Year. (Integer.)
+#' \item  life_exp. Life Expectancy at Birth, measured in years.
+#' \item  is_usa. Indicator for USA or Other country.
+#' }
+##'
+##' @docType data
+##' @keywords datasets
+##' @name oecd_le
+##' @format "A tibble with 1,746 rows and 4 columns."
+##' @source OECD
+"oecd_le"
+
+
+##' Life Expectancy in the OECD, 1960-2015
+##'
+##' Life expectancy data summary table.
+##'
+##' The variables are as follows:
+#'
+#' \itemize{
+#' \item  year. Year. (Integer.)
+#' \item  other. Life Expectancy at birth in OECD countries excluding
+#' the USA. Measured in years.
+#' \item usa. Life Expectancy at birth in the USA. Measured in years.
+#' \item  diff. Difference between usa and other.
+#' \item hi_lo. Is usa above or below the oecd average?
+#' }
+##'
+##' @docType data
+##' @keywords datasets
+##' @name oecd_sum
+##' @format "A tibble with 57 rows and 5 columns."
+##' @source OECD
+"oecd_sum"
