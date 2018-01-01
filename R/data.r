@@ -497,6 +497,7 @@
 #' \item adjusted.se. Standard error of Adjusted death rate.
 #' \item region. Census region. (Stored as an ordered factor.)
 #' \item abbr. Abbreviated state name.
+#' \item division_name. Census Division. (Character.)
 #' }
 ##'
 ##' @docType data
