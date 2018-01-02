@@ -22,18 +22,41 @@ When you click the **Knit** button a document will be generated that includes bo
 
 Code chunks are delimited by three backticks (found to the left of the 1 key on US and UK keyboards) at the start and end. The opening backticks also have a pair of braces and the letter `r`, to indicate what language the chunk is written in. You write your code inside the code chunks. Write your notes and other material around them, as here. 
 
+## Before you Begin
+
+To install the tidyverse, make sure you have an Internet connection. Then *manually* run the code in the chunk below. If you knit the document if will be skipped. We do this because you only need to install these packages once, not every time you run this file. Either knit the chunk using the little green "play" arrow to the right of the chunk area, or copy and paste the text into the console window.
+
+```{r install, eval = FALSE}
+
+## This code will not be evaluated automatically.
+## (Notice the eval = FALSE declaration in the options section of the
+## code chunk)
+
+my_packages <- c("tidyverse", "broom", "coefplot", "cowplot",
+                 "gapminder", "GGally", "ggrepel", "ggridges", "gridExtra",
+                 "here", "interplot", "margins", "maps", "mapproj",
+                 "mapdata", "MASS", "quantreg", "rlang", "scales",
+                 "survey", "srvyr", "viridis", "viridisLite", "devtools")
+
+install.packages(my_packages, repos = "http://cran.rstudio.com")
+
+```
+
 ## Set Up Your Project and Load Libraries
 
 To begin we must load some libraries we will be using. If we do not load them, R will not be able to find the functions contained in these libraries. The tidyverse includes ggplot and other tools. We also load the socviz and gapminder libraries.
 
 ```{r setup, include=FALSE}
 
-## Show code as well as output by default
+## By defult, show code for all chunks in the knitted document,
+## as well as the output. To override for a particular chunk
+## use echo = FALSE in its options.
 knitr::opts_chunk$set(echo = TRUE) 
 
-## Sst the default size of figures
+## Set the default size of figures
 knitr::opts_chunk$set(fig.width=8, fig.height=5)  
 
+## Load the libraries we will be using
 library(gapminder)
 library(here)
 library(socviz)
