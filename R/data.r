@@ -544,7 +544,7 @@
 #' \itemize{
 #' \item  country. Country. (Character)
 #' \item  year. Year. (Integer.)
-#' \item  life_exp. Life Expectancy at Birth, measured in years.
+#' \item  lifeexp. Life Expectancy at Birth, measured in years.
 #' \item  is_usa. Indicator for USA or Other country.
 #' }
 ##'
