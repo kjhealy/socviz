@@ -68,10 +68,11 @@ color_pal <- function(col, border = "light gray", ...)
 ##' @param df data frame of color hex values
 ##' @return Plot of table of colors
 ##' @author Kieran Healy
+##' @export
 color_comp <- function(df) {
     d <- as.data.frame(df)
     plot.new()
-    par(mfrow = c(ncol(d), 1), mar = c(1, 0, 2, 0))
+    par(mfrow = c(ncol(d), 1), mar = c(1, 0, 2, 0), cex = 1.2)
 
     for(i in 1:ncol(d)) {
         color_pal(d[,i])
