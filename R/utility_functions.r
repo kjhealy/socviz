@@ -44,6 +44,43 @@ int_to_year <- function(x, month="01", day="01") {
   }
 }
 
+##' Draw a palette of colors
+##'
+##' Borrowed from the colorspace library
+##' @title Draw a palette of colors
+##' @param col vector of colors
+##' @param border border
+##' @param ... other arguments
+##' @return Plot of a color palette
+##' @author colorspace library authors
+color_pal <- function(col, border = "light gray", ...)
+{
+  n <- length(col)
+  plot(0, 0, type="n", xlim = c(0, 1), ylim = c(0, 1),
+    axes = FALSE, xlab = "", ylab = "", ...)
+  rect(0:(n-1)/n, 0, 1:n/n, 1, col = col, border = border)
+}
+
+##' Plot a table of color hex values as a table of colors
+##'
+##' Given a data frame of color values, plot them as swatches
+##' @title Plot a table of color hex values as a table of colors
+##' @param df data frame of color hex values
+##' @return Plot of table of colors
+##' @author Kieran Healy
+color_comp <- function(df) {
+    d <- as.data.frame(df)
+    plot.new()
+    par(mfrow = c(ncol(d), 1), mar = c(1, 0, 2, 0))
+
+    for(i in 1:ncol(d)) {
+        color_pal(d[,i])
+        title(colnames(d)[i])
+    }
+}
+
+
+
 ##' Generate a tidy n-way frequency table
 ##'
 ##' tidyverse, pipeline, and dplyr-friendly frequency tables
