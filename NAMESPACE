@@ -2,6 +2,7 @@
 
 export("%nin%")
 export(center_df)
+export(color_comp)
 export(freq_tab)
 export(int_to_year)
 export(lay_out)

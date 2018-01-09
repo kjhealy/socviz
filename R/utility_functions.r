@@ -68,6 +68,7 @@ color_pal <- function(col, border = "light gray", ...)
 ##' @param df data frame of color hex values
 ##' @return Plot of table of colors
 ##' @author Kieran Healy
+##' @export
 color_comp <- function(df) {
     d <- as.data.frame(df)
     plot.new()
