@@ -11,7 +11,6 @@ Depends: R (>= 2.10)
 Imports:
     knitr,
     dplyr,
-    grid,
     rlang,
     tibble
 Encoding: UTF-8
