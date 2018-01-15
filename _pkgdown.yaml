@@ -51,4 +51,5 @@ reference:
       - pandoc_to
       - prefix_replace
       - prefix_strip
+      - theme_map
       - tw_tab      
