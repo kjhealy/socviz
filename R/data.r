@@ -577,3 +577,28 @@
 ##' @format "A tibble with 57 rows and 5 columns."
 ##' @source OECD
 "oecd_sum"
+
+
+##' Monthly Births in the US, and England & Wales
+##'
+##' Births by month, 1933-2015 (United States) and 1938-1991 (England
+##' & Wales)
+##'
+##' The variables are as follows:
+#'
+#' \itemize{
+#' \item  date. Year and month. (Day is arbitrarily set to 01 for all observations,
+#' data are monthly.)
+#' \item  month. Month of the year (1-12).
+#' \item n_days. The number of days in a given month/year date.
+#' \item births. Total live births for that month.
+#' \item  total_pop. National population estimate for that month.
+#' \item country. United States or England & Wales.
+#' }
+##'
+##' @docType data
+##' @keywords datasets
+##' @name bommer
+##' @format "A tibble with 1,644 rows and 6 columns."
+##' @source UK Office of National Statistics; US Census Bureau.
+"boomer"
