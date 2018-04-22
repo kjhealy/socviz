@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>margin_codenote — margin_codenote • socviz</title>
+<title>Plot a table of color hex values as a table of colors — color_comp • socviz</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,9 +25,9 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="margin_codenote — margin_codenote" />
+<meta property="og:title" content="Plot a table of color hex values as a table of colors — color_comp" />
 
-<meta property="og:description" content="Use in inline R expressions to write a monospaced margin note for tufte-latex documents" />
+<meta property="og:description" content="Plot a table of color hex values as a table of colors" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -93,37 +93,33 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>margin_codenote</h1>
+    <h1>Plot a table of color hex values as a table of colors</h1>
     <small>Source: <a href='https://github.com/kjhealy/sociviz/blob/master/R/utility_functions.r'><code>R/utility_functions.r</code></a></small>
-    <div class="hidden name"><code>margin_codenote.Rd</code></div>
+    <div class="hidden name"><code>color_comp.Rd</code></div>
     </div>
 
     
-    <p>Use in inline R expressions to write a monospaced margin note for tufte-latex documents</p>
+    <p>Plot a table of color hex values as a table of colors</p>
     
 
-    <pre class="usage"><span class='fu'>margin_codenote</span>(<span class='no'>text</span>, <span class='kw'>icon</span> <span class='kw'>=</span> <span class='st'>"&amp;#8853;"</span>)</pre>
+    <pre class="usage"><span class='fu'>color_comp</span>(<span class='no'>df</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>text</th>
-      <td><p>The text of the note</p></td>
-    </tr>
-    <tr>
-      <th>icon</th>
-      <td><p>An icon</p></td>
+      <th>df</th>
+      <td><p>data frame of color hex values</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A marginal note in monospace font</p>
+    <p>Plot of table of colors</p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Adapted from Dirk Eddelbuettel's tint package.</p>
+    <p>Given a data frame of color values, plot them as swatches</p>
     
 
   </div>

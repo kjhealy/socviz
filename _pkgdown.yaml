@@ -38,6 +38,7 @@ reference:
       - starts_with("%")
       - center_df
       - color_comp
+      - color_pal
       - freq_tab
       - int_to_year
       - is_html_output

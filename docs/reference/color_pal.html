@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>margin_codenote — margin_codenote • socviz</title>
+<title>Draw a palette of colors — color_pal • socviz</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -25,9 +25,9 @@
 <link href="../pkgdown.css" rel="stylesheet">
 <script src="../jquery.sticky-kit.min.js"></script>
 <script src="../pkgdown.js"></script>
-<meta property="og:title" content="margin_codenote — margin_codenote" />
+<meta property="og:title" content="Draw a palette of colors — color_pal" />
 
-<meta property="og:description" content="Use in inline R expressions to write a monospaced margin note for tufte-latex documents" />
+<meta property="og:description" content="Draw a palette of colors" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -93,37 +93,41 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>margin_codenote</h1>
+    <h1>Draw a palette of colors</h1>
     <small>Source: <a href='https://github.com/kjhealy/sociviz/blob/master/R/utility_functions.r'><code>R/utility_functions.r</code></a></small>
-    <div class="hidden name"><code>margin_codenote.Rd</code></div>
+    <div class="hidden name"><code>color_pal.Rd</code></div>
     </div>
 
     
-    <p>Use in inline R expressions to write a monospaced margin note for tufte-latex documents</p>
+    <p>Draw a palette of colors</p>
     
 
-    <pre class="usage"><span class='fu'>margin_codenote</span>(<span class='no'>text</span>, <span class='kw'>icon</span> <span class='kw'>=</span> <span class='st'>"&amp;#8853;"</span>)</pre>
+    <pre class="usage"><span class='fu'>color_pal</span>(<span class='no'>col</span>, <span class='kw'>border</span> <span class='kw'>=</span> <span class='st'>"light gray"</span>, <span class='no'>...</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>text</th>
-      <td><p>The text of the note</p></td>
+      <th>col</th>
+      <td><p>vector of colors</p></td>
     </tr>
     <tr>
-      <th>icon</th>
-      <td><p>An icon</p></td>
+      <th>border</th>
+      <td><p>border</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>other arguments</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>A marginal note in monospace font</p>
+    <p>Plot of a color palette</p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Adapted from Dirk Eddelbuettel's tint package.</p>
+    <p>Borrowed from the colorspace library</p>
     
 
   </div>
@@ -139,7 +143,7 @@
 
     <h2>Author</h2>
     
-Kieran Healy
+colorspace library authors
 
   </div>
 </div>
