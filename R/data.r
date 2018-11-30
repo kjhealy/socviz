@@ -245,7 +245,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name bad_date
-#' @format "A tibble with 10 rows and two columns."
+#' @format A tibble with 10 rows and two columns.
 #' @source Chris Delcher.
 "bad_date"
 
@@ -257,7 +257,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name preg
-#' @format "A tbl_df with 3 rows and 3 columns."
+#' @format A tbl_df with 3 rows and 3 columns.
 #' @source Hadley Wickham (2014).
 "preg"
 
@@ -269,7 +269,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name preg2
-#' @format "An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) with 2 rows and 4 columns."
+#' @format An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) with 2 rows and 4 columns.
 #' @source Hadley Wickham (2014).
 "preg2"
 
@@ -280,7 +280,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name titanic
-##' @format "A data frame with four rows and four columns."
+##' @format A data frame with four rows and four columns.
 ##' @source Titanic data
 "titanic"
 
@@ -289,6 +289,7 @@
 ##'
 ##' Counts of educational attainment (in thousands) from 1940 to 2016
 ##'
+##' The variables are as follows:
 ##' \itemize{
 ##' \item age Character. Cut into 25-34, 35-54, 55>
 ##' \item sex Character. Male, Female.
@@ -306,7 +307,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name edu
-##' @format "A tibble with 366 rows and 11 columns."
+##' @format A tibble with 366 rows and 11 columns.
 ##' @source US Census Bureau
 "edu"
 
@@ -320,7 +321,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name maunaloa
-##' @format "A data frame with 4 columns and 271 rows."
+##' @format A data frame with 4 columns and 271 rows.
 ##' @source R base datasets; Cleveland (1993).
 "maunaloa"
 
@@ -333,7 +334,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name fredts
-##' @format "A data frame with 5 columns and 357 rows."
+##' @format A data frame with 5 columns and 357 rows.
 ##' @source FRED data.
 "fredts"
 
@@ -347,7 +348,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name yahoo
-##' @format "A data frame with 4 columns and 11 rows."
+##' @format A data frame with 4 columns and 11 rows.
 ##' @source QZ.com
 "yahoo"
 
@@ -360,7 +361,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name studebt
-##' @format "A tibble with 16 rows and 4 columns."
+##' @format A tibble with 16 rows and 4 columns.
 ##' @source Federal Reserve Bank of New York
 "studebt"
 
@@ -374,14 +375,17 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name asasec
-##' @format "A data frame with 572 rows and 9 columns."
+##' @format A data frame with 572 rows and 9 columns.
 ##' @source ASA Annual Report 2016
 "asasec"
 
 
 ##' Census Data on US Counties
 ##'
-##' Selected county data (including state-level observations on some variables)
+##' Selected county data (including state-level observations on some
+##' variables)
+##'
+##' The variables are as follows:
 ##' \itemize{
 ##' \item id. FIPS State and County code (character)
 ##' \item name. State or County Name
@@ -442,7 +446,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name county_data
-##' @format "A data frame with 3195 rows and 13 columns."
+##' @format A data frame with 3195 rows and 13 columns.
 ##' @source US Census Bureau, Centers for Disease Control
 "county_data"
 
@@ -464,7 +468,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name county_map
-##' @format "A data frame with 191,372 rows and 7 columns."
+##' @format A data frame with 191,372 rows and 7 columns.
 ##' @source Eric Celeste
 "county_map"
 
@@ -503,7 +507,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name opiates
-##' @format "A tibble with 800 rows and 10 columns."
+##' @format A tibble with 800 rows and 10 columns.
 ##' @source Centers for Disease Control CDC WONDER data
 "opiates"
 
@@ -513,7 +517,6 @@
 ##' Annual enrollments in US Law Schools.
 ##'
 ##' The variables are as follows:
-##'
 ##' \itemize{
 ##' \item  ay. Academic year. character.
 ##' \item  year. Year. integer.
@@ -531,7 +534,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name lawschools
-##' @format "A tibble with 53 rows and 11 columns."
+##' @format A tibble with 53 rows and 11 columns.
 ##' @source American Bar Association
 "lawschools"
 
@@ -540,7 +543,6 @@
 ##' Life expectancy data for individual countries.
 ##'
 ##' The variables are as follows:
-##'
 ##' \itemize{
 ##' \item  country. Country. (Character)
 ##' \item  year. Year. (Integer.)
@@ -551,7 +553,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name oecd_le
-##' @format "A tibble with 1,746 rows and 4 columns."
+##' @format A tibble with 1,746 rows and 4 columns.
 ##' @source OECD
 "oecd_le"
 
@@ -561,7 +563,6 @@
 ##' Life expectancy data summary table.
 ##'
 ##' The variables are as follows:
-##'
 ##' \itemize{
 ##' \item  year. Year. (Integer.)
 ##' \item  other. Life Expectancy at birth in OECD countries excluding
@@ -574,7 +575,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name oecd_sum
-##' @format "A tibble with 57 rows and 5 columns."
+##' @format A tibble with 57 rows and 5 columns.
 ##' @source OECD
 "oecd_sum"
 
@@ -599,16 +600,16 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name boomer
-##' @format "A tibble with 1,644 rows and 6 columns."
+##' @format A tibble with 1,644 rows and 6 columns.
 ##' @source UK Office of National Statistics; US Census Bureau.
 "boomer"
 
 
 ##' Active dog licenses in New York City, 2016
+##'
 ##' This data has been partially cleaned and recoded from the original source
 ##'
 ##' The variables are as follows:
-##'
 ##' \itemize{
 ##' \item row_number (integer) Record ID
 ##' \item animal_name (character) Name of dog
@@ -631,17 +632,17 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name nyc_license
-##' @format "A tibble with 122,203 rows and 15 columns."
+##' @format A tibble with 122,203 rows and 15 columns.
 ##' @source New York City OpenData: https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp
 "nyc_license"
 
 
 ##' New York City Zip Code tabulation areas
+##'
 ##' A simple features (sf) object with zip code boundary information
 ##' for New York City.
 ##'
 ##' The variables are as follows:
-##'
 ##' \itemize{
 ##' \item objectid (integer) Record ID
 ##' \item zip_code (integer) Zip code
@@ -660,6 +661,6 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name nyc_zips
-##' @format "A Simple feature collection with 262 features and 11 fields"
-##' @source "New York City"
+##' @format A Simple feature collection with 262 features and 11 fields
+##' @source New York City
 "nyc_zips"
