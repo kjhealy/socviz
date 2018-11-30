@@ -602,3 +602,67 @@
 ##' @format "A tibble with 1,644 rows and 6 columns."
 ##' @source UK Office of National Statistics; US Census Bureau.
 "boomer"
+
+
+##'
+##'
+##' Active dog licenses in New York City, 2016
+##' This data has been partially cleaned and recoded from the original source
+##'
+##' The variables are as follows:
+#'
+#' \itemize{
+#' \item row_number (integer) Record ID
+#' \item animal_name (character) Name of dog
+#' \item animal_gender (character) M (Male), F (Female)
+#' \item animal_birth_month (date) Month and year of dog's birth.
+#' Encoded as a date, but all "day" values are the first of the month.
+#' \item breed_rc (character) Breed of dog.
+#' \item borough (character) City borough of owner
+#' \item zip_code (integer) Zip code of owner
+#' \item census_tract2010 (integer) Census Tract (2010 Census) of owner
+#' \item nta (character) Neighborhood tabulation area of owner
+#' \item city_council_district (integer) City council district of owner
+#' \item congressional_district (integer) Congressional district of owner
+#' \item state_senatorial_district (integer) State senatorial district
+#' of owner
+#' \item license_issued_date (date) Date license issued
+#' \item license_expiered_date (date) Date license expired
+#' }
+##'
+##' @docType data
+##' @keywords datasets
+##' @name nyc_license
+##' @format "A tibble with 122,203 rows and 15 columns."
+##' @source New York City OpenData: https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp
+"nyc_license"
+
+##'
+##'
+##' New York City Zip Code tabulation areas
+##' A simple features (sf) object with zip code boundary information
+##' for New York City.
+##'
+##' The variables are as follows:
+#'
+#' \itemize{
+#' \item objectid (integer) Record ID
+#' \item zip_code (integer) Zip code
+#' \item po_name (integer) Post Office name
+#' \item state (charater) State
+#' \item borough (character) City borough
+#' \item st_fips (character) State FIPS code
+#' \item cty_fips (character) County FIPS code
+#' \item bld_gpostal code Building postal code
+#' \item shape_leng (double)
+#' \item shape_area (double)
+#' \item id (character)
+#' \item geometry (polygon)
+#' }
+##'
+##' @docType data
+##' @keywords datasets
+##' @name nyc_license
+##' @format "A Simple feature collection with 262 features and 11 fields"
+##' @source "New York City"
+"nyc_zips"

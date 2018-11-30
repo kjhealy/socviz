@@ -23,6 +23,8 @@ reference:
       - gss_lon
       - lawschools
       - maunaloa
+      - nyc_license
+      - nyc_zips
       - oecd_le
       - oecd_sum
       - opiates
