@@ -598,7 +598,7 @@
 ##'
 ##' @docType data
 ##' @keywords datasets
-##' @name bommer
+##' @name boomer
 ##' @format "A tibble with 1,644 rows and 6 columns."
 ##' @source UK Office of National Statistics; US Census Bureau.
 "boomer"

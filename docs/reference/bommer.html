@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>prefix_strip — prefix_strip • socviz</title>
+<title>Monthly Births in the US, and England &amp; Wales — bommer • socviz</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -30,9 +30,10 @@
 
 
 
-<meta property="og:title" content="prefix_strip — prefix_strip" />
+<meta property="og:title" content="Monthly Births in the US, and England &amp; Wales — bommer" />
 
-<meta property="og:description" content="Strip a series of characters from the beginning of a character vector." />
+<meta property="og:description" content="Births by month, 1933-2015 (United States) and 1938-1991 (England
+&amp;amp; Wales)" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -97,69 +98,53 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>prefix_strip</h1>
-    <small class="dont-index">Source: <a href='https://github.com/kjhealy/socviz/blob/master/R/utility_functions.r'><code>R/utility_functions.r</code></a></small>
-    <div class="hidden name"><code>prefix_strip.Rd</code></div>
+    <h1>Monthly Births in the US, and England &amp; Wales</h1>
+    <small class="dont-index">Source: <a href='https://github.com/kjhealy/socviz/blob/master/R/data.r'><code>R/data.r</code></a></small>
+    <div class="hidden name"><code>bommer.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Strip a series of characters from the beginning of a character vector.</p>
+    <p>Births by month, 1933-2015 (United States) and 1938-1991 (England
+&amp; Wales)</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>prefix_strip</span>(<span class='no'>var_string</span>, <span class='no'>prefixes</span>, <span class='kw'>toTitle</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)</pre>
-    
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>var_string</th>
-      <td><p>A character vector, usually variable names</p></td>
-    </tr>
-    <tr>
-      <th>prefixes</th>
-      <td><p>A character vector, usually variable prefixes</p></td>
-    </tr>
-    <tr>
-      <th>toTitle</th>
-      <td><p>Convert results to Title Case? Defaults to TRUE.</p></td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td><p>Other arguments to `gsub`</p></td>
-    </tr>
-    </table>
-    
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+    <pre class="usage"><span class='no'>boomer</span></pre>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A character vector with `prefixes` terms stripped from the
-    beginning of `var_name` terms.</p>
+    <p>"A tibble with 1,644 rows and 6 columns."</p>
+    
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p>UK Office of National Statistics; US Census Bureau.</p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Takes a character vector (usually vector of variable names from a
-    summarized or tidied model object), along with a vector of
-    character terms (usually the prefix of a dummy or categorical
-    variable added by R when creating model terms) and strips the
-    latter away from the former. Useful for quickly cleaning
-    variable names for a plot.</p>
+    <p>The variables are as follows:</p>
+<ul>
+<li><p>date. Year and month. (Day is arbitrarily set to 01 for all observations,
+data are monthly.)</p></li>
+<li><p>month. Month of the year (1-12).</p></li>
+<li><p>n_days. The number of days in a given month/year date.</p></li>
+<li><p>births. Total live births for that month.</p></li>
+<li><p>total_pop. National population estimate for that month.</p></li>
+<li><p>country. United States or England &amp; Wales.</p></li>
+</ul>
     
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#value">Value</a></li>
+      <li><a href="#format">Format</a></li>
+
+      <li><a href="#source">Source</a></li>
 
       <li><a href="#details">Details</a></li>
           </ul>
-
-    <h2>Author</h2>
-    
-Kieran Healy
 
   </div>
 </div>
