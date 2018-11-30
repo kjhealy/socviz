@@ -13,8 +13,6 @@ Imports:
     dplyr,
     rlang,
     tibble
-Suggests:
-    sf
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/kjhealy/socviz
