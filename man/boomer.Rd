@@ -4,7 +4,7 @@
 \name{boomer}
 \alias{boomer}
 \title{Monthly Births in the US, and England & Wales}
-\format{"A tibble with 1,644 rows and 6 columns."}
+\format{A tibble with 1,644 rows and 6 columns.}
 \source{
 UK Office of National Statistics; US Census Bureau.
 }

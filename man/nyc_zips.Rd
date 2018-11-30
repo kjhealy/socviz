@@ -3,20 +3,20 @@
 \docType{data}
 \name{nyc_zips}
 \alias{nyc_zips}
-\title{New York City Zip Code tabulation areas
-A simple features (sf) object with zip code boundary information
-for New York City.}
-\format{"A Simple feature collection with 262 features and 11 fields"}
+\title{New York City Zip Code tabulation areas}
+\format{A Simple feature collection with 262 features and 11 fields}
 \source{
-"New York City"
+New York City
 }
 \usage{
 nyc_zips
 }
 \description{
-The variables are as follows:
+A simple features (sf) object with zip code boundary information
+for New York City.
 }
 \details{
+The variables are as follows:
 \itemize{
 \item objectid (integer) Record ID
 \item zip_code (integer) Zip code

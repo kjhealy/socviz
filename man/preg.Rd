@@ -4,7 +4,7 @@
 \name{preg}
 \alias{preg}
 \title{An untidy table of data}
-\format{"A tbl_df with 3 rows and 3 columns."}
+\format{A tbl_df with 3 rows and 3 columns.}
 \source{
 Hadley Wickham (2014).
 }

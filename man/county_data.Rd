@@ -4,7 +4,7 @@
 \name{county_data}
 \alias{county_data}
 \title{Census Data on US Counties}
-\format{"A data frame with 3195 rows and 13 columns."}
+\format{A data frame with 3195 rows and 13 columns.}
 \source{
 US Census Bureau, Centers for Disease Control
 }
@@ -12,7 +12,11 @@ US Census Bureau, Centers for Disease Control
 county_data
 }
 \description{
-Selected county data (including state-level observations on some variables)
+Selected county data (including state-level observations on some
+variables)
+}
+\details{
+The variables are as follows:
 \itemize{
 \item id. FIPS State and County code (character)
 \item name. State or County Name

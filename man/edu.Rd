@@ -4,7 +4,7 @@
 \name{edu}
 \alias{edu}
 \title{Years of school completed by people 25 years and over in the US.}
-\format{"A tibble with 366 rows and 11 columns."}
+\format{A tibble with 366 rows and 11 columns.}
 \source{
 US Census Bureau
 }
@@ -15,6 +15,7 @@ edu
 Counts of educational attainment (in thousands) from 1940 to 2016
 }
 \details{
+The variables are as follows:
 \itemize{
 \item age Character. Cut into 25-34, 35-54, 55>
 \item sex Character. Male, Female.

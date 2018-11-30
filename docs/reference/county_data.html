@@ -32,62 +32,8 @@
 
 <meta property="og:title" content="Census Data on US Counties — county_data" />
 
-<meta property="og:description" content="Selected county data (including state-level observations on some variables)
-id. FIPS State and County code (character)
-name. State or County Name
-state. State abbreviation
-census_region. Census region
-pop_dens. Population density per square mile, 2014 estimate
-(seven categories).
-pop_dens4. Population density per square mile, 2014 estimate (quartiles)
-pop_dens6. Poptulation density per square mile, 2014
-estimate (six categories)
-pct_black. Percent black population, 2014 estimate (seven
-category factor)
-pop. Population, 2014 estimate
-female. Female persons, percent, 2013
-white. White alone, percent, 2013
-black. Black alone, percent, 2013
-travel_time. Mean travel time to work (minutes), workers age 16+, 2009-2013
-land_area. Land area in square miles, 2010
-hh_income. Median household income, 2009-2013
-su_gun4. Firearm-related suicides per 100,000 population,
-1999-2015. Factor variable cut into quartiles. Note that the
-values in this variable contain an inaccurate bottom-quartile
-coding by construction. Do not present this variable as an
-accurate measure of the firearm-related suicide rate.
-su_gun6. Firearm-related suicides per 100,000 population,
-1999-2015. Factor variable cut into six categories. Note that the
-values in this variable contain an inaccurate bottom-quartile
-coding by construction. Do not present this variable as an
-accurate measure of the firearm-related suicide rate.
-fips. FIPS code (integer).
-votes_dem_2016. Provisional count of Democratic votes in the
-2016 Presidential election.
-votes_gop_2016. Provisional count of Republican votes in the
-2016 Presidential election.
-total_votes_2016. Provitional count of votes cast in the
-2016 Presidential election.
-per_dem_2016. Democratic Presidential vote, percent.
-per_gop_2016. Republican Presidental vote, percent.
-diff_2016. Difference between Democratic and Republican
-Presidental vote.
-votes_dem_2012. Provisional count of Democratic votes in the
-2012 Presidential election.
-votes_gop_2012. Provisional count of Republican votes in the
-2012 Presidential election.
-total_votes_2012. Provitional count of votes cast in the
-2012 Presidential election.
-per_dem_2012. Democratic Presidential vote, percent.
-per_gop_2012. Republican Presidental vote, percent.
-diff_2012. Difference between Democratic and Republican
-Presidental vote.
-winner. Winning candidate, 2016 Presidental Election.
-partywinner16. Winning party, 2016 Presidental Election.
-winner12. Winning candidate, 2012 Presidental Election.
-partywinner12. Winning party, 2012 Presidental Election.
-fipped. Did the area flip parties from 2012 to 2016.
-" />
+<meta property="og:description" content="Selected county data (including state-level observations on some
+variables)" />
 <meta name="twitter:card" content="summary" />
 
 
@@ -159,7 +105,24 @@ fipped. Did the area flip parties from 2012 to 2016.
 
     <div class="ref-description">
     
-    <p>Selected county data (including state-level observations on some variables)</p><ul>
+    <p>Selected county data (including state-level observations on some
+variables)</p>
+    
+    </div>
+
+    <pre class="usage"><span class='no'>county_data</span></pre>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+
+    <p>A data frame with 3195 rows and 13 columns.</p>
+    
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p>US Census Bureau, Centers for Disease Control</p>
+    
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>The variables are as follows:</p><ul>
 <li><p>id. FIPS State and County code (character)</p></li>
 <li><p>name. State or County Name</p></li>
 <li><p>state. State abbreviation</p></li>
@@ -216,18 +179,6 @@ Presidental vote.</p></li>
 <li><p>fipped. Did the area flip parties from 2012 to 2016.</p></li>
 </ul>
     
-    </div>
-
-    <pre class="usage"><span class='no'>county_data</span></pre>
-        
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
-
-    <p>"A data frame with 3195 rows and 13 columns."</p>
-    
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
-
-    <p>US Census Bureau, Centers for Disease Control</p>
-    
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
@@ -237,6 +188,8 @@ Presidental vote.</p></li>
       <li><a href="#format">Format</a></li>
 
       <li><a href="#source">Source</a></li>
+
+      <li><a href="#details">Details</a></li>
           </ul>
 
   </div>

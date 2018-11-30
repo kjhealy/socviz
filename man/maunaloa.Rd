@@ -4,7 +4,7 @@
 \name{maunaloa}
 \alias{maunaloa}
 \title{Mauna Loa Atmospheric CO2 Concentration}
-\format{"A data frame with 4 columns and 271 rows."}
+\format{A data frame with 4 columns and 271 rows.}
 \source{
 R base datasets; Cleveland (1993).
 }

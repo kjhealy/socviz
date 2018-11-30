@@ -4,7 +4,7 @@
 \name{opiates}
 \alias{opiates}
 \title{Opiate-Related Deaths in the United States, 1999-2014}
-\format{"A tibble with 800 rows and 10 columns."}
+\format{A tibble with 800 rows and 10 columns.}
 \source{
 Centers for Disease Control CDC WONDER data
 }

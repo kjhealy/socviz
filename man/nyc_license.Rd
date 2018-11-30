@@ -3,9 +3,8 @@
 \docType{data}
 \name{nyc_license}
 \alias{nyc_license}
-\title{Active dog licenses in New York City, 2016
-This data has been partially cleaned and recoded from the original source}
-\format{"A tibble with 122,203 rows and 15 columns."}
+\title{Active dog licenses in New York City, 2016}
+\format{A tibble with 122,203 rows and 15 columns.}
 \source{
 New York City OpenData: https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp
 }
@@ -13,9 +12,10 @@ New York City OpenData: https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-D
 nyc_license
 }
 \description{
-The variables are as follows:
+This data has been partially cleaned and recoded from the original source
 }
 \details{
+The variables are as follows:
 \itemize{
 \item row_number (integer) Record ID
 \item animal_name (character) Name of dog

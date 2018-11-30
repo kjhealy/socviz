@@ -4,7 +4,7 @@
 \name{county_map}
 \alias{county_map}
 \title{US County map file}
-\format{"A data frame with 191,372 rows and 7 columns."}
+\format{A data frame with 191,372 rows and 7 columns.}
 \source{
 Eric Celeste
 }
