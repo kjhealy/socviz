@@ -636,7 +636,6 @@
 "nyc_license"
 
 
-
 ##' New York City Zip Code tabulation areas
 ##' A simple features (sf) object with zip code boundary information
 ##' for New York City.
@@ -660,7 +659,7 @@
 ##'
 ##' @docType data
 ##' @keywords datasets
-##' @name nyc_license
+##' @name nyc_zips
 ##' @format "A Simple feature collection with 262 features and 11 fields"
 ##' @source "New York City"
 "nyc_zips"

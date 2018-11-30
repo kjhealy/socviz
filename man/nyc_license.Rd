@@ -3,23 +3,16 @@
 \docType{data}
 \name{nyc_license}
 \alias{nyc_license}
-\alias{nyc_zips}
 \title{Active dog licenses in New York City, 2016
 This data has been partially cleaned and recoded from the original source}
 \format{"A tibble with 122,203 rows and 15 columns."}
 \source{
 New York City OpenData: https://data.cityofnewyork.us/Health/NYC-Dog-Licensing-Dataset/nu7n-tubp
-
-"New York City"
 }
 \usage{
 nyc_license
-
-nyc_zips
 }
 \description{
-The variables are as follows:
-
 The variables are as follows:
 }
 \details{
@@ -40,21 +33,6 @@ Encoded as a date, but all "day" values are the first of the month.
 of owner
 \item license_issued_date (date) Date license issued
 \item license_expiered_date (date) Date license expired
-}
-
-\itemize{
-\item objectid (integer) Record ID
-\item zip_code (integer) Zip code
-\item po_name (integer) Post Office name
-\item state (charater) State
-\item borough (character) City borough
-\item st_fips (character) State FIPS code
-\item cty_fips (character) County FIPS code
-\item bld_gpostal code Building postal code
-\item shape_leng (double)
-\item shape_area (double)
-\item id (character)
-\item geometry (polygon)
 }
 }
 \keyword{datasets}
