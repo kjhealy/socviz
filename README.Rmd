@@ -16,9 +16,11 @@ knitr::opts_chunk$set(
 
 # socviz 
 
-This is a small R package of datasets and a few functions to support a
-data visualization course, and its accompanying book.
+This is an R package of datasets and functions to support a
+data visualization course taught with the book [__Data Visualization: A Practical Introduction_](https://amzn.to/2vfAixM) (Princeton University Press, 2019).
 
+
+![Book cover](inst/assets/dv-cover-pupress.jpg)
 
 ## Installation
 
@@ -29,9 +31,11 @@ data visualization course, and its accompanying book.
 devtools::install_github("kjhealy/socviz")
 ```
 
-Load the library as usual with
+Load the library with
 
 ```{r, eval = FALSE}
 library(socviz)
 ```
+
+The included datasets and functions are documented at <http://kjhealy.github.io/socviz>.
 

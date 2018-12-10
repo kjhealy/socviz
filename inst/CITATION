@@ -1,0 +1,16 @@
+citHeader("To cite socviz in publications use:")
+
+citEntry(entry = "Book",
+  title        = "Data Visualization: A Practical Introduction",
+  author       = personList(as.person("Kieran Healy")),
+  publisher    = "Princeton University Press"
+  address      = "Princeton"
+  year         = "2019",
+  url          = "http://www.socviz.co",
+
+  textVersion  =
+  paste("Kieran Healy (2019).",
+        "Data Visualization: A Practical Introduction.",
+        "Princeton University Press.",
+        "URL http://socviz.co")
+)
