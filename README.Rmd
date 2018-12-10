@@ -8,7 +8,7 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-"
+  fig.path = "inst/assets/README-"
 )
 ```
 
@@ -20,7 +20,8 @@ This is an R package of datasets and functions to support a
 data visualization course taught with the book [__Data Visualization: A Practical Introduction_](https://amzn.to/2vfAixM) (Princeton University Press, 2019).
 
 
-![Book cover](inst/assets/dv-cover-pupress.jpg)
+<img src="http://socviz.co/assets/dv-cover-pupress.jpg" width = "75%"/>
+
 
 ## Installation
 
