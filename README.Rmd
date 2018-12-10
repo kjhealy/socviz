@@ -25,7 +25,7 @@ data visualization course taught with the book _[Data Visualization: A Practical
 
 ## Installation
 
-`socviz` is not currently available from CRAN, but you can install it from github with:
+`socviz` is not currently available from CRAN, but you can install it from github by launching R or R Studio and then:
 
 ```{r, eval = FALSE}
 # install.packages("devtools")
