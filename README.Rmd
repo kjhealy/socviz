@@ -38,5 +38,5 @@ Load the library with
 library(socviz)
 ```
 
-The included datasets and functions are documented at <http://kjhealy.github.io/socviz>.
+The included datasets and functions are documented at <http://kjhealy.github.io/socviz/reference/>.
 
