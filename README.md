@@ -10,8 +10,7 @@ output: github_document
 
 # socviz 
 
-This is an R package of datasets and functions to support a
-data visualization course taught with the book _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (Princeton University Press, 2019).
+This is an R package of datasets, functions, and a course packet to go along with the book _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (Princeton University Press, 2019).
 
 
 <img src="http://socviz.co/assets/dv-cover-pupress.jpg" width = "75%"/>
