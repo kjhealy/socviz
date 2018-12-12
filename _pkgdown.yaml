@@ -55,4 +55,5 @@ reference:
       - pandoc_to
       - prefix_replace
       - prefix_strip
+      - setup_course_notes
       - tw_tab      
