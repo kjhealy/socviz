@@ -505,3 +505,9 @@ setup_course_notes <- function(folder = "~/Desktop", zipfile = "dataviz_course_n
     message(paste("Copied ", file_name, "to", dest_path, "and expanded it into", dest_dir_name))
 
 }
+##' @examples
+##' \dontrun{
+##' setup_course_notes()
+##'
+##' setup_course_notes(folder = "~/Documents")
+##' }
