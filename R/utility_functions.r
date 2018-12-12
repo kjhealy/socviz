@@ -1,5 +1,5 @@
+##' Convenience 'not-in' operator
 ##'
-##' Convenience not-in operator
 ##' Complement of the built-in operator \code{\%in\%}. Returns the elements of \code{x} that are not in \code{y}.
 ##' @title \%nin\%
 ##' @param x vector of items
@@ -15,8 +15,10 @@
 "%nin%" <- function(x, y) {
   return( !(x %in% y) )
 }
-##'
+
+
 ##' Convert an integer to a date.
+##'
 ##' @title int_to_year
 ##' @param x An integer or vector integers.
 ##' @param month The month to be added to the year. Months 1 to 9
@@ -119,7 +121,7 @@ freq_tab <- function (df, ...)
     }
 }
 
-##' check if is html output
+##' Check if something is html output
 ##'
 ##' internal knitr function
 ##' @title is_html_output
@@ -146,6 +148,10 @@ is_html_output <- function (fmt = pandoc_to(), excludes = NULL)
 ##' @param x fmt
 ##' @return opt_knit element
 ##' @author Yihui Xie
+
+##' rmarkdown pandoc to
+##'
+##' internal knitr function
 pandoc_to <- function (x)
 {
     fmt = knitr::opts_knit$get("rmarkdown.pandoc.to")
@@ -160,6 +166,7 @@ pandoc_to <- function (x)
 ##' @param x x
 ##' @return format
 ##' @author Yihui Xie
+
 out_format <- function (x)
 {
     fmt = knitr::opts_knit$get("out.format")
@@ -179,7 +186,7 @@ is_latex_output <- function ()
     out_format("latex") || pandoc_to(c("latex", "beamer"))
 }
 
-##' marginal note for tufte html output
+##' Marginal note for tufte html output
 ##'
 ##' Make a html margin note
 ##' @title marginnote_html
