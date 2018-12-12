@@ -7,10 +7,11 @@ Authors@R: person("Kieran", "Healy", email = "kjhealy@gmail.com",
 Maintainer: Kieran Healy <kjhealy@gmail.com>
 Description: Supporting materials for a short course and book on data visualization using R. It contains utility functions for graphs and several sample data sets.
 License: MIT + file LICENSE
-Depends: R (>= 2.10)
+Depends: R (>= 3.10)
 Imports:
     knitr,
     dplyr,
+    fs,
     rlang,
     tibble
 Encoding: UTF-8
