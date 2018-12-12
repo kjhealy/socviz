@@ -10,7 +10,7 @@ setup_course_notes(folder = "~/Desktop",
 }
 \arguments{
 \item{folder}{The destination to copy to within the user's home.
-By default ~/Desktop.}
+By default `~/Desktop`.}
 
 \item{zipfile}{The name of the zipped course materials file in the
 socviz library.}
