@@ -479,19 +479,29 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
 ##' @title setup_course_notes
 ##' @param folder The destination to copy to within the user's home.
 ##'     By default ~/Desktop.
-##' @return Files are copied to the destination.
+##' @param zipfile The name of the zipped course materials file in the
+##'     socviz library.
+##' @param packet The name of the course packet folder to be created
+##' @return The `zipfile` is copied to `folder` and its contents
+##'     expanded into a directory, the `packet`.
 ##' @author Kieran Healy
 ##' @export
-setup_course_notes <- function(folder = "~/Desktop") {
-    file_name <- "dataviz_course_notes.zip"
+setup_course_notes <- function(folder = "~/Desktop", zipfile = "dataviz_course_notes.zip",
+                               packet = "dataviz_course_notes") {
+    file_name <- zipfile
     lib_loc <- fs::path_package("socviz")
 
-    origin_path <- fs::path(lib_loc, file_name)
+    origin_path <- fs::path(lib_loc, "resources", file_name)
     dest_path <- fs::path_expand(folder)
 
     fs::file_copy(origin_path, dest_path)
-    utils::unzip(fs::path(dest_path, file_name))
 
-    message(paste("Copied and expanded the contents of", file_name, "to", dest_path))
+    dest_file <- fs::path(dest_path, file_name)
+    fs::dir_create(dest_path, packet)
+    dest_dir_name <- fs::path(dest_path, packet)
+
+    utils::unzip(dest_file, exdir = dest_dir_name)
+
+    message(paste("Copied ", file_name, "to", dest_path, "and expanded it into", dest_dir_name))
 
 }
