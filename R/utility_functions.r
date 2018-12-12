@@ -509,7 +509,7 @@ setup_course_notes <- function(folder = "~/Desktop", zipfile = "dataviz_course_n
 
     utils::unzip(dest_file, exdir = dest_dir_name)
 
-    message(paste("Copied ", file_name, "to", dest_path, "and expanded it into", dest_dir_name))
+    message(paste("Copied", file_name, "to", dest_path, "and expanded it into", dest_dir_name))
 
 }
 ##' @examples
