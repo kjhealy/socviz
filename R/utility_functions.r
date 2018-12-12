@@ -478,7 +478,7 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
 ##'     library to the Desktop.
 ##' @title setup_course_notes
 ##' @param folder The destination to copy to within the user's home.
-##'     By default ~/Desktop.
+##'     By default `~/Desktop`.
 ##' @param zipfile The name of the zipped course materials file in the
 ##'     socviz library.
 ##' @param packet The name of the course packet folder to be created
