@@ -75,14 +75,39 @@
 <a href="#socviz" class="anchor"></a>socviz</h1></div>
 <p>This is an R package of datasets and functions to support a data visualization course taught with the book <em><a href="https://amzn.to/2vfAixM">Data Visualization: A Practical Introduction</a></em> (Princeton University Press, 2019).</p>
 <p><img src="http://socviz.co/assets/dv-cover-pupress.jpg" width="75%"></p>
+<div id="whats-in-this-package" class="section level2">
+<h2 class="hasAnchor">
+<a href="#whats-in-this-package" class="anchor"></a>What’s in this Package</h2>
+<p>The <code>socviz</code> package contains about twenty five datasets and a number of utility and convenience functions. The datasets range in size from just a few rows to over 120,000 observations. Most of them are used in <em><a href="https://amzn.to/2vfAixM">Data Visualization: A Practical Introduction</a></em> (<code>http://socviz.co</code>), and there are also a few others as well for self-learners and students to practice their skills on.</p>
+<p>A course packet is also included. This is a zipped file containing an <a href="http://rstudio.com">R Studio</a> project consisting of a nine <a href="http://rmarkdown.rstudio.com">R Markdown</a> documents that parallel the chapters in the book. They contain the code for almost all the figures in the book (and a few more besides). Some support files are also included, to help demonstrate things like reading in your own data locally in R.</p>
+</div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p><code>socviz</code> is not currently available from CRAN, but you can install it from github by launching R or R Studio and then:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("devtools")</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"kjhealy/socviz"</span>)</a></code></pre></div>
-<p>Load the library with</p>
+<p>To install the package, you can follow the instructions in the Preface to the book. Alternatively, first download and install R for <a href="https://cran.r-project.org/bin/macosx/">MacOS</a>, <a href="https://cran.r-project.org/bin/windows/">Windows</a> or <a href="https://cran.r-project.org/bin/linux/">Linux</a>, as appropriate. Then download and install <a href="http://rstudio.com/download/">RStudio</a>. Launch RStudio and then type the following code at the Console prompt (<code>&gt;</code>), hitting return at the end of each line:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">my_packages &lt;-<span class="st"> </span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/c">c</a></span>(<span class="st">"tidyverse"</span>, <span class="st">"fs"</span>, <span class="st">"devtools"</span>)</a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages</a></span>(my_packages)</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"></a>
+<a class="sourceLine" id="cb1-6" data-line-number="6"></a>
+<a class="sourceLine" id="cb1-7" data-line-number="7">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"kjhealy/socviz"</span>)</a></code></pre></div>
+<p>Once everything has downloaded and been installed (which may take a little while), load the <code>socviz</code> package:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(socviz)</a></code></pre></div>
+</div>
+<div id="the-course-packet" class="section level2">
+<h2 class="hasAnchor">
+<a href="#the-course-packet" class="anchor"></a>The Course Packet</h2>
+<p>The supporting materials are contained in a compressed <code>.zip</code> file. To extract them to your Desktop, make sure the <code>socviz</code> package is loaded as described above. Then do this:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw"><a href="reference/setup_course_notes.html">setup_course_notes</a></span>()</a></code></pre></div>
+<p>This will copy the <code>dataviz_course_notes.zip</code> file to your Desktop, and uncompress it into a folder called <code>dataviz_course_notes</code>. Double-click the file named <code>dataviz.Rproj</code> to launch the project as a new RStudio session. If you want to uncompress the file somewhere other than your Desktop, e.g. your Documents folder, you can do this:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw"><a href="reference/setup_course_notes.html">setup_course_notes</a></span>(<span class="dt">folder =</span> <span class="st">"~/Documents"</span>)</a></code></pre></div>
+</div>
+<div id="more-about-the-datasets-and-functions" class="section level2">
+<h2 class="hasAnchor">
+<a href="#more-about-the-datasets-and-functions" class="anchor"></a>More about the Datasets and Functions</h2>
 <p>The included datasets and functions are documented at <a href="http://kjhealy.github.io/socviz/reference/" class="uri">http://kjhealy.github.io/socviz/reference/</a>.</p>
 </div>
 </div>
