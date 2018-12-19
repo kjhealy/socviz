@@ -27,7 +27,8 @@
 ##'     as 01 or 02, etc, and not 1 or 2, etc.
 ##' @return A vector of dates where the input integer forms the year
 ##'     component. The day and month components added will by default
-##'     be today's day and month. For input, only years 0:9999 are
+##'     be the 15th of June, so that tick marks will appear in the
+##'     middle of the series on plots. For input, only years 0:9999 are
 ##'     accepted.
 ##' @examples
 ##' int_to_year(1960)
@@ -35,7 +36,7 @@
 ##' int_to_year(1960:1965)
 ##' @author Kieran Healy
 ##' @export
-int_to_year <- function(x, month="01", day="01") {
+int_to_year <- function(x, month="06", day="15") {
   values <- !is.na(x) ## non-NA values
   if(any(x[values]%%1!=0)){
     message("Input contains non-integers.")
