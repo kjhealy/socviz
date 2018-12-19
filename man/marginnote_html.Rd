@@ -15,7 +15,7 @@ marginnote_html(text = "", icon = "&#8853;")
 An HTML note
 }
 \description{
-marginal note for tufte html output
+Marginal note for tufte html output
 }
 \details{
 Make a html margin note

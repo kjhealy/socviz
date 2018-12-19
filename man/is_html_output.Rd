@@ -15,7 +15,7 @@ is_html_output(fmt = pandoc_to(), excludes = NULL)
 html flag
 }
 \description{
-check if is html output
+Check if something is html output
 }
 \details{
 internal knitr function

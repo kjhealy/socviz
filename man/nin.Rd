@@ -15,7 +15,9 @@ x \%nin\% y
 logical vecotor of items in x not in y
 }
 \description{
-Convenience not-in operator
+Convenience 'not-in' operator
+}
+\details{
 Complement of the built-in operator \code{\%in\%}. Returns the elements of \code{x} that are not in \code{y}.
 }
 \examples{

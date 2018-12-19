@@ -20,4 +20,7 @@ what are we converting to
 }
 \author{
 Yihui Xie
+rmarkdown pandoc to
+
+internal knitr function
 }
