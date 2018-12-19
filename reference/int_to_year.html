@@ -112,7 +112,7 @@
     
     </div>
 
-    <pre class="usage"><span class='fu'>int_to_year</span>(<span class='no'>x</span>, <span class='kw'>month</span> <span class='kw'>=</span> <span class='st'>"01"</span>, <span class='kw'>day</span> <span class='kw'>=</span> <span class='st'>"01"</span>)</pre>
+    <pre class="usage"><span class='fu'>int_to_year</span>(<span class='no'>x</span>, <span class='kw'>month</span> <span class='kw'>=</span> <span class='st'>"06"</span>, <span class='kw'>day</span> <span class='kw'>=</span> <span class='st'>"15"</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -137,13 +137,14 @@ as 01 or 02, etc, and not 1 or 2, etc.</p></td>
 
     <p>A vector of dates where the input integer forms the year
     component. The day and month components added will by default
-    be today's day and month. For input, only years 0:9999 are
+    be the 15th of June, so that tick marks will appear in the
+    middle of the series on plots. For input, only years 0:9999 are
     accepted.</p>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>int_to_year</span>(<span class='fl'>1960</span>)</div><div class='output co'>#&gt; [1] "1960-01-01"</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/class'>class</a></span>(<span class='fu'>int_to_year</span>(<span class='fl'>1960</span>))</div><div class='output co'>#&gt; [1] "Date"</div><div class='input'><span class='fu'>int_to_year</span>(<span class='fl'>1960</span>:<span class='fl'>1965</span>)</div><div class='output co'>#&gt; [1] "1960-01-01" "1961-01-01" "1962-01-01" "1963-01-01" "1964-01-01"
-#&gt; [6] "1965-01-01"</div></pre>
+    <pre class="examples"><div class='input'><span class='fu'>int_to_year</span>(<span class='fl'>1960</span>)</div><div class='output co'>#&gt; [1] "1960-06-15"</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/class'>class</a></span>(<span class='fu'>int_to_year</span>(<span class='fl'>1960</span>))</div><div class='output co'>#&gt; [1] "Date"</div><div class='input'><span class='fu'>int_to_year</span>(<span class='fl'>1960</span>:<span class='fl'>1965</span>)</div><div class='output co'>#&gt; [1] "1960-06-15" "1961-06-15" "1962-06-15" "1963-06-15" "1964-06-15"
+#&gt; [6] "1965-06-15"</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
