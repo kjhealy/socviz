@@ -1,10 +1,14 @@
+---
+output: github_document
+---
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 
 
 # socviz <img src="man/figures/logo.png" align="right" width="120" />
 
-[![Build Status](https://travis-ci.org/kjhealy/socviz.svg?branch=master)](https://travis-ci.org/kjhealy/socviz) 
+[![Build Status](https://travis-ci.org/kjhealy/socviz.svg?branch=master)](https://travis-ci.org/kjhealy/socviz) [![](https://img.shields.io/github/downloads/kjhealy/socviz/total.svg)](https://github.com/kjhealy/socviz)
 
 This is an R package of datasets, functions, and course materials to go along with the book _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (Princeton University Press, 2019).
 
