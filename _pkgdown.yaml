@@ -3,7 +3,7 @@ authors:
     href: http://kieranhealy.org    
 template:
   params:
-    bootswatch: journal
+    bootswatch: cosmo
 reference:
   - title: "Datasets"
     desc: >
