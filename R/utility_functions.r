@@ -1,3 +1,6 @@
+#' @importFrom magrittr "%>%"
+NULL
+
 ##' Convenience 'not-in' operator
 ##'
 ##' Complement of the built-in operator \code{\%in\%}. Returns the elements of \code{x} that are not in \code{y}.
@@ -59,9 +62,9 @@ int_to_year <- function(x, month="06", day="15") {
 color_pal <- function(col, border = "light gray", ...)
 {
   n <- length(col)
-  plot(0, 0, type="n", xlim = c(0, 1), ylim = c(0, 1),
+  graphics::plot(0, 0, type="n", xlim = c(0, 1), ylim = c(0, 1),
     axes = FALSE, xlab = "", ylab = "", ...)
-  rect(0:(n-1)/n, 0, 1:n/n, 1, col = col, border = border)
+  graphics::rect(0:(n-1)/n, 0, 1:n/n, 1, col = col, border = border)
 }
 
 ##' Plot a table of color hex values as a table of colors
@@ -74,12 +77,12 @@ color_pal <- function(col, border = "light gray", ...)
 ##' @export
 color_comp <- function(df) {
     d <- as.data.frame(df)
-    plot.new()
-    par(mfrow = c(ncol(d), 1), mar = c(1, 0, 2, 0), cex = 1.2)
+    graphics::plot.new()
+    graphics::par(mfrow = c(ncol(d), 1), mar = c(1, 0, 2, 0), cex = 1.2)
 
     for(i in 1:ncol(d)) {
         color_pal(d[,i])
-        title(colnames(d)[i])
+        graphics::title(colnames(d)[i])
     }
 }
 
@@ -103,6 +106,7 @@ color_comp <- function(df) {
 freq_tab <- function (df, ...)
 {
     grouping <- rlang::quos(...)
+    n <- NULL
 
     if(dplyr::is_grouped_df(df)) {
         out_tbl <- df %>% dplyr::count(!!!grouping)
@@ -110,7 +114,7 @@ freq_tab <- function (df, ...)
         out_tbl <- df %>% dplyr::group_by(!!!grouping) %>% dplyr::count()
     }
 
-    n_groups <- length(group_vars(out_tbl))
+    n_groups <- length(dplyr::group_vars(out_tbl))
 
     if(n_groups == 1) {
         out_tbl %>% dplyr::ungroup() %>%

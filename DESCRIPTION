@@ -9,6 +9,8 @@ Description: Supporting materials for a short course and book on data visualizat
 License: MIT + file LICENSE
 Depends: R (>= 3.1)
 Imports:
+    graphics,
+    magrittr,
     knitr,
     dplyr,
     fs,
