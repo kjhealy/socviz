@@ -16,6 +16,8 @@ Imports:
     magrittr,
     rlang,
     tibble
+Suggests:
+    ggplot2       
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/kjhealy/socviz
