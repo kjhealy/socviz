@@ -39,8 +39,11 @@ install.packages("socviz")
 
 To install the development version of `socviz`, then instead of `install.packages("socviz")` do the following:
 
-```{r, eval = FALSE}```
+
+```r
+
 devtools::install_github("kjhealy/socviz")
+
 ```
 
 Once everything has downloaded and been installed (which may take a little while), load the `socviz` package: 
