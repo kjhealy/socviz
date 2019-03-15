@@ -1,3 +1,7 @@
+---
+output: github_document
+---
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 
@@ -29,8 +33,14 @@ To install the package, you can follow the instructions in the Preface to the bo
 my_packages <- c("tidyverse", "fs", "devtools")
 install.packages(my_packages)
 
-devtools::install_github("kjhealy/socviz")
+install.packages("socviz")
 
+```
+
+To install the development version of `socviz`, then instead of `install.packages("socviz")` do the following:
+
+```{r, eval = FALSE}```
+devtools::install_github("kjhealy/socviz")
 ```
 
 Once everything has downloaded and been installed (which may take a little while), load the `socviz` package: 
