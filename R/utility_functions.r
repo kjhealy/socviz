@@ -60,7 +60,7 @@ int_to_year <- function(x, month="06", day="15") {
 ##' @return Plot of a color palette
 ##' @author colorspace library authors
 ##' @examples
-##' \donttest{
+##' \dontrun{
 ##' color_pal(5)}
 color_pal <- function(col, border = "light gray", ...)
 {
@@ -78,7 +78,7 @@ color_pal <- function(col, border = "light gray", ...)
 ##' @return Plot of table of colors
 ##' @author Kieran Healy
 ##' @examples
-##' \donttest{
+##' \dontrun{
 ##' color_table
 ##' color_comp(color_table)
 ##' }
