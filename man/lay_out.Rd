@@ -24,6 +24,7 @@ The function takes arguments of the form `list(plot, row(s),
 }
 \examples{
 \dontrun{
+library(tidyverse)
 p1 <- qplot(x=wt,y=mpg,geom="point",main="Scatterplot of wt vs.
     mpg", data=mtcars)
 p2 <- qplot(x=wt,y=disp,geom="point",main="Scatterplot of wt vs
