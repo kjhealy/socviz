@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>center_df — center_df • socviz</title>
+<title>A table of hex color values related to types of color blindness — color_table • socviz</title>
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -30,9 +30,11 @@
 
 
 
-<meta property="og:title" content="center_df — center_df" />
+<meta property="og:title" content="A table of hex color values related to types of color blindness — color_table" />
 
-<meta property="og:description" content="Scale and/or center the numeric columns of a data frame or tibble" />
+<meta property="og:description" content="Hex values for five default ggplot colors, with corresponding
+approximations for three kinds of color blindness. Produced by the
+`dichromat` package." />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -101,77 +103,40 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>center_df</h1>
-    <small class="dont-index">Source: <a href='https://github.com/kjhealy/socviz/blob/master/R/utility_functions.r'><code>R/utility_functions.r</code></a></small>
-    <div class="hidden name"><code>center_df.Rd</code></div>
+    <h1>A table of hex color values related to types of color blindness</h1>
+    <small class="dont-index">Source: <a href='https://github.com/kjhealy/socviz/blob/master/R/data.r'><code>R/data.r</code></a></small>
+    <div class="hidden name"><code>color_table.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Scale and/or center the numeric columns of a data frame or tibble</p>
+    <p>Hex values for five default ggplot colors, with corresponding
+approximations for three kinds of color blindness. Produced by the
+`dichromat` package.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>center_df</span>(<span class='no'>data</span>, <span class='kw'>sc</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>cen</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
-    
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>data</th>
-      <td><p>A data frame or tibble</p></td>
-    </tr>
-    <tr>
-      <th>sc</th>
-      <td><p>Scale the variables (default FALSE)</p></td>
-    </tr>
-    <tr>
-      <th>cen</th>
-      <td><p>Center the variables on their means (default TRUE)</p></td>
-    </tr>
-    </table>
-    
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+    <pre class="usage"><span class='no'>color_table</span></pre>
+        
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>An object of the same class as `data`, with the numeric
-    columns scaled or centered as requested</p>
+    <p>A tibble with five rows and four columns.</p>
     
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Takes a data frame or tibble as input and scales and/or centers
-    the numeric columns. By default, centers but doesn't scale</p>
+    <p>Kieran Healy</p>
     
 
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/utils/topics/head'>head</a></span>(<span class='fu'>center_df</span>(<span class='no'>organdata</span>))</div><div class='output co'>#&gt; # A tibble: 6 x 21
-#&gt;   country year       donors[,1] pop[,1] pop_dens[,1] gdp[,1] gdp_lag[,1]
-#&gt;   &lt;chr&gt;   &lt;date&gt;          &lt;dbl&gt;   &lt;dbl&gt;        &lt;dbl&gt;   &lt;dbl&gt;       &lt;dbl&gt;
-#&gt; 1 Austra… NA              NA    -22856.        -11.8  -6212.      -5984.
-#&gt; 2 Austra… 1991-01-01      -4.39 -22637.        -11.8  -5815.      -5801.
-#&gt; 3 Austra… 1992-01-01      -4.13 -22426.        -11.8  -5072.      -5404.
-#&gt; 4 Austra… 1993-01-01      -3.97 -22254.        -11.8  -4103.      -4661.
-#&gt; 5 Austra… 1994-01-01      -6.23 -22066.        -11.8  -3137.      -3692.
-#&gt; 6 Austra… 1995-01-01      -6.30 -21849.        -11.8  -1907.      -2726.
-#&gt; # … with 14 more variables: health[,1] &lt;dbl&gt;, health_lag[,1] &lt;dbl&gt;,
-#&gt; #   pubhealth[,1] &lt;dbl&gt;, roads[,1] &lt;dbl&gt;, cerebvas[,1] &lt;dbl&gt;,
-#&gt; #   assault[,1] &lt;dbl&gt;, external[,1] &lt;dbl&gt;, txp_pop[,1] &lt;dbl&gt;, world &lt;chr&gt;,
-#&gt; #   opt &lt;chr&gt;, consent_law &lt;chr&gt;, consent_practice &lt;chr&gt;, consistent &lt;chr&gt;,
-#&gt; #   ccode &lt;chr&gt;</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#arguments">Arguments</a></li>
       
-      <li><a href="#value">Value</a></li>
+      <li><a href="#format">Format</a></li>
 
-      <li><a href="#details">Details</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
+      <li><a href="#source">Source</a></li>
+          </ul>
 
-    <h2>Author</h2>
-    <p>Kieran Healy</p>
   </div>
 </div>
 
