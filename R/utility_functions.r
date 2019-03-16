@@ -149,7 +149,8 @@ freq_tab <- function (df, ...)
 ##' @author Extracted from the [wq] package
 ##' @param ... A series lists of of ggplot objects
 ##' @examples
-#'
+##' \dontrun{
+##' library(tidyverse)
 ##' p1 <- qplot(x=wt,y=mpg,geom="point",main="Scatterplot of wt vs.
 ##'     mpg", data=mtcars)
 ##' p2 <- qplot(x=wt,y=disp,geom="point",main="Scatterplot of wt vs
@@ -158,7 +159,7 @@ freq_tab <- function (df, ...)
 ##' lay_out(list(p1, 1:2, 1:4),
 ##'       list(p2, 3:4, 1:2),
 ##'       list(p3, 3:4, 3:4))
-##'
+##'}
 ##' @export
 lay_out = function(...) {
     x <- list(...)
