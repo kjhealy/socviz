@@ -352,6 +352,10 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
 ##' @return The `zipfile` is copied to `folder` and its contents
 ##'     expanded into a directory, the `packet`.
 ##' @author Kieran Healy
+##' @examples
+##' \dontrun{
+##' setup_course_notes(folder = "~/Desktop")
+##' }
 ##' @export
 setup_course_notes <- function(folder, zipfile = "dataviz_course_notes.zip",
                                packet = "dataviz_course_notes") {
