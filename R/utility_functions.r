@@ -22,6 +22,7 @@ NULL
 
 ##' Convert an integer to a date.
 ##'
+##' Convert an integer to a date object.
 ##' @title int_to_year
 ##' @param x An integer or vector integers.
 ##' @param month The month to be added to the year. Months 1 to 9
@@ -107,9 +108,9 @@ color_comp <- function(df) {
 ##'     outermost grouping variable.
 ##' @author Kieran Healy
 ##' @examples
-##' \dontrun{
+##'
 ##' mtcars %>% freq_tab(vs, gear, carb)
-##' }
+##'
 ##' @export
 freq_tab <- function (df, ...)
 {
@@ -146,7 +147,7 @@ freq_tab <- function (df, ...)
 ##' @author Extracted from the [wq] package
 ##' @param ... A series lists of of ggplot objects
 ##' @examples
-#'\dontrun{
+#'
 ##' p1 <- qplot(x=wt,y=mpg,geom="point",main="Scatterplot of wt vs.
 ##'     mpg", data=mtcars)
 ##' p2 <- qplot(x=wt,y=disp,geom="point",main="Scatterplot of wt vs
@@ -155,7 +156,7 @@ freq_tab <- function (df, ...)
 ##' lay_out(list(p1, 1:2, 1:4),
 ##'       list(p2, 3:4, 1:2),
 ##'       list(p3, 3:4, 3:4))
-##' }
+##'
 ##' @export
 lay_out = function(...) {
     x <- list(...)
@@ -188,13 +189,13 @@ lay_out = function(...) {
 ##' @return A contingency table of percentage values.
 ##' @author Kieran Healy
 ##' @examples
-##' \dontrun{
-##' > with(gss_sm, tw_tab(bigregion, religion, useNA = "ifany", digs =
+##'
+##' with(gss_sm, tw_tab(bigregion, religion, useNA = "ifany", digs =
 ##'     1))
 ##'
 ##' with(gss_sm, tw_tab(bigregion, religion, margin = 2, useNA =
 ##'     "ifany", digs = 1))
-##' }
+##'
 ##' @export
 tw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
     out <- round(prop.table(table(x, y, ...), margin = margin)*100, digits = digs)
@@ -211,7 +212,7 @@ tw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
 ##' @return An object of the same class as `data`, with the numeric
 ##'     columns rounded off to `dig`
 ##' @examples
-##' round_df(iris, 0)
+##' head(round_df(iris, 0))
 ##' @author Kieran Healy
 ##' @export
 round_df <- function(data, dig=2) {
