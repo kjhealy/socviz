@@ -22,6 +22,10 @@ Draw a palette of colors
 \details{
 Borrowed from the colorspace library
 }
+\examples{
+\donttest{
+color_pal(5)}
+}
 \author{
 colorspace library authors
 }

@@ -285,6 +285,19 @@
 "titanic"
 
 
+##' A table of hex color values related to types of color blindness
+##'
+##' Hex values for five default ggplot colors, with corresponding
+##' approximations for three kinds of color blindness. Produced by the
+##' `dichromat` package.
+##'
+##' @docType data
+##' @keywords datasets
+##' @name color_table
+##' @format A tibble with five rows and four columns.
+##' @source Kieran Healy
+"color_table"
+
 ##' Years of school completed by people 25 years and over in the US.
 ##'
 ##' Counts of educational attainment (in thousands) from 1940 to 2016

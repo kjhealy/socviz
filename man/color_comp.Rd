@@ -18,6 +18,12 @@ Plot a table of color hex values as a table of colors
 \details{
 Given a data frame of color values, plot them as swatches
 }
+\examples{
+\donttest{
+color_table
+color_comp(color_table)
+}
+}
 \author{
 Kieran Healy
 }

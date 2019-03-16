@@ -30,6 +30,9 @@ Takes a character vector (usually vector of variable names from a
     latter away from the former. Useful for quickly cleaning
     variable names for a plot.
 }
+\examples{
+prefix_strip(iris$Species, c("set", "v"))
+}
 \author{
 Kieran Healy
 }

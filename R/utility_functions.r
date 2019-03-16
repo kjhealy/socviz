@@ -59,6 +59,9 @@ int_to_year <- function(x, month="06", day="15") {
 ##' @param ... other arguments
 ##' @return Plot of a color palette
 ##' @author colorspace library authors
+##' @examples
+##' \donttest{
+##' color_pal(5)}
 color_pal <- function(col, border = "light gray", ...)
 {
   n <- length(col)
@@ -74,6 +77,11 @@ color_pal <- function(col, border = "light gray", ...)
 ##' @param df data frame of color hex values
 ##' @return Plot of table of colors
 ##' @author Kieran Healy
+##' @examples
+##' \donttest{
+##' color_table
+##' color_comp(color_table)
+##' }
 ##' @export
 color_comp <- function(df) {
     d <- as.data.frame(df)
@@ -124,130 +132,6 @@ freq_tab <- function (df, ...)
         out_tbl %>% dplyr::group_by(!!outer_group) %>%
             dplyr::mutate(prop = prop.table(n))
     }
-}
-
-##' Check if something is html output
-##'
-##' internal knitr function
-##' @title is_html_output
-##' @param fmt format
-##' @param excludes excludes
-##' @return html flag
-##' @author Yihui Xie
-is_html_output <- function (fmt = pandoc_to(), excludes = NULL)
-{
-    if (length(fmt) == 0)
-        return(FALSE)
-    if (grepl("^markdown", fmt))
-        fmt = "markdown"
-    if (fmt == "epub3")
-        fmt = "epub"
-    fmts = c("markdown", "epub", "html", "html5", "revealjs",
-        "s5", "slideous", "slidy")
-    fmt %in% setdiff(fmts, excludes)
-}
-##' pandoc_to
-##'
-##' what are we converting to
-##' @title pandoc_to
-##' @param x fmt
-##' @return opt_knit element
-##' @author Yihui Xie
-
-##' rmarkdown pandoc to
-##'
-##' internal knitr function
-pandoc_to <- function (x)
-{
-    fmt = knitr::opts_knit$get("rmarkdown.pandoc.to")
-    if (missing(x))
-        fmt
-    else !is.null(fmt) && (fmt %in% x)
-}
-##' out_format
-##'
-##' internal knitr function
-##' @title out_format
-##' @param x x
-##' @return format
-##' @author Yihui Xie
-
-out_format <- function (x)
-{
-    fmt = knitr::opts_knit$get("out.format")
-    if (missing(x))
-        fmt
-    else !is.null(fmt) && (fmt %in% x)
-}
-
-##' is_latex_output
-##'
-##' is latex output
-##' @title is_latex_output
-##' @return the format
-##' @author Yihui Xie
-is_latex_output <- function ()
-{
-    out_format("latex") || pandoc_to(c("latex", "beamer"))
-}
-
-##' Marginal note for tufte html output
-##'
-##' Make a html margin note
-##' @title marginnote_html
-##' @param text The text of the note
-##' @param icon An icon
-##' @return An HTML note
-##' @author Dirk Eddelbuettel
-##' @examples
-##' \dontrun{
-##' marginnote_html("Hello")
-##' }
-marginnote_html <- function (text = "", icon = "&#8853;")
-{
-    sprintf(paste0("<label for=\"tufte-mn-\" class=\"margin-toggle\">%s</label>",
-        "<input type=\"checkbox\" id=\"tufte-mn-\" class=\"margin-toggle\">%s"),
-        icon, text)
-}
-
-##' Use in inline R expressions to write a margin note for tufte-latex documents
-##'
-##' Borrowed from Dirk Eddelbuettel's tint package.
-##' @title margin_textnote
-##' @param text The text of the note
-##' @param icon An icon
-##' @return A marginal note
-##' @author Kieran Healy (but really Dirk Eddelbuettel)
-##' @export
-margin_textnote <- function(text, icon = '&#8853;') {
-  if (is_html_output()) {
-    marginnote_html(sprintf('<span class="marginnote">%s</span>', text), icon)
-  } else if (is_latex_output()) {
-    sprintf('\\marginnote{%s}', text)
-  } else {
-    warning('margin_textnote() only works for HTML and LaTeX output', call. = FALSE)
-    text
-  }
-}
-
-##' Use in inline R expressions to write a monospaced margin note for tufte-latex documents
-##'
-##' Adapted from Dirk Eddelbuettel's tint package.
-##' @title margin_codenote
-##' @param text The text of the note
-##' @param icon An icon
-##' @return A marginal note in monospace font
-##' @author Kieran Healy
-##' @export
-margin_codenote <- function(text, icon = '&#8853;') {
-  if (is_html_output()) {
-    marginnote_html(sprintf('<span class="codenote">%s</span>', text), icon)
-  } else if (is_latex_output()) {
-    sprintf('\\marginnote{\\texttt %s}', text)
-  } else {
-    warning('margin_codenote() only works for HTML and LaTeX output', call. = FALSE)
-    text
-  }
 }
 
 ##' Arrange ggplot2 plots in an arbitrary grid
@@ -303,61 +187,19 @@ lay_out = function(...) {
 ##' @param ... Other arguments to be passed to `table`.
 ##' @return A contingency table of percentage values.
 ##' @author Kieran Healy
+##' @examples
+##' \dontrun{
+##' > with(gss_sm, tw_tab(bigregion, religion, useNA = "ifany", digs =
+##'     1))
+##'
+##' with(gss_sm, tw_tab(bigregion, religion, margin = 2, useNA =
+##'     "ifany", digs = 1))
+##' }
 ##' @export
 tw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
     out <- round(prop.table(table(x, y, ...), margin = margin)*100, digits = digs)
     out
 }
-
-##' Arrange ggplot objects on an arbitrary page grid
-##'
-##' ggplot objects can be passed in ..., or to plotlist (as a list of
-##'     ggplot objects). If the layout is something like matrix(c(1,2,3,3), nrow=2,
-##'     byrow=TRUE), then plot 1 will go in the upper left, 2 will go
-##'     in the upper right, and 3 will go all the way across the bottom.
-##' @title multiplot
-##' @param ... ggplot objects
-##' @param plotlist ggplot objects
-##' @param file .
-##' @param cols Number of columns in the layout. Ignored if layout is present.
-##' @param layout A matrix specifying the layout. If present, 'cols' is ignored.
-##' @return Prints a grid of plot objects
-##' @author Winston Chang
-##' @export
-multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
-  # Make a list from the ... arguments and plotlist
-  plots <- c(list(...), plotlist)
-
-  numPlots = length(plots)
-
-  # If layout is NULL, then use 'cols' to determine layout
-  if (is.null(layout)) {
-    # Make the panel
-    # ncol: Number of columns of plots
-    # nrow: Number of rows needed, calculated from # of cols
-    layout <- matrix(seq(1, cols * ceiling(numPlots/cols)),
-                    ncol = cols, nrow = ceiling(numPlots/cols))
-  }
-
- if (numPlots==1) {
-    print(plots[[1]])
-
-  } else {
-    # Set up the page
-    grid::grid.newpage()
-    grid::pushViewport(grid::viewport(layout = grid::grid.layout(nrow(layout), ncol(layout))))
-
-    # Make each plot, in the correct location
-    for (i in 1:numPlots) {
-      # Get the i,j matrix positions of the regions that contain this subplot
-      matchidx <- as.data.frame(which(layout == i, arr.ind = TRUE))
-
-      print(plots[[i]], vp = grid::viewport(layout.pos.row = matchidx$row,
-                                      layout.pos.col = matchidx$col))
-    }
-  }
-}
-
 
 ##' Round numeric columns of a data frame or tibble
 ##'
@@ -368,6 +210,8 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
 ##' @param dig The number of digits to round to
 ##' @return An object of the same class as `data`, with the numeric
 ##'     columns rounded off to `dig`
+##' @examples
+##' round_df(iris, 0)
 ##' @author Kieran Healy
 ##' @export
 round_df <- function(data, dig=2) {
@@ -405,6 +249,8 @@ round_df <- function(data, dig=2) {
 ##' @return An object of the same class as `data`, with the numeric
 ##'     columns scaled or centered as requested
 ##' @author Kieran Healy
+##' @examples
+##' head(center_df(organdata))
 ##' @export
 center_df <- function(data, sc = FALSE, cen = TRUE) {
     obj_class <- class(data)
@@ -449,6 +295,8 @@ center_df <- function(data, sc = FALSE, cen = TRUE) {
 ##' @return A character vector with `prefixes` terms stripped from the
 ##'     beginning of `var_name` terms.
 ##' @author Kieran Healy
+##' @examples
+##' prefix_strip(iris$Species, c("set", "v"))
 ##' @export
 prefix_strip <- function(var_string, prefixes, toTitle = TRUE, ...) {
     pre_terms <- paste0("^", prefixes, collapse = "|")
@@ -474,6 +322,9 @@ prefix_strip <- function(var_string, prefixes, toTitle = TRUE, ...) {
 ##' @param ... Other arguments to `gsub`
 ##' @return A character vector with `prefixes` terms in `var_names`
 ##'     replaced with the content of the `replacement` terms.
+##' @examples
+##' prefix_replace(iris$Species, c("set", "ver", "vir"), c("sat",
+##'     "ber", "bar"))
 ##' @author Kieran Healy
 ##' @export
 prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ...) {
@@ -490,7 +341,7 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
 ##'     library to the Desktop.
 ##' @title setup_course_notes
 ##' @param folder The destination to copy to within the user's home.
-##'     By default `~/Desktop`.
+##'     This must be supplied by the user.
 ##' @param zipfile The name of the zipped course materials file in the
 ##'     socviz library.
 ##' @param packet The name of the course packet folder to be created
@@ -498,28 +349,33 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
 ##'     expanded into a directory, the `packet`.
 ##' @author Kieran Healy
 ##' @export
-setup_course_notes <- function(folder = "~/Desktop", zipfile = "dataviz_course_notes.zip",
+setup_course_notes <- function(folder, zipfile = "dataviz_course_notes.zip",
                                packet = "dataviz_course_notes") {
-    file_name <- zipfile
-    lib_loc <- fs::path_package("socviz")
+    if(missing(folder)) {
+        message("You must specify a destination for the notes, e.g., '~/Desktop'")
+    } else {
+        file_name <- zipfile
+        lib_loc <- fs::path_package("socviz")
 
-    origin_path <- fs::path(lib_loc, "resources", file_name)
-    dest_path <- fs::path_expand(folder)
+        origin_path <- fs::path(lib_loc, "resources", file_name)
+        dest_path <- fs::path_expand(folder)
 
-    fs::file_copy(origin_path, dest_path)
+        if(fs::dir_exists(dest_path)) {
 
-    dest_file <- fs::path(dest_path, file_name)
-    fs::dir_create(dest_path, packet)
-    dest_dir_name <- fs::path(dest_path, packet)
+            fs::file_copy(origin_path, dest_path)
 
-    utils::unzip(dest_file, exdir = dest_dir_name)
+            dest_file <- fs::path(dest_path, file_name)
+            fs::dir_create(dest_path, packet)
+            dest_dir_name <- fs::path(dest_path, packet)
 
-    message(paste("Copied", file_name, "to", dest_path, "and expanded it into", dest_dir_name))
+            utils::unzip(dest_file, exdir = dest_dir_name)
 
+            message(paste("Copied", file_name, "to", dest_path, "and expanded it into", dest_dir_name))
+        } else {
+        message(paste("Failed. Cannot copy notes to the folder", dest_path, "because it does not exist."))}
+        }
 }
 ##' @examples
 ##' \dontrun{
-##' setup_course_notes()
-##'
 ##' setup_course_notes(folder = "~/Documents")
 ##' }

@@ -33,6 +33,15 @@ A wrapper for `table` and `prop.table` with the margin labels set
     by default to NULL and the cells rounded to percents at 1
     decimal place.
 }
+\examples{
+\dontrun{
+> with(gss_sm, tw_tab(bigregion, religion, useNA = "ifany", digs =
+    1))
+
+with(gss_sm, tw_tab(bigregion, religion, margin = 2, useNA =
+    "ifany", digs = 1))
+}
+}
 \author{
 Kieran Healy
 }
