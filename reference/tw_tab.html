@@ -158,14 +158,22 @@ the result (the dimnames names). Defaults to NULL for none.</p></td>
     
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"># NOT RUN {
-> with(gss_sm, tw_tab(bigregion, religion, useNA = "ifany", digs =
-    1))
-
-with(gss_sm, tw_tab(bigregion, religion, margin = 2, useNA =
-    "ifany", digs = 1))
-# }
-</pre>
+    <pre class="examples"><div class='input'>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/with'>with</a></span>(<span class='no'>gss_sm</span>, <span class='fu'>tw_tab</span>(<span class='no'>bigregion</span>, <span class='no'>religion</span>, <span class='kw'>useNA</span> <span class='kw'>=</span> <span class='st'>"ifany"</span>, <span class='kw'>digs</span> <span class='kw'>=</span>
+    <span class='fl'>1</span>))</div><div class='output co'>#&gt;            y
+#&gt; x           Protestant Catholic Jewish None Other &lt;NA&gt;
+#&gt;   Northeast        5.5      5.7    0.9  3.9   1.0  0.0
+#&gt;   Midwest         11.3      6.0    0.1  5.5   1.2  0.2
+#&gt;   South           22.7      5.6    0.4  5.9   1.7  0.4
+#&gt;   West             8.3      5.4    0.3  6.3   1.7  0.0</div><div class='input'>
+<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/with'>with</a></span>(<span class='no'>gss_sm</span>, <span class='fu'>tw_tab</span>(<span class='no'>bigregion</span>, <span class='no'>religion</span>, <span class='kw'>margin</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>useNA</span> <span class='kw'>=</span>
+    <span class='st'>"ifany"</span>, <span class='kw'>digs</span> <span class='kw'>=</span> <span class='fl'>1</span>))</div><div class='output co'>#&gt;            y
+#&gt; x           Protestant Catholic Jewish None Other &lt;NA&gt;
+#&gt;   Northeast       11.5     25.0   52.9 18.1  17.6  5.6
+#&gt;   Midwest         23.7     26.5    5.9 25.4  20.8 27.8
+#&gt;   South           47.4     24.7   21.6 27.5  31.4 61.1
+#&gt;   West            17.4     23.9   19.6 29.1  30.2  5.6</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
