@@ -12,6 +12,7 @@ reference:
       - asasec
       - bad_date
       - boomer
+      - color_table
       - county_data
       - county_map
       - edu
@@ -43,14 +44,7 @@ reference:
       - color_pal
       - freq_tab
       - int_to_year
-      - is_html_output
-      - is_latex_output
       - lay_out
-      - marginnote_html
-      - margin_codenote
-      - margin_textnote
-      - multiplot
-      - out_format
       - round_df
       - pandoc_to
       - prefix_replace

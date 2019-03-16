@@ -33,6 +33,10 @@ Takes a character vector (usually vector of variable names from a
     latter away from the former. Useful for quickly cleaning
     variable names for a plot.
 }
+\examples{
+prefix_replace(iris$Species, c("set", "ver", "vir"), c("sat",
+    "ber", "bar"))
+}
 \author{
 Kieran Healy
 }

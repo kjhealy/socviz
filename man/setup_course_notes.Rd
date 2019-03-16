@@ -4,13 +4,12 @@
 \alias{setup_course_notes}
 \title{setup_course_notes}
 \usage{
-setup_course_notes(folder = "~/Desktop",
-  zipfile = "dataviz_course_notes.zip",
+setup_course_notes(folder, zipfile = "dataviz_course_notes.zip",
   packet = "dataviz_course_notes")
 }
 \arguments{
 \item{folder}{The destination to copy to within the user's home.
-By default `~/Desktop`.}
+This must be supplied by the user.}
 
 \item{zipfile}{The name of the zipped course materials file in the
 socviz library.}

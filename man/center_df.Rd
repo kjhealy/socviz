@@ -24,6 +24,9 @@ Scale and/or center the numeric columns of a data frame or tibble
 Takes a data frame or tibble as input and scales and/or centers
     the numeric columns. By default, centers but doesn't scale
 }
+\examples{
+head(center_df(organdata))
+}
 \author{
 Kieran Healy
 }
