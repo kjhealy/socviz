@@ -93,7 +93,7 @@
 <a class="sourceLine" id="cb1-4" data-line-number="4"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages</a></span>(my_packages)</a>
 <a class="sourceLine" id="cb1-5" data-line-number="5"></a>
 <a class="sourceLine" id="cb1-6" data-line-number="6"><span class="kw"><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages</a></span>(<span class="st">"socviz"</span>)</a></code></pre></div>
-<p>To install the development version of <code>socviz</code>, then instead of <code><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages("socviz")</a></code> do the following:</p>
+<p>To install the development version of <code>socviz</code>, instead of <code><a href="https://www.rdocumentation.org/packages/utils/topics/install.packages">install.packages("socviz")</a></code> do the following:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"></a>
 <a class="sourceLine" id="cb2-2" data-line-number="2">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"kjhealy/socviz"</span>)</a></code></pre></div>
 <p>Once everything has downloaded and been installed (which may take a little while), load the <code>socviz</code> package:</p>
@@ -102,10 +102,10 @@
 <div id="the-course-packet" class="section level2">
 <h2 class="hasAnchor">
 <a href="#the-course-packet" class="anchor"></a>The Course Packet</h2>
-<p>The supporting materials are contained in a compressed <code>.zip</code> file. To extract them to your Desktop, make sure the <code>socviz</code> package is loaded as described above. Then do this:</p>
+<p>The supporting materials are contained in a compressed <code>.zip</code> file. To extract them to your Desktop, make sure the <code>socviz</code> package is loaded as described above. Then do something like this:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw"><a href="reference/setup_course_notes.html">setup_course_notes</a></span>()</a></code></pre></div>
-<p>This will copy the <code>dataviz_course_notes.zip</code> file to your Desktop, and uncompress it into a folder called <code>dataviz_course_notes</code>. Double-click the file named <code>dataviz.Rproj</code> to launch the project as a new RStudio session. If you want to uncompress the file somewhere other than your Desktop, e.g. your Documents folder, you can do this:</p>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw"><a href="reference/setup_course_notes.html">setup_course_notes</a></span>(<span class="dt">folder =</span> <span class="st">"~/Desktop"</span>)</a></code></pre></div>
+<p>You can choose the destination folder, but you must supply one. Here, the <code>dataviz_course_notes.zip</code> file will be copied to your Desktop, and uncompressed there into a folder called <code>dataviz_course_notes</code>. Open the folder, and double-click the file named <code>dataviz.Rproj</code> to launch the project as a new RStudio session. If you want to uncompress the file somewhere other than your Desktop, e.g. your Documents folder, you can do this:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"></a>
 <a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw"><a href="reference/setup_course_notes.html">setup_course_notes</a></span>(<span class="dt">folder =</span> <span class="st">"~/Documents"</span>)</a></code></pre></div>
 </div>
