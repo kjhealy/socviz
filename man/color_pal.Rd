@@ -23,7 +23,7 @@ Draw a palette of colors
 Borrowed from the colorspace library
 }
 \examples{
-\donttest{
+\dontrun{
 color_pal(5)}
 }
 \author{
