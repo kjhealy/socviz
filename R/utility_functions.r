@@ -108,8 +108,10 @@ color_comp <- function(df) {
 ##'     outermost grouping variable.
 ##' @author Kieran Healy
 ##' @examples
-##'
+##' \dontrun{
+##' library(tidyverse)
 ##' mtcars %>% freq_tab(vs, gear, carb)
+##' }
 ##'
 ##' @export
 freq_tab <- function (df, ...)
