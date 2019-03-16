@@ -23,7 +23,7 @@ The function takes arguments of the form `list(plot, row(s),
     http://stackoverflow.com/questions/18427455/multiple-ggplots-of-different-sizes
 }
 \examples{
-\dontrun{
+
 p1 <- qplot(x=wt,y=mpg,geom="point",main="Scatterplot of wt vs.
     mpg", data=mtcars)
 p2 <- qplot(x=wt,y=disp,geom="point",main="Scatterplot of wt vs
@@ -32,7 +32,7 @@ p3 <- qplot(wt,data=mtcars)
 lay_out(list(p1, 1:2, 1:4),
       list(p2, 3:4, 1:2),
       list(p3, 3:4, 3:4))
-}
+
 }
 \author{
 Extracted from the [wq] package

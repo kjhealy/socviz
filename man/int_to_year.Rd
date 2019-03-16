@@ -25,6 +25,9 @@ A vector of dates where the input integer forms the year
 \description{
 Convert an integer to a date.
 }
+\details{
+Convert an integer to a date object.
+}
 \examples{
 int_to_year(1960)
 class(int_to_year(1960))
