@@ -2,7 +2,7 @@
 % Please edit documentation in R/utility_functions.r
 \name{prefix_strip}
 \alias{prefix_strip}
-\title{prefix_strip}
+\title{Strip a series of characters from the beginning of a character vector}
 \usage{
 prefix_strip(var_string, prefixes, toTitle = TRUE, ...)
 }

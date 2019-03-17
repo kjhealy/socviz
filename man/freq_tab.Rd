@@ -2,7 +2,7 @@
 % Please edit documentation in R/utility_functions.r
 \name{freq_tab}
 \alias{freq_tab}
-\title{freq_tab}
+\title{Generate a tidy n-way frequency table}
 \usage{
 freq_tab(df, ...)
 }
@@ -20,7 +20,7 @@ A tibble with the grouping variables, the N (`n`) per group, and
 Generate a tidy n-way frequency table
 }
 \details{
-tidyverse, pipeline, and dplyr-friendly frequency tables
+Tidyverse, pipeline, and dplyr-friendly frequency tables
 }
 \examples{
 \dontrun{

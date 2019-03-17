@@ -20,15 +20,15 @@ NULL
 }
 
 
-##' Convert an integer to a date.
-##'
 ##' Convert an integer to a date object.
-##' @title int_to_year
+##'
+##' @title Convert an integer to a date object.
 ##' @param x An integer or vector integers.
 ##' @param month The month to be added to the year. Months 1 to 9
-##'     should be given as 01, 02, etc.
+##'     should be given as character strings, i.e. "01", "02", etc,
+##'     and not 1 or 2o, etc.
 ##' @param day The day to be added to the year. Days should be given
-##'     as 01 or 02, etc, and not 1 or 2, etc.
+##'     as character strings, i.e., "01" or "02", etc, and not 1 or 2, etc.
 ##' @return A vector of dates where the input integer forms the year
 ##'     component. The day and month components added will by default
 ##'     be the 15th of June, so that tick marks will appear in the
@@ -38,6 +38,7 @@ NULL
 ##' int_to_year(1960)
 ##' class(int_to_year(1960))
 ##' int_to_year(1960:1965)
+##' int_to_year(1990, month = "01", day = "30")
 ##' @author Kieran Healy
 ##' @export
 int_to_year <- function(x, month="06", day="15") {
@@ -99,8 +100,8 @@ color_comp <- function(df) {
 
 ##' Generate a tidy n-way frequency table
 ##'
-##' tidyverse, pipeline, and dplyr-friendly frequency tables
-##' @title freq_tab
+##' Tidyverse, pipeline, and dplyr-friendly frequency tables
+##' @title Generate a tidy n-way frequency table
 ##' @param df tibble or data frame (implicit within pipline)
 ##' @param ... grouping, as with group_by()
 ##' @return A tibble with the grouping variables, the N (`n`) per group, and
@@ -144,7 +145,7 @@ freq_tab <- function (df, ...)
 ##'     rows and columns identify an area of the grid that you want
 ##'     that plot object to occupy. See
 ##'     http://stackoverflow.com/questions/18427455/multiple-ggplots-of-different-sizes
-##' @title lay_out
+##' @title Arrange ggplot2 plots in an arbitrary grid
 ##' @return A grid of ggplot2 plots
 ##' @author Extracted from the [wq] package
 ##' @param ... A series lists of of ggplot objects
@@ -179,7 +180,7 @@ lay_out = function(...) {
 ##' A wrapper for `table` and `prop.table` with the margin labels set
 ##'     by default to NULL and the cells rounded to percents at 1
 ##'     decimal place.
-##' @title tw_tab
+##' @title Quickly make a two-way table of proportions (percentages)
 ##' @param x Row variable
 ##' @param y Column variable
 ##' @param margin See `prop.table`. Default is joint distribution (all
@@ -209,7 +210,7 @@ tw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
 ##'
 ##' Takes a data frame or tibble as input, rounds the numeric columns to the
 ##'     specified number of digits.
-##' @title round_df
+##' @title Round numeric columns of a data frame or tibble
 ##' @param data A data frame or tibble
 ##' @param dig The number of digits to round to
 ##' @return An object of the same class as `data`, with the numeric
@@ -246,7 +247,7 @@ round_df <- function(data, dig=2) {
 ##'
 ##' Takes a data frame or tibble as input and scales and/or centers
 ##'     the numeric columns. By default, centers but doesn't scale
-##' @title center_df
+##' @title Scale and/or center the numeric columns of a data frame or tibble
 ##' @param data A data frame or tibble
 ##' @param sc Scale the variables (default FALSE)
 ##' @param cen Center the variables on their means (default TRUE)
@@ -291,7 +292,7 @@ center_df <- function(data, sc = FALSE, cen = TRUE) {
 ##'     variable added by R when creating model terms) and strips the
 ##'     latter away from the former. Useful for quickly cleaning
 ##'     variable names for a plot.
-##' @title prefix_strip
+##' @title Strip a series of characters from the beginning of a character vector
 ##' @param var_string A character vector, usually variable names
 ##' @param prefixes A character vector, usually variable prefixes
 ##' @param toTitle Convert results to Title Case? Defaults to TRUE.
@@ -317,7 +318,7 @@ prefix_strip <- function(var_string, prefixes, toTitle = TRUE, ...) {
 ##'     variable added by R when creating model terms) and strips the
 ##'     latter away from the former. Useful for quickly cleaning
 ##'     variable names for a plot.
-##' @title prefix_replace
+##' @title  Replace characters (usually variable names) at the beginning of a character vector
 ##' @param var_names A character vector, usually variable names
 ##' @param prefixes A character vector, usually variable prefixes
 ##' @param replacements A character vector of replacements for the
@@ -339,11 +340,11 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
   if(toTitle) tools::toTitleCase(out) else out
 }
 
-##' Copy and expend course notes to the desktop
+##' Copy and expand course notes to a specified folder
 ##'
 ##' Transfers a zip file containing course materials from the socviz
 ##'     library to the Desktop.
-##' @title setup_course_notes
+##' @title Copy and expand course notes to a specified folder
 ##' @param folder The destination to copy to within the user's home.
 ##'     This must be supplied by the user.
 ##' @param zipfile The name of the zipped course materials file in the

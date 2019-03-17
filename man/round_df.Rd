@@ -2,7 +2,7 @@
 % Please edit documentation in R/utility_functions.r
 \name{round_df}
 \alias{round_df}
-\title{round_df}
+\title{Round numeric columns of a data frame or tibble}
 \usage{
 round_df(data, dig = 2)
 }
