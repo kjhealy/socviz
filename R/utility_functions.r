@@ -378,5 +378,5 @@ setup_course_notes <- function(folder, zipfile = "dataviz_course_notes.zip",
 }
 ##' @examples
 ##' \dontrun{
-##' setup_course_notes(folder = "~/Documents")
+##' setup_course_notes(folder = tempdir())
 ##' }

@@ -23,7 +23,7 @@ Takes a data frame or tibble as input, rounds the numeric columns to the
     specified number of digits.
 }
 \examples{
-round_df(iris, 0)
+head(round_df(iris, 0))
 }
 \author{
 Kieran Healy
