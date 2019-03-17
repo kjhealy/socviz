@@ -20,9 +20,9 @@ NULL
 }
 
 
-##' Convert an integer to a date object.
+##' Convert an integer to a date.
 ##'
-##' @title Convert an integer to a date object.
+##' @title int_to_year
 ##' @param x An integer or vector integers.
 ##' @param month The month to be added to the year. Months 1 to 9
 ##'     should be given as character strings, i.e. "01", "02", etc,
@@ -210,7 +210,7 @@ tw_tab <- function(x, y, margin = NULL, digs = 1, dnn = NULL, ...) {
 ##'
 ##' Takes a data frame or tibble as input, rounds the numeric columns to the
 ##'     specified number of digits.
-##' @title Round numeric columns of a data frame or tibble
+##' @title round_df
 ##' @param data A data frame or tibble
 ##' @param dig The number of digits to round to
 ##' @return An object of the same class as `data`, with the numeric
@@ -247,7 +247,7 @@ round_df <- function(data, dig=2) {
 ##'
 ##' Takes a data frame or tibble as input and scales and/or centers
 ##'     the numeric columns. By default, centers but doesn't scale
-##' @title Scale and/or center the numeric columns of a data frame or tibble
+##' @title center_df
 ##' @param data A data frame or tibble
 ##' @param sc Scale the variables (default FALSE)
 ##' @param cen Center the variables on their means (default TRUE)
@@ -292,7 +292,7 @@ center_df <- function(data, sc = FALSE, cen = TRUE) {
 ##'     variable added by R when creating model terms) and strips the
 ##'     latter away from the former. Useful for quickly cleaning
 ##'     variable names for a plot.
-##' @title Strip a series of characters from the beginning of a character vector
+##' @title prefix_strip
 ##' @param var_string A character vector, usually variable names
 ##' @param prefixes A character vector, usually variable prefixes
 ##' @param toTitle Convert results to Title Case? Defaults to TRUE.
@@ -318,7 +318,7 @@ prefix_strip <- function(var_string, prefixes, toTitle = TRUE, ...) {
 ##'     variable added by R when creating model terms) and strips the
 ##'     latter away from the former. Useful for quickly cleaning
 ##'     variable names for a plot.
-##' @title  Replace characters (usually variable names) at the beginning of a character vector
+##' @title prefix_replace
 ##' @param var_names A character vector, usually variable names
 ##' @param prefixes A character vector, usually variable prefixes
 ##' @param replacements A character vector of replacements for the
@@ -340,11 +340,11 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
   if(toTitle) tools::toTitleCase(out) else out
 }
 
-##' Copy and expand course notes to a specified folder
+##' Copy and expend course notes to the desktop
 ##'
 ##' Transfers a zip file containing course materials from the socviz
 ##'     library to the Desktop.
-##' @title Copy and expand course notes to a specified folder
+##' @title setup_course_notes
 ##' @param folder The destination to copy to within the user's home.
 ##'     This must be supplied by the user.
 ##' @param zipfile The name of the zipped course materials file in the
