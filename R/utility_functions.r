@@ -355,7 +355,7 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
 ##' @author Kieran Healy
 ##' @examples
 ##' \dontrun{
-##' setup_course_notes(folder = "~/Desktop")
+##' setup_course_notes(folder = tempdir())
 ##' }
 ##' @export
 setup_course_notes <- function(folder, zipfile = "dataviz_course_notes.zip",
@@ -384,7 +384,3 @@ setup_course_notes <- function(folder, zipfile = "dataviz_course_notes.zip",
         message(paste("Failed. Cannot copy notes to the folder", dest_path, "because it does not exist."))}
         }
 }
-##' @examples
-##' \dontrun{
-##' setup_course_notes(folder = "~/Documents")
-##' }

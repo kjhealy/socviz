@@ -29,7 +29,7 @@ Transfers a zip file containing course materials from the socviz
 }
 \examples{
 \dontrun{
-setup_course_notes(folder = "~/Desktop")
+setup_course_notes(folder = tempdir())
 }
 }
 \author{
