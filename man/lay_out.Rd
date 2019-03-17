@@ -2,7 +2,7 @@
 % Please edit documentation in R/utility_functions.r
 \name{lay_out}
 \alias{lay_out}
-\title{lay_out}
+\title{Arrange ggplot2 plots in an arbitrary grid}
 \usage{
 lay_out(...)
 }

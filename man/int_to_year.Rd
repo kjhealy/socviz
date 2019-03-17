@@ -10,10 +10,11 @@ int_to_year(x, month = "06", day = "15")
 \item{x}{An integer or vector integers.}
 
 \item{month}{The month to be added to the year. Months 1 to 9
-should be given as 01, 02, etc.}
+should be given as character strings, i.e. "01", "02", etc,
+and not 1 or 2o, etc.}
 
 \item{day}{The day to be added to the year. Days should be given
-as 01 or 02, etc, and not 1 or 2, etc.}
+as character strings, i.e., "01" or "02", etc, and not 1 or 2, etc.}
 }
 \value{
 A vector of dates where the input integer forms the year
@@ -29,6 +30,7 @@ Convert an integer to a date.
 int_to_year(1960)
 class(int_to_year(1960))
 int_to_year(1960:1965)
+int_to_year(1990, month = "01", day = "30")
 }
 \author{
 Kieran Healy

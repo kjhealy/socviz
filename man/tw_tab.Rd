@@ -2,7 +2,7 @@
 % Please edit documentation in R/utility_functions.r
 \name{tw_tab}
 \alias{tw_tab}
-\title{tw_tab}
+\title{Quickly make a two-way table of proportions (percentages)}
 \usage{
 tw_tab(x, y, margin = NULL, digs = 1, dnn = NULL, ...)
 }
