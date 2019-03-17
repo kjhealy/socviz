@@ -25,9 +25,10 @@ NULL
 ##' @title int_to_year
 ##' @param x An integer or vector integers.
 ##' @param month The month to be added to the year. Months 1 to 9
-##'     should be given as 01, 02, etc.
+##'     should be given as character strings, i.e. "01", "02", etc,
+##'     and not 1 or 2o, etc.
 ##' @param day The day to be added to the year. Days should be given
-##'     as 01 or 02, etc, and not 1 or 2, etc.
+##'     as character strings, i.e., "01" or "02", etc, and not 1 or 2, etc.
 ##' @return A vector of dates where the input integer forms the year
 ##'     component. The day and month components added will by default
 ##'     be the 15th of June, so that tick marks will appear in the
@@ -37,6 +38,7 @@ NULL
 ##' int_to_year(1960)
 ##' class(int_to_year(1960))
 ##' int_to_year(1960:1965)
+##' int_to_year(1990, month = "01", day = "30")
 ##' @author Kieran Healy
 ##' @export
 int_to_year <- function(x, month="06", day="15") {
@@ -98,8 +100,8 @@ color_comp <- function(df) {
 
 ##' Generate a tidy n-way frequency table
 ##'
-##' tidyverse, pipeline, and dplyr-friendly frequency tables
-##' @title freq_tab
+##' Tidyverse, pipeline, and dplyr-friendly frequency tables
+##' @title Generate a tidy n-way frequency table
 ##' @param df tibble or data frame (implicit within pipline)
 ##' @param ... grouping, as with group_by()
 ##' @return A tibble with the grouping variables, the N (`n`) per group, and
@@ -108,8 +110,10 @@ color_comp <- function(df) {
 ##' @author Kieran Healy
 ##' @examples
 ##' \dontrun{
+##' library(tidyverse)
 ##' mtcars %>% freq_tab(vs, gear, carb)
 ##' }
+##'
 ##' @export
 freq_tab <- function (df, ...)
 {
@@ -141,7 +145,7 @@ freq_tab <- function (df, ...)
 ##'     rows and columns identify an area of the grid that you want
 ##'     that plot object to occupy. See
 ##'     http://stackoverflow.com/questions/18427455/multiple-ggplots-of-different-sizes
-##' @title lay_out
+##' @title Arrange ggplot2 plots in an arbitrary grid
 ##' @return A grid of ggplot2 plots
 ##' @author Extracted from the [wq] package
 ##' @param ... A series lists of of ggplot objects
@@ -176,7 +180,7 @@ lay_out = function(...) {
 ##' A wrapper for `table` and `prop.table` with the margin labels set
 ##'     by default to NULL and the cells rounded to percents at 1
 ##'     decimal place.
-##' @title tw_tab
+##' @title Quickly make a two-way table of proportions (percentages)
 ##' @param x Row variable
 ##' @param y Column variable
 ##' @param margin See `prop.table`. Default is joint distribution (all
@@ -349,6 +353,10 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
 ##' @return The `zipfile` is copied to `folder` and its contents
 ##'     expanded into a directory, the `packet`.
 ##' @author Kieran Healy
+##' @examples
+##' \dontrun{
+##' setup_course_notes(folder = tempdir())
+##' }
 ##' @export
 setup_course_notes <- function(folder, zipfile = "dataviz_course_notes.zip",
                                packet = "dataviz_course_notes") {
@@ -376,7 +384,3 @@ setup_course_notes <- function(folder, zipfile = "dataviz_course_notes.zip",
         message(paste("Failed. Cannot copy notes to the folder", dest_path, "because it does not exist."))}
         }
 }
-##' @examples
-##' \dontrun{
-##' setup_course_notes(folder = tempdir())
-##' }

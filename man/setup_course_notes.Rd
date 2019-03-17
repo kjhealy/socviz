@@ -27,6 +27,11 @@ Copy and expend course notes to the desktop
 Transfers a zip file containing course materials from the socviz
     library to the Desktop.
 }
+\examples{
+\dontrun{
+setup_course_notes(folder = tempdir())
+}
+}
 \author{
 Kieran Healy
 }
