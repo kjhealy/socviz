@@ -19,10 +19,8 @@ Plot a table of color hex values as a table of colors
 Given a data frame of color values, plot them as swatches
 }
 \examples{
-\dontrun{
 color_table
 color_comp(color_table)
-}
 }
 \author{
 Kieran Healy

@@ -1,5 +1,6 @@
-#' @importFrom magrittr "%>%"
-NULL
+#' @importFrom magrittr %>%
+#' @export
+magrittr::`%>%`
 
 ##' Convenience 'not-in' operator
 ##'
@@ -61,11 +62,10 @@ int_to_year <- function(x, month="06", day="15") {
 ##' @param ... other arguments
 ##' @return Plot of a color palette
 ##' @author colorspace library authors
+##' @export
 ##' @examples
-##' \dontrun{
-##' color_pal(5)}
-color_pal <- function(col, border = "light gray", ...)
-{
+##' color_pal(c("#66C2A5", "#FC8D62", "#8DA0CB"))
+color_pal <- function(col, border = "gray70", ...) {
   n <- length(col)
   graphics::plot(0, 0, type="n", xlim = c(0, 1), ylim = c(0, 1),
     axes = FALSE, xlab = "", ylab = "", ...)
@@ -80,10 +80,8 @@ color_pal <- function(col, border = "light gray", ...)
 ##' @return Plot of table of colors
 ##' @author Kieran Healy
 ##' @examples
-##' \dontrun{
 ##' color_table
 ##' color_comp(color_table)
-##' }
 ##' @export
 color_comp <- function(df) {
     d <- as.data.frame(df)
@@ -109,10 +107,7 @@ color_comp <- function(df) {
 ##'     outermost grouping variable.
 ##' @author Kieran Healy
 ##' @examples
-##' \dontrun{
-##' library(tidyverse)
 ##' mtcars %>% freq_tab(vs, gear, carb)
-##' }
 ##'
 ##' @export
 freq_tab <- function (df, ...)
@@ -150,8 +145,7 @@ freq_tab <- function (df, ...)
 ##' @author Extracted from the [wq] package
 ##' @param ... A series lists of of ggplot objects
 ##' @examples
-##' \dontrun{
-##' library(tidyverse)
+##' library(ggplot2)
 ##' p1 <- qplot(x=wt,y=mpg,geom="point",main="Scatterplot of wt vs.
 ##'     mpg", data=mtcars)
 ##' p2 <- qplot(x=wt,y=disp,geom="point",main="Scatterplot of wt vs
@@ -160,7 +154,6 @@ freq_tab <- function (df, ...)
 ##' lay_out(list(p1, 1:2, 1:4),
 ##'       list(p2, 3:4, 1:2),
 ##'       list(p3, 3:4, 3:4))
-##'}
 ##' @export
 lay_out = function(...) {
     x <- list(...)
@@ -194,8 +187,7 @@ lay_out = function(...) {
 ##' @author Kieran Healy
 ##' @examples
 ##'
-##' with(gss_sm, tw_tab(bigregion, religion, useNA = "ifany", digs =
-##'     1))
+##' with(gss_sm, tw_tab(bigregion, religion, useNA = "ifany", digs = 1))
 ##'
 ##' with(gss_sm, tw_tab(bigregion, religion, margin = 2, useNA =
 ##'     "ifany", digs = 1))
@@ -354,9 +346,7 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
 ##'     expanded into a directory, the `packet`.
 ##' @author Kieran Healy
 ##' @examples
-##' \dontrun{
-##' setup_course_notes(folder = tempdir())
-##' }
+##' setup_course_notes()
 ##' @export
 setup_course_notes <- function(folder, zipfile = "dataviz_course_notes.zip",
                                packet = "dataviz_course_notes") {

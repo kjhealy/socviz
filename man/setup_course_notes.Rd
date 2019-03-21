@@ -28,9 +28,7 @@ Transfers a zip file containing course materials from the socviz
     library to the Desktop.
 }
 \examples{
-\dontrun{
-setup_course_notes(folder = tempdir())
-}
+setup_course_notes()
 }
 \author{
 Kieran Healy
