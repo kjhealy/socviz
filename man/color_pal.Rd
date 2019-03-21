@@ -4,7 +4,7 @@
 \alias{color_pal}
 \title{Draw a palette of colors}
 \usage{
-color_pal(col, border = "light gray", ...)
+color_pal(col, border = "gray70", ...)
 }
 \arguments{
 \item{col}{vector of colors}
@@ -23,8 +23,7 @@ Draw a palette of colors
 Borrowed from the colorspace library
 }
 \examples{
-\dontrun{
-color_pal(5)}
+color_pal(c("#66C2A5", "#FC8D62", "#8DA0CB"))
 }
 \author{
 colorspace library authors

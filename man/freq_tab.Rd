@@ -23,10 +23,7 @@ Generate a tidy n-way frequency table
 Tidyverse, pipeline, and dplyr-friendly frequency tables
 }
 \examples{
-\dontrun{
-library(tidyverse)
 mtcars \%>\% freq_tab(vs, gear, carb)
-}
 
 }
 \author{

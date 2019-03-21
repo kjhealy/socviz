@@ -35,8 +35,7 @@ A wrapper for `table` and `prop.table` with the margin labels set
 }
 \examples{
 
-with(gss_sm, tw_tab(bigregion, religion, useNA = "ifany", digs =
-    1))
+with(gss_sm, tw_tab(bigregion, religion, useNA = "ifany", digs = 1))
 
 with(gss_sm, tw_tab(bigregion, religion, margin = 2, useNA =
     "ifany", digs = 1))
