@@ -5,7 +5,7 @@ Version: 1.0.0.9000
 Authors@R: person("Kieran", "Healy", email = "kjhealy@gmail.com",
                       role = c("aut", "cre"))
 Maintainer: Kieran Healy <kjhealy@gmail.com>
-Description: Supporting materials for a course and book on data visualization using R. It contains utility functions for graphs and several sample data sets. See Healy (2019) <ISBN 978-0691181622>.
+Description: Supporting materials for a course and book on data visualization. It contains utility functions for graphs and several sample data sets. See Healy (2019) <ISBN 978-0691181622>.
 License: MIT + file LICENSE
 Depends: R (>= 3.1)
 Imports:
