@@ -179,7 +179,7 @@ lay_out = function(...) {
 ##' @param margin See `prop.table`. Default is joint distribution (all
 ##'     cells sum to 100), 1 for row margins (rows sum to 1), 2 for
 ##'     column margins (columns sum to 1)
-##' @param digs Number of rigits to round percentages to. Defaults to 1.
+##' @param digs Number of digits to round percentages to. Defaults to 1.
 ##' @param dnn See `table`. the names to be given to the dimensions in
 ##'     the result (the dimnames names). Defaults to NULL for none.
 ##' @param ... Other arguments to be passed to `table`.

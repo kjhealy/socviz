@@ -15,7 +15,7 @@ tw_tab(x, y, margin = NULL, digs = 1, dnn = NULL, ...)
 cells sum to 100), 1 for row margins (rows sum to 1), 2 for
 column margins (columns sum to 1)}
 
-\item{digs}{Number of rigits to round percentages to. Defaults to 1.}
+\item{digs}{Number of digits to round percentages to. Defaults to 1.}
 
 \item{dnn}{See `table`. the names to be given to the dimensions in
 the result (the dimnames names). Defaults to NULL for none.}
