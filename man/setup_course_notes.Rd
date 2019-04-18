@@ -21,7 +21,7 @@ The `zipfile` is copied to `folder` and its contents
     expanded into a directory, the `packet`.
 }
 \description{
-Copy and expend course notes to the desktop
+Copy and expand course notes to the desktop
 }
 \details{
 Transfers a zip file containing course materials from the socviz

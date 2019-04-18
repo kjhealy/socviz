@@ -332,7 +332,7 @@ prefix_replace <- function(var_names, prefixes, replacements, toTitle = TRUE, ..
   if(toTitle) tools::toTitleCase(out) else out
 }
 
-##' Copy and expend course notes to the desktop
+##' Copy and expand course notes to the desktop
 ##'
 ##' Transfers a zip file containing course materials from the socviz
 ##'     library to the Desktop.
