@@ -12,7 +12,6 @@ Imports:
     dplyr,
     fs,
     graphics,
-    knitr,
     magrittr,
     rlang,
     tibble
