@@ -2,7 +2,7 @@
 % Please edit documentation in R/utility_functions.r
 \name{int_to_year}
 \alias{int_to_year}
-\title{Convert an integer to a date object.}
+\title{int_to_year}
 \usage{
 int_to_year(x, month = "06", day = "15")
 }
@@ -24,7 +24,7 @@ A vector of dates where the input integer forms the year
     accepted.
 }
 \description{
-Convert an integer to a date object.
+Convert an integer to a date.
 }
 \examples{
 int_to_year(1960)

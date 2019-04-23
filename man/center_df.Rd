@@ -2,7 +2,7 @@
 % Please edit documentation in R/utility_functions.r
 \name{center_df}
 \alias{center_df}
-\title{Scale and/or center the numeric columns of a data frame or tibble}
+\title{center_df}
 \usage{
 center_df(data, sc = FALSE, cen = TRUE)
 }

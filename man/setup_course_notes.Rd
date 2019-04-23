@@ -2,7 +2,7 @@
 % Please edit documentation in R/utility_functions.r
 \name{setup_course_notes}
 \alias{setup_course_notes}
-\title{Copy and expand course notes to a specified folder}
+\title{setup_course_notes}
 \usage{
 setup_course_notes(folder, zipfile = "dataviz_course_notes.zip",
   packet = "dataviz_course_notes")
@@ -21,7 +21,7 @@ The `zipfile` is copied to `folder` and its contents
     expanded into a directory, the `packet`.
 }
 \description{
-Copy and expand course notes to a specified folder
+Copy and expand course notes to the desktop
 }
 \details{
 Transfers a zip file containing course materials from the socviz

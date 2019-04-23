@@ -2,7 +2,7 @@
 % Please edit documentation in R/utility_functions.r
 \name{prefix_replace}
 \alias{prefix_replace}
-\title{Replace characters (usually variable names) at the beginning of a character vector}
+\title{prefix_replace}
 \usage{
 prefix_replace(var_names, prefixes, replacements, toTitle = TRUE, ...)
 }

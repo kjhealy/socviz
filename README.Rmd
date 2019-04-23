@@ -10,12 +10,24 @@ knitr::opts_chunk$set(
   echo = TRUE,
   comment = "#>",
   fig.path = "inst/assets/README-"
-)
+  )
+
+get_badge <- function (pkg, type = c("last-month", "last-week", "grand-total"), 
+    color = "green") 
+{
+    type <- match.arg(type)
+    svg <- paste0("http://cranlogs.r-pkg.org/badges/", type, 
+        "/", pkg, "?color=", color)
+    url <- paste0("https://cran.r-project.org/package=", pkg)
+    placeholder <- "CRAN link"
+    paste0("[![](", svg, ")](", url, ")")
+}
+
 ```
 
 # socviz <img src="man/figures/logo.png" align="right" width="120" />
 
-`r badger::badge_cran_download("socviz", "grand-total", "blue")` [![Build Status](https://travis-ci.org/kjhealy/socviz.svg?branch=master)](https://travis-ci.org/kjhealy/socviz) 
+`r get_badge("socviz", "grand-total", "blue")` [![Build Status](https://travis-ci.org/kjhealy/socviz.svg?branch=master)](https://travis-ci.org/kjhealy/socviz) 
 
 This is an R package of datasets, functions, and course materials to go along with the book _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (Princeton University Press, 2019).
 
