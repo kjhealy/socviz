@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 
 # socviz <img src="man/figures/logo.png" align="right" width="120" />
 
-[![Build Status](https://travis-ci.org/kjhealy/socviz.svg?branch=master)](https://travis-ci.org/kjhealy/socviz) 
+`r badger::badge_cran_download("socviz", "grand-total", "blue")` [![Build Status](https://travis-ci.org/kjhealy/socviz.svg?branch=master)](https://travis-ci.org/kjhealy/socviz) 
 
 This is an R package of datasets, functions, and course materials to go along with the book _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (Princeton University Press, 2019).
 
@@ -24,7 +24,7 @@ This is an R package of datasets, functions, and course materials to go along wi
 
 ## What's in this Package
 
-The `socviz` package contains about twenty five datasets and a number of utility and convenience functions. The datasets range in size from just a few rows to over 120,000 observations. Most of them are used in _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (`http://socviz.co`), and there are also a few others as well for self-learners and students to practice their skills on. 
+The `socviz` package contains about twenty five datasets and a number of utility and convenience functions. Most of them are used in _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (`http://socviz.co`), and there are also a few others as well for self-learners and students to practice their skills on. 
 
 A course packet is also included. This is a zipped file containing an [R Studio](http://rstudio.com) project consisting of a nine [R Markdown](http://rmarkdown.rstudio.com) documents that parallel the chapters in the book. They contain the code for almost all the figures in the book (and a few more besides). Some support files are also included, to help demonstrate things like reading in your own data locally in R.
 
