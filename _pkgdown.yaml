@@ -24,8 +24,6 @@ reference:
       - gss_lon
       - lawschools
       - maunaloa
-      - nyc_license      
-      - nyc_zips
       - oecd_le
       - oecd_sum
       - opiates
@@ -46,7 +44,6 @@ reference:
       - int_to_year
       - lay_out
       - round_df
-      - pandoc_to
       - prefix_replace
       - prefix_strip
       - setup_course_notes
