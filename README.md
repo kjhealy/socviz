@@ -88,8 +88,6 @@ setup_course_notes(folder = "~/Desktop")
 This will copy the `dataviz_course_notes.zip` file to your Desktop, and
 uncompress it into a folder called `dataviz_course_notes`. Double-click
 You can choose the destination folder, but you must supply one. Here, the `dataviz_course_notes.zip` file will be copied to your Desktop, and uncompressed there into a folder called `dataviz_course_notes`. Open the folder, and double-click the file named `dataviz.Rproj` to launch the project as a new RStudio session. If you want to uncompress the file somewhere other than your Desktop, e.g. your Documents folder, you can do this:
-session. If you want to uncompress the file somewhere other than your
-Desktop, e.g. your Documents folder, you can do this:
 
 ``` r
 
