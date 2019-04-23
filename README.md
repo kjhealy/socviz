@@ -1,9 +1,5 @@
----
-output: github_document
----
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
 
 # socviz <img src="man/figures/logo.png" align="right" width="120" />
 
@@ -54,12 +50,10 @@ install.packages(my_packages)
 install.packages("socviz")
 ```
 
-To install the development version of `socviz`, then instead of
+To install the development version of `socviz`, instead of
 `install.packages("socviz")` do the following:
 
 ``` r
-
-```r
 
 devtools::install_github("kjhealy/socviz")
 ```
@@ -75,26 +69,25 @@ library(socviz)
 
 The supporting materials are contained in a compressed `.zip` file. To
 extract them to your Desktop, make sure the `socviz` package is loaded
-as described above. Then do this:
+as described above. Then do something like this:
 
 ``` r
 
-```r
-
 setup_course_notes(folder = "~/Desktop")
-
 ```
 
-This will copy the `dataviz_course_notes.zip` file to your Desktop, and
-uncompress it into a folder called `dataviz_course_notes`. Double-click
-You can choose the destination folder, but you must supply one. Here, the `dataviz_course_notes.zip` file will be copied to your Desktop, and uncompressed there into a folder called `dataviz_course_notes`. Open the folder, and double-click the file named `dataviz.Rproj` to launch the project as a new RStudio session. If you want to uncompress the file somewhere other than your Desktop, e.g. your Documents folder, you can do this:
+You can choose the destination folder, but you must supply one. Here,
+the `dataviz_course_notes.zip` file will be copied to your Desktop, and
+uncompressed there into a folder called `dataviz_course_notes`. Open the
+folder, and double-click the file named `dataviz.Rproj` to launch the
+project as a new RStudio session. If you want to uncompress the file
+somewhere other than your Desktop, e.g. your Documents folder, you can
+do this:
 
 ``` r
 
 setup_course_notes(folder = "~/Documents")
 ```
-
-
 
 ## More about the Datasets and Functions
 
