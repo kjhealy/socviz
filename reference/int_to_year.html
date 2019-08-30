@@ -8,10 +8,12 @@
 
 <title>int_to_year — int_to_year • socviz</title>
 
+
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 
@@ -30,12 +32,12 @@
 
 
 
+
 <meta property="og:title" content="int_to_year — int_to_year" />
-
 <meta property="og:description" content="Convert an integer to a date." />
-
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
+
 
 
 
@@ -81,7 +83,6 @@
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         
       </ul>
@@ -102,13 +103,11 @@
     </div>
 
     <div class="ref-description">
-    
     <p>Convert an integer to a date.</p>
-    
     </div>
 
     <pre class="usage"><span class='fu'>int_to_year</span>(<span class='no'>x</span>, <span class='kw'>month</span> <span class='kw'>=</span> <span class='st'>"06"</span>, <span class='kw'>day</span> <span class='kw'>=</span> <span class='st'>"15"</span>)</pre>
-    
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -128,7 +127,7 @@ and not 1 or 2o, etc.</p></td>
 as character strings, i.e., "01" or "02", etc, and not 1 or 2, etc.</p></td>
     </tr>
     </table>
-    
+
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A vector of dates where the input integer forms the year
@@ -136,7 +135,6 @@ as character strings, i.e., "01" or "02", etc, and not 1 or 2, etc.</p></td>
     be the 15th of June, so that tick marks will appear in the
     middle of the series on plots. For input, only years 0:9999 are
     accepted.</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>int_to_year</span>(<span class='fl'>1960</span>)</div><div class='output co'>#&gt; [1] "1960-06-15"</div><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/class'>class</a></span>(<span class='fu'>int_to_year</span>(<span class='fl'>1960</span>))</div><div class='output co'>#&gt; [1] "Date"</div><div class='input'><span class='fu'>int_to_year</span>(<span class='fl'>1960</span>:<span class='fl'>1965</span>)</div><div class='output co'>#&gt; [1] "1960-06-15" "1961-06-15" "1962-06-15" "1963-06-15" "1964-06-15"
@@ -146,9 +144,7 @@ as character strings, i.e., "01" or "02", etc, and not 1 or 2, etc.</p></td>
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      
       <li><a href="#value">Value</a></li>
-      
       <li><a href="#examples">Examples</a></li>
     </ul>
 

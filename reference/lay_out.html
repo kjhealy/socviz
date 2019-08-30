@@ -8,10 +8,12 @@
 
 <title>Arrange ggplot2 plots in an arbitrary grid — lay_out • socviz</title>
 
+
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 
@@ -30,12 +32,12 @@
 
 
 
+
 <meta property="og:title" content="Arrange ggplot2 plots in an arbitrary grid — lay_out" />
-
 <meta property="og:description" content="Arrange ggplot2 plots in an arbitrary grid" />
-
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
+
 
 
 
@@ -81,7 +83,6 @@
   <a href="../reference/index.html">Reference</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
         
       </ul>
@@ -102,13 +103,11 @@
     </div>
 
     <div class="ref-description">
-    
     <p>Arrange ggplot2 plots in an arbitrary grid</p>
-    
     </div>
 
     <pre class="usage"><span class='fu'>lay_out</span>(<span class='no'>...</span>)</pre>
-    
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -117,11 +116,10 @@
       <td><p>A series lists of of ggplot objects</p></td>
     </tr>
     </table>
-    
+
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A grid of ggplot2 plots</p>
-    
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The function takes arguments of the form `list(plot, row(s),
@@ -129,15 +127,14 @@
     rows and columns identify an area of the grid that you want
     that plot object to occupy. See
     http://stackoverflow.com/questions/18427455/multiple-ggplots-of-different-sizes</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/library'>library</a></span>(<span class='no'>ggplot2</span>)
-<span class='no'>p1</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/qplot'>qplot</a></span>(<span class='kw'>x</span><span class='kw'>=</span><span class='no'>wt</span>,<span class='kw'>y</span><span class='kw'>=</span><span class='no'>mpg</span>,<span class='kw'>geom</span><span class='kw'>=</span><span class='st'>"point"</span>,<span class='kw'>main</span><span class='kw'>=</span><span class='st'>"Scatterplot of wt vs.
+<span class='no'>p1</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>(<span class='kw'>x</span><span class='kw'>=</span><span class='no'>wt</span>,<span class='kw'>y</span><span class='kw'>=</span><span class='no'>mpg</span>,<span class='kw'>geom</span><span class='kw'>=</span><span class='st'>"point"</span>,<span class='kw'>main</span><span class='kw'>=</span><span class='st'>"Scatterplot of wt vs.
     mpg"</span>, <span class='kw'>data</span><span class='kw'>=</span><span class='no'>mtcars</span>)
-<span class='no'>p2</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/qplot'>qplot</a></span>(<span class='kw'>x</span><span class='kw'>=</span><span class='no'>wt</span>,<span class='kw'>y</span><span class='kw'>=</span><span class='no'>disp</span>,<span class='kw'>geom</span><span class='kw'>=</span><span class='st'>"point"</span>,<span class='kw'>main</span><span class='kw'>=</span><span class='st'>"Scatterplot of wt vs
+<span class='no'>p2</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>(<span class='kw'>x</span><span class='kw'>=</span><span class='no'>wt</span>,<span class='kw'>y</span><span class='kw'>=</span><span class='no'>disp</span>,<span class='kw'>geom</span><span class='kw'>=</span><span class='st'>"point"</span>,<span class='kw'>main</span><span class='kw'>=</span><span class='st'>"Scatterplot of wt vs
     disp"</span>, <span class='kw'>data</span><span class='kw'>=</span><span class='no'>mtcars</span>)
-<span class='no'>p3</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/ggplot2/topics/qplot'>qplot</a></span>(<span class='no'>wt</span>,<span class='kw'>data</span><span class='kw'>=</span><span class='no'>mtcars</span>)
+<span class='no'>p3</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>(<span class='no'>wt</span>,<span class='kw'>data</span><span class='kw'>=</span><span class='no'>mtcars</span>)
 <span class='fu'>lay_out</span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/list'>list</a></span>(<span class='no'>p1</span>, <span class='fl'>1</span>:<span class='fl'>2</span>, <span class='fl'>1</span>:<span class='fl'>4</span>),
       <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/list'>list</a></span>(<span class='no'>p2</span>, <span class='fl'>3</span>:<span class='fl'>4</span>, <span class='fl'>1</span>:<span class='fl'>2</span>),
       <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/list'>list</a></span>(<span class='no'>p3</span>, <span class='fl'>3</span>:<span class='fl'>4</span>, <span class='fl'>3</span>:<span class='fl'>4</span>))</div><div class='output co'>#&gt; <span class='message'>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</span></div><div class='img'><img src='lay_out-1.png' alt='' width='700' height='433' /></div></pre>
@@ -146,11 +143,8 @@
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      
       <li><a href="#value">Value</a></li>
-
       <li><a href="#details">Details</a></li>
-      
       <li><a href="#examples">Examples</a></li>
     </ul>
 
