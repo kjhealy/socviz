@@ -365,7 +365,7 @@ setup_course_notes <- function(folder, zipfile = "dataviz_course_notes.zip",
 
             dest_file <- fs::path(dest_path, file_name)
             fs::dir_create(dest_path, packet)
-            dest_dir_name <- fs::path(dest_path, packet)
+            dest_dir_name <- fs::path(dest_path)
 
             utils::unzip(dest_file, exdir = dest_dir_name)
 
