@@ -3,5 +3,8 @@
 README.Rmd
 _pkgdown.yaml
 socviz.Rproj
+data-raw
 cran-comments.md
 ^temp$
+^.*\.Rproj$
+^\.Rproj\.user$
