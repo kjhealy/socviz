@@ -4,8 +4,11 @@
 \alias{setup_course_notes}
 \title{setup_course_notes}
 \usage{
-setup_course_notes(folder, zipfile = "dataviz_course_notes.zip",
-  packet = "dataviz_course_notes")
+setup_course_notes(
+  folder,
+  zipfile = "dataviz_course_notes.zip",
+  packet = "dataviz_course_notes"
+)
 }
 \arguments{
 \item{folder}{The destination to copy to within the user's home.

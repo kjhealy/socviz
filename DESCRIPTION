@@ -7,7 +7,7 @@ Authors@R: person("Kieran", "Healy", email = "kjhealy@gmail.com",
 Maintainer: Kieran Healy <kjhealy@gmail.com>
 Description: Supporting materials for a course and book on data visualization. It contains utility functions for graphs and several sample data sets. See Healy (2019) <ISBN 978-0691181622>.
 License: MIT + file LICENSE
-Depends: R (>= 3.1)
+Depends: R (>= 3.5)
 Imports:
     dplyr,
     fs,
@@ -21,4 +21,4 @@ Encoding: UTF-8
 LazyData: true
 URL: http://kjhealy.github.io/socviz/
 BugReports: https://github.com/kjhealy/socviz/issues
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
