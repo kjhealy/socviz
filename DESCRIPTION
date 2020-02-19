@@ -1,7 +1,7 @@
 Package: socviz
 Type: Package
 Title: Utility Functions and Data Sets for Data Visualization
-Version: 1.0.0.9000
+Version: 1.1
 Authors@R: person("Kieran", "Healy", email = "kjhealy@gmail.com",
                       role = c("aut", "cre"))
 Maintainer: Kieran Healy <kjhealy@gmail.com>
@@ -16,7 +16,7 @@ Imports:
     rlang,
     tibble
 Suggests:
-    ggplot2       
+    ggplot2   
 Encoding: UTF-8
 LazyData: true
 URL: http://kjhealy.github.io/socviz/
