@@ -4,7 +4,9 @@
 \name{bad_date}
 \alias{bad_date}
 \title{Dates in character form}
-\format{A tibble with 10 rows and two columns.}
+\format{
+A tibble with 10 rows and two columns.
+}
 \source{
 Chris Delcher.
 }

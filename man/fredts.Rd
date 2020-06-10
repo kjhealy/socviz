@@ -4,7 +4,9 @@
 \name{fredts}
 \alias{fredts}
 \title{Monetary Base and S&P 500 series}
-\format{A data frame with 5 columns and 357 rows.}
+\format{
+A data frame with 5 columns and 357 rows.
+}
 \source{
 FRED data.
 }

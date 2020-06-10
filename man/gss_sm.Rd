@@ -4,7 +4,9 @@
 \name{gss_sm}
 \alias{gss_sm}
 \title{General Social Survey data, 2016}
-\format{A data frame with 2538 rows and 26 variables.}
+\format{
+A data frame with 2538 rows and 26 variables.
+}
 \source{
 National Opinion Research Center, http://gss.norc.org.
 }

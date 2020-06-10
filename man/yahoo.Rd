@@ -4,7 +4,9 @@
 \name{yahoo}
 \alias{yahoo}
 \title{Yahoo Revenue and Employees}
-\format{A data frame with 4 columns and 11 rows.}
+\format{
+A tibble with 4 columns and 12 rows.
+}
 \source{
 QZ.com
 }

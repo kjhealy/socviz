@@ -4,7 +4,9 @@
 \name{asasec}
 \alias{asasec}
 \title{American Sociological Association Section Membership}
-\format{A data frame with 572 rows and 9 columns.}
+\format{
+A data frame with 572 rows and 9 columns.
+}
 \source{
 ASA Annual Report 2016
 }

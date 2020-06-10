@@ -4,7 +4,9 @@
 \name{studebt}
 \alias{studebt}
 \title{Student debt data}
-\format{A tibble with 16 rows and 4 columns.}
+\format{
+A tibble with 16 rows and 4 columns.
+}
 \source{
 Federal Reserve Bank of New York
 }

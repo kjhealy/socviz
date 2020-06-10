@@ -4,7 +4,9 @@
 \name{lawschools}
 \alias{lawschools}
 \title{US Law School Enrollments 1963-2015}
-\format{A tibble with 53 rows and 11 columns.}
+\format{
+A tibble with 53 rows and 11 columns.
+}
 \source{
 American Bar Association
 }

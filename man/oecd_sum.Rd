@@ -4,7 +4,9 @@
 \name{oecd_sum}
 \alias{oecd_sum}
 \title{Life Expectancy in the OECD, 1960-2015}
-\format{A tibble with 57 rows and 5 columns.}
+\format{
+A tibble with 57 rows and 5 columns.
+}
 \source{
 OECD
 }

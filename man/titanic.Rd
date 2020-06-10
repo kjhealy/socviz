@@ -4,7 +4,9 @@
 \name{titanic}
 \alias{titanic}
 \title{A table of survival rates from the Titanic}
-\format{A data frame with four rows and four columns.}
+\format{
+A data frame with four rows and four columns.
+}
 \source{
 Titanic data
 }

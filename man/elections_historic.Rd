@@ -4,7 +4,9 @@
 \name{elections_historic}
 \alias{elections_historic}
 \title{US Presidential Election vote shares}
-\format{A (tibble) data frame with 237 rows and 21 variables.}
+\format{
+A (tibble) data frame with 237 rows and 21 variables.
+}
 \source{
 https://en.wikipedia.org/wiki/List_of_United_States_presidential_elections_by_popular_vote_margin.
 }

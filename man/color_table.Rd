@@ -4,7 +4,9 @@
 \name{color_table}
 \alias{color_table}
 \title{A table of hex color values related to types of color blindness}
-\format{A tibble with five rows and four columns.}
+\format{
+A tibble with five rows and four columns.
+}
 \source{
 Kieran Healy
 }

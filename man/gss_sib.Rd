@@ -4,7 +4,9 @@
 \name{gss_sib}
 \alias{gss_sib}
 \title{General Social Survey data, 1972-2016}
-\format{A data frame with 60,423 rows and 7 variables.}
+\format{
+A data frame with 60,423 rows and 7 variables.
+}
 \source{
 National Opinion Research Center, http://gss.norc.org.
 }

@@ -14,7 +14,7 @@ Encoding: UTF-8
 LazyData: true
 URL: http://kjhealy.github.io/socviz/
 BugReports: https://github.com/kjhealy/socviz/issues
-RoxygenNote: 7.0.2
+RoxygenNote: 7.1.0
 NeedsCompilation: no
 Packaged: 2020-02-19 19:04:37 UTC; kjhealy
 Author: Kieran Healy [aut, cre]
