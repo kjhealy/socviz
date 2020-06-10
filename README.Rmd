@@ -27,7 +27,9 @@ get_badge <- function (pkg, type = c("last-month", "last-week", "grand-total"),
 
 # socviz <img src="man/figures/logo.png" align="right" width="120" />
 
-`r get_badge("socviz", "grand-total", "blue")` [![Build Status](https://travis-ci.org/kjhealy/socviz.svg?branch=master)](https://travis-ci.org/kjhealy/socviz) 
+<!-- badges: start -->
+[![R build status](https://github.com/kjhealy/socviz/workflows/R-CMD-check/badge.svg)](https://github.com/kjhealy/socviz/actions)
+<!-- badges: end -->
 
 This is an R package of datasets, functions, and course materials to go along with the book _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (Princeton University Press, 2019).
 
