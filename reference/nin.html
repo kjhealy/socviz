@@ -125,7 +125,7 @@
     <p>Convenience 'not-in' operator</p>
     </div>
 
-    <pre class="usage"><span class='no'>x</span> <span class='kw'>%nin%</span> <span class='no'>y</span></pre>
+    <pre class="usage"><span class='kw'>x</span> <span class='op'>%nin%</span> <span class='kw'>y</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -145,11 +145,14 @@
     <p>logical vecotor of items in x not in y</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Complement of the built-in operator <code>%in%</code>. Returns the elements of <code>x</code> that are not in <code>y</code>.</p>
+    <p>Complement of the built-in operator <code><a href='https://rdrr.io/r/base/match.html'>%in%</a></code>. Returns the elements of <code>x</code> that are not in <code>y</code>.</p>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>Kieran Healy</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='no'>fruit</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"apples"</span>, <span class='st'>"oranges"</span>, <span class='st'>"banana"</span>)
-<span class='st'>"apples"</span> <span class='kw'>%nin%</span> <span class='no'>fruit</span></div><div class='output co'>#&gt; [1] FALSE</div><div class='input'><span class='st'>"pears"</span> <span class='kw'>%nin%</span> <span class='no'>fruit</span></div><div class='output co'>#&gt; [1] TRUE</div></pre>
+    <pre class="examples"><div class='input'><span class='kw'>fruit</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"apples"</span>, <span class='st'>"oranges"</span>, <span class='st'>"banana"</span>)
+<span class='st'>"apples"</span> <span class='op'>%nin%</span> <span class='kw'>fruit</span></div><div class='output co'>#&gt; [1] FALSE</div><div class='input'><span class='st'>"pears"</span> <span class='op'>%nin%</span> <span class='kw'>fruit</span></div><div class='output co'>#&gt; [1] TRUE</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -165,7 +168,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
 </div>
 
       </footer>

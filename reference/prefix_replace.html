@@ -125,7 +125,7 @@
     <p>Replace series of characters (usually variable names) at the beginning of a character vector.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>prefix_replace</span>(<span class='no'>var_names</span>, <span class='no'>prefixes</span>, <span class='no'>replacements</span>, <span class='kw'>toTitle</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'><a href='https://rdrr.io/pkg/socviz/man/prefix_replace.html'>prefix_replace</a></span>(<span class='kw'>var_names</span>, <span class='kw'>prefixes</span>, <span class='kw'>replacements</span>, toTitle = <span class='fl'>TRUE</span>, <span class='kw'>...</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -165,9 +165,12 @@
     variable added by R when creating model terms) and strips the
     latter away from the former. Useful for quickly cleaning
     variable names for a plot.</p>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>Kieran Healy</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>prefix_replace</span>(<span class='no'>iris</span>$<span class='no'>Species</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"set"</span>, <span class='st'>"ver"</span>, <span class='st'>"vir"</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"sat"</span>,
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/pkg/socviz/man/prefix_replace.html'>prefix_replace</a></span>(<span class='kw'>iris</span><span class='op'>$</span><span class='kw'>Species</span>, <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"set"</span>, <span class='st'>"ver"</span>, <span class='st'>"vir"</span>), <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"sat"</span>,
     <span class='st'>"ber"</span>, <span class='st'>"bar"</span>))</div><div class='output co'>#&gt;   [1] "Satosa"     "Satosa"     "Satosa"     "Satosa"     "Satosa"    
 #&gt;   [6] "Satosa"     "Satosa"     "Satosa"     "Satosa"     "Satosa"    
 #&gt;  [11] "Satosa"     "Satosa"     "Satosa"     "Satosa"     "Satosa"    
@@ -213,7 +216,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
 </div>
 
       </footer>

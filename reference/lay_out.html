@@ -125,7 +125,7 @@
     <p>Arrange ggplot2 plots in an arbitrary grid</p>
     </div>
 
-    <pre class="usage"><span class='fu'>lay_out</span>(<span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'><a href='https://rdrr.io/pkg/socviz/man/lay_out.html'>lay_out</a></span>(<span class='kw'>...</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -146,17 +146,22 @@
     rows and columns identify an area of the grid that you want
     that plot object to occupy. See
     http://stackoverflow.com/questions/18427455/multiple-ggplots-of-different-sizes</p>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>Extracted from the [wq] package</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>ggplot2</span>)
-<span class='no'>p1</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>(<span class='kw'>x</span><span class='kw'>=</span><span class='no'>wt</span>,<span class='kw'>y</span><span class='kw'>=</span><span class='no'>mpg</span>,<span class='kw'>geom</span><span class='kw'>=</span><span class='st'>"point"</span>,<span class='kw'>main</span><span class='kw'>=</span><span class='st'>"Scatterplot of wt vs.
-    mpg"</span>, <span class='kw'>data</span><span class='kw'>=</span><span class='no'>mtcars</span>)
-<span class='no'>p2</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>(<span class='kw'>x</span><span class='kw'>=</span><span class='no'>wt</span>,<span class='kw'>y</span><span class='kw'>=</span><span class='no'>disp</span>,<span class='kw'>geom</span><span class='kw'>=</span><span class='st'>"point"</span>,<span class='kw'>main</span><span class='kw'>=</span><span class='st'>"Scatterplot of wt vs
-    disp"</span>, <span class='kw'>data</span><span class='kw'>=</span><span class='no'>mtcars</span>)
-<span class='no'>p3</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>(<span class='no'>wt</span>,<span class='kw'>data</span><span class='kw'>=</span><span class='no'>mtcars</span>)
-<span class='fu'>lay_out</span>(<span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='no'>p1</span>, <span class='fl'>1</span>:<span class='fl'>2</span>, <span class='fl'>1</span>:<span class='fl'>4</span>),
-      <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='no'>p2</span>, <span class='fl'>3</span>:<span class='fl'>4</span>, <span class='fl'>1</span>:<span class='fl'>2</span>),
-      <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='no'>p3</span>, <span class='fl'>3</span>:<span class='fl'>4</span>, <span class='fl'>3</span>:<span class='fl'>4</span>))</div><div class='output co'>#&gt; <span class='message'>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</span></div><div class='img'><img src='lay_out-1.png' alt='' width='700' height='433' /></div></pre>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='kw'><a href='http://ggplot2.tidyverse.org'>ggplot2</a></span>)
+<span class='kw'>p1</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>(x=<span class='kw'>wt</span>,y=<span class='kw'>mpg</span>,geom=<span class='st'>"point"</span>,main=<span class='st'>"Scatterplot of wt vs.
+    mpg"</span>lot(x=wt,y=mpg,geom="point",main="Scatterplot of wt vs.
+    mpg", data=<span class='kw'>mtcars</span>)
+<span class='kw'>p2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>(x=<span class='kw'>wt</span>,y=<span class='kw'>disp</span>,geom=<span class='st'>"point"</span>,main=<span class='st'>"Scatterplot of wt vs
+    disp"</span>ot(x=wt,y=disp,geom="point",main="Scatterplot of wt vs
+    disp", data=<span class='kw'>mtcars</span>)
+<span class='kw'>p3</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/qplot.html'>qplot</a></span>(<span class='kw'>wt</span>,data=<span class='kw'>mtcars</span>)
+<span class='fu'><a href='https://rdrr.io/pkg/socviz/man/lay_out.html'>lay_out</a></span>(<span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>p1</span>, <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>, <span class='fl'>1</span><span class='op'>:</span><span class='fl'>4</span>),
+      <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>p2</span>, <span class='fl'>3</span><span class='op'>:</span><span class='fl'>4</span>, <span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>),
+      <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>p3</span>, <span class='fl'>3</span><span class='op'>:</span><span class='fl'>4</span>, <span class='fl'>3</span><span class='op'>:</span><span class='fl'>4</span>))</div><div class='output co'>#&gt; <span class='message'>`stat_bin()` using `bins = 30`. Pick better value with `binwidth`.</span></div><div class='img'><img src='lay_out-1.png' alt='' width='700' height='433' /></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -172,7 +177,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
 </div>
 
       </footer>

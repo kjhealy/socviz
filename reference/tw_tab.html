@@ -125,7 +125,7 @@
     <p>Quickly make a two-way table of proportions (percentages)</p>
     </div>
 
-    <pre class="usage"><span class='fu'>tw_tab</span>(<span class='no'>x</span>, <span class='no'>y</span>, <span class='kw'>margin</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>digs</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>dnn</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='no'>...</span>)</pre>
+    <pre class="usage"><span class='fu'><a href='https://rdrr.io/pkg/socviz/man/tw_tab.html'>tw_tab</a></span>(<span class='kw'>x</span>, <span class='kw'>y</span>, margin = <span class='kw'>NULL</span>, digs = <span class='fl'>1</span>, dnn = <span class='kw'>NULL</span>, <span class='kw'>...</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -167,23 +167,25 @@ the result (the dimnames names). Defaults to NULL for none.</p></td>
     <p>A wrapper for `table` and `prop.table` with the margin labels set
     by default to NULL and the cells rounded to percents at 1
     decimal place.</p>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>Kieran Healy</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span>(<span class='no'>gss_sm</span>, <span class='fu'>tw_tab</span>(<span class='no'>bigregion</span>, <span class='no'>religion</span>, <span class='kw'>useNA</span> <span class='kw'>=</span> <span class='st'>"ifany"</span>, <span class='kw'>digs</span> <span class='kw'>=</span> <span class='fl'>1</span>))</div><div class='output co'>#&gt;            y
+<span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span>(<span class='kw'>gss_sm</span>, <span class='fu'><a href='https://rdrr.io/pkg/socviz/man/tw_tab.html'>tw_tab</a></span>(<span class='kw'>bigregion</span>, <span class='kw'>religion</span>, useNA = <span class='st'>"ifany"</span>, digs = <span class='fl'>1</span>))</div><div class='output co'>#&gt;            y
 #&gt; x           Protestant Catholic Jewish None Other &lt;NA&gt;
 #&gt;   Northeast        5.5      5.7    0.9  3.9   1.0  0.0
 #&gt;   Midwest         11.3      6.0    0.1  5.5   1.2  0.2
 #&gt;   South           22.7      5.6    0.4  5.9   1.7  0.4
 #&gt;   West             8.3      5.4    0.3  6.3   1.7  0.0</div><div class='input'>
-<span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span>(<span class='no'>gss_sm</span>, <span class='fu'>tw_tab</span>(<span class='no'>bigregion</span>, <span class='no'>religion</span>, <span class='kw'>margin</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>useNA</span> <span class='kw'>=</span>
-    <span class='st'>"ifany"</span>, <span class='kw'>digs</span> <span class='kw'>=</span> <span class='fl'>1</span>))</div><div class='output co'>#&gt;            y
+<span class='fu'><a href='https://rdrr.io/r/base/with.html'>with</a></span>(<span class='kw'>gss_sm</span>, <span class='fu'><a href='https://rdrr.io/pkg/socviz/man/tw_tab.html'>tw_tab</a></span>(<span class='kw'>bigregion</span>, <span class='kw'>religion</span>, margin = <span class='fl'>2</span>, useNA =
+    <span class='st'>"ifany"</span>, digs = <span class='fl'>1</span>))</div><div class='output co'>#&gt;            y
 #&gt; x           Protestant Catholic Jewish None Other &lt;NA&gt;
 #&gt;   Northeast       11.5     25.0   52.9 18.1  17.6  5.6
 #&gt;   Midwest         23.7     26.5    5.9 25.4  20.8 27.8
 #&gt;   South           47.4     24.7   21.6 27.5  31.4 61.1
-#&gt;   West            17.4     23.9   19.6 29.1  30.2  5.6</div><div class='input'>
-</div></pre>
+#&gt;   West            17.4     23.9   19.6 29.1  30.2  5.6</div><div class='input'></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -199,7 +201,7 @@ the result (the dimnames names). Defaults to NULL for none.</p></td>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
 </div>
 
       </footer>

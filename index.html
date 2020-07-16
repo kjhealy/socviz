@@ -73,9 +73,9 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="socviz" class="section level1">
+<div id="socviz-" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
-<a href="#socviz" class="anchor"></a>socviz <img src="reference/figures/logo.png" align="right" width="120">
+<a href="#socviz-" class="anchor"></a>socviz <img src="reference/figures/logo.png" align="right" width="120">
 </h1></div>
 <!-- badges: start -->
 
@@ -91,27 +91,37 @@
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
 <p>To install the package, you can follow the instructions in the Preface to the book. Alternatively, first download and install R for <a href="https://cran.r-project.org/bin/macosx/">MacOS</a>, <a href="https://cran.r-project.org/bin/windows/">Windows</a> or <a href="https://cran.r-project.org/bin/linux/">Linux</a>, as appropriate. Then download and install <a href="http://rstudio.com/download/">RStudio</a>. Launch RStudio and then type the following code at the Console prompt (<code><a href="https://rdrr.io/r/base/Comparison.html">&gt;</a></code>), hitting return at the end of each line:</p>
-<div class="sourceCode" id="cb1"><pre class="r">
+<div class="sourceCode" id="cb1"><pre class="downlit">
 
-<span class="no">my_packages</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"tidyverse"</span>, <span class="st">"fs"</span>, <span class="st">"devtools"</span>)
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="no">my_packages</span>)
 
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"socviz"</span>)</pre></div>
+<span class="kw">my_packages</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"tidyverse"</span>, <span class="st">"fs"</span>, <span class="st">"devtools"</span>)
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="kw">my_packages</span>)
+
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"socviz"</span>)
+</pre></div>
 <p>To install the development version of <code>socviz</code>, instead of <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("socviz")</a></code> do the following:</p>
-<div class="sourceCode" id="cb2"><pre class="r">
-<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu">install_github</span>(<span class="st">"kjhealy/socviz"</span>)</pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+
+<span class="kw">devtools</span>::<span class="fu">install_github</span>(<span class="st">"kjhealy/socviz"</span>)
+</pre></div>
 <p>Once everything has downloaded and been installed (which may take a little while), load the <code>socviz</code> package:</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">socviz</span>)</pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="http://kjhealy.github.io/socviz">socviz</a></span>)
+</pre></div>
 </div>
 <div id="the-course-packet" class="section level2">
 <h2 class="hasAnchor">
 <a href="#the-course-packet" class="anchor"></a>The Course Packet</h2>
 <p>The supporting materials are contained in a compressed <code>.zip</code> file. To extract them to your Desktop, make sure the <code>socviz</code> package is loaded as described above. Then do something like this:</p>
-<div class="sourceCode" id="cb4"><pre class="r">
-<span class="fu"><a href="reference/setup_course_notes.html">setup_course_notes</a></span>(<span class="kw">folder</span> <span class="kw">=</span> <span class="st">"~/Desktop"</span>)</pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit">
+
+<span class="fu"><a href="reference/setup_course_notes.html">setup_course_notes</a></span>(folder = <span class="st">"~/Desktop"</span>)
+</pre></div>
 <p>You can choose the destination folder, but you must supply one. Here, the <code>dataviz_course_notes.zip</code> file will be copied to your Desktop, and uncompressed there into a folder called <code>dataviz_course_notes</code>. Open the folder, and double-click the file named <code>dataviz.Rproj</code> to launch the project as a new RStudio session. If you want to uncompress the file somewhere other than your Desktop, e.g. your Documents folder, you can do this:</p>
-<div class="sourceCode" id="cb5"><pre class="r">
-<span class="fu"><a href="reference/setup_course_notes.html">setup_course_notes</a></span>(<span class="kw">folder</span> <span class="kw">=</span> <span class="st">"~/Documents"</span>)</pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit">
+
+<span class="fu"><a href="reference/setup_course_notes.html">setup_course_notes</a></span>(folder = <span class="st">"~/Documents"</span>)
+</pre></div>
 </div>
 <div id="more-about-the-datasets-and-functions" class="section level2">
 <h2 class="hasAnchor">
@@ -170,7 +180,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
 </div>
 
       </footer>

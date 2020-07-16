@@ -125,7 +125,7 @@
     <p>Scale and/or center the numeric columns of a data frame or tibble</p>
     </div>
 
-    <pre class="usage"><span class='fu'>center_df</span>(<span class='no'>data</span>, <span class='kw'>sc</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>cen</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)</pre>
+    <pre class="usage"><span class='fu'><a href='https://rdrr.io/pkg/socviz/man/center_df.html'>center_df</a></span>(<span class='kw'>data</span>, sc = <span class='fl'>FALSE</span>, cen = <span class='fl'>TRUE</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -152,22 +152,25 @@
 
     <p>Takes a data frame or tibble as input and scales and/or centers
     the numeric columns. By default, centers but doesn't scale</p>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>Kieran Healy</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='fu'>center_df</span>(<span class='no'>organdata</span>))</div><div class='output co'>#&gt; # A tibble: 6 x 21
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span>(<span class='fu'><a href='https://rdrr.io/pkg/socviz/man/center_df.html'>center_df</a></span>(<span class='kw'>organdata</span>))</div><div class='output co'>#&gt; <span style='color: #555555;'># A tibble: 6 x 21</span><span>
 #&gt;   country year       donors[,1] pop[,1] pop_dens[,1] gdp[,1] gdp_lag[,1]
-#&gt;   &lt;chr&gt;   &lt;date&gt;          &lt;dbl&gt;   &lt;dbl&gt;        &lt;dbl&gt;   &lt;dbl&gt;       &lt;dbl&gt;
-#&gt; 1 Austra… NA              NA    -22856.        -11.8  -6212.      -5984.
-#&gt; 2 Austra… 1991-01-01      -4.39 -22637.        -11.8  -5815.      -5801.
-#&gt; 3 Austra… 1992-01-01      -4.13 -22426.        -11.8  -5072.      -5404.
-#&gt; 4 Austra… 1993-01-01      -3.97 -22254.        -11.8  -4103.      -4661.
-#&gt; 5 Austra… 1994-01-01      -6.23 -22066.        -11.8  -3137.      -3692.
-#&gt; 6 Austra… 1995-01-01      -6.30 -21849.        -11.8  -1907.      -2726.
-#&gt; # … with 14 more variables: health[,1] &lt;dbl&gt;, health_lag[,1] &lt;dbl&gt;,
-#&gt; #   pubhealth[,1] &lt;dbl&gt;, roads[,1] &lt;dbl&gt;, cerebvas[,1] &lt;dbl&gt;,
-#&gt; #   assault[,1] &lt;dbl&gt;, external[,1] &lt;dbl&gt;, txp_pop[,1] &lt;dbl&gt;, world &lt;chr&gt;,
-#&gt; #   opt &lt;chr&gt;, consent_law &lt;chr&gt;, consent_practice &lt;chr&gt;, consistent &lt;chr&gt;,
-#&gt; #   ccode &lt;chr&gt;</div></pre>
+#&gt;   </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;date&gt;</span><span>          </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>        </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>   </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>       </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span>
+#&gt; </span><span style='color: #555555;'>1</span><span> Austra… </span><span style='color: #BB0000;'>NA</span><span>              </span><span style='color: #BB0000;'>NA</span><span>    -</span><span style='color: #BB0000;text-decoration: underline;'>22</span><span style='color: #BB0000;'>856.</span><span>        -</span><span style='color: #BB0000;'>11.8</span><span>  -</span><span style='color: #BB0000;text-decoration: underline;'>6</span><span style='color: #BB0000;'>212.</span><span>      -</span><span style='color: #BB0000;text-decoration: underline;'>5</span><span style='color: #BB0000;'>984.</span><span>
+#&gt; </span><span style='color: #555555;'>2</span><span> Austra… 1991-01-01      -</span><span style='color: #BB0000;'>4.39</span><span> -</span><span style='color: #BB0000;text-decoration: underline;'>22</span><span style='color: #BB0000;'>637.</span><span>        -</span><span style='color: #BB0000;'>11.8</span><span>  -</span><span style='color: #BB0000;text-decoration: underline;'>5</span><span style='color: #BB0000;'>815.</span><span>      -</span><span style='color: #BB0000;text-decoration: underline;'>5</span><span style='color: #BB0000;'>801.</span><span>
+#&gt; </span><span style='color: #555555;'>3</span><span> Austra… 1992-01-01      -</span><span style='color: #BB0000;'>4.13</span><span> -</span><span style='color: #BB0000;text-decoration: underline;'>22</span><span style='color: #BB0000;'>426.</span><span>        -</span><span style='color: #BB0000;'>11.8</span><span>  -</span><span style='color: #BB0000;text-decoration: underline;'>5</span><span style='color: #BB0000;'>072.</span><span>      -</span><span style='color: #BB0000;text-decoration: underline;'>5</span><span style='color: #BB0000;'>404.</span><span>
+#&gt; </span><span style='color: #555555;'>4</span><span> Austra… 1993-01-01      -</span><span style='color: #BB0000;'>3.97</span><span> -</span><span style='color: #BB0000;text-decoration: underline;'>22</span><span style='color: #BB0000;'>254.</span><span>        -</span><span style='color: #BB0000;'>11.8</span><span>  -</span><span style='color: #BB0000;text-decoration: underline;'>4</span><span style='color: #BB0000;'>103.</span><span>      -</span><span style='color: #BB0000;text-decoration: underline;'>4</span><span style='color: #BB0000;'>661.</span><span>
+#&gt; </span><span style='color: #555555;'>5</span><span> Austra… 1994-01-01      -</span><span style='color: #BB0000;'>6.23</span><span> -</span><span style='color: #BB0000;text-decoration: underline;'>22</span><span style='color: #BB0000;'>066.</span><span>        -</span><span style='color: #BB0000;'>11.8</span><span>  -</span><span style='color: #BB0000;text-decoration: underline;'>3</span><span style='color: #BB0000;'>137.</span><span>      -</span><span style='color: #BB0000;text-decoration: underline;'>3</span><span style='color: #BB0000;'>692.</span><span>
+#&gt; </span><span style='color: #555555;'>6</span><span> Austra… 1995-01-01      -</span><span style='color: #BB0000;'>6.30</span><span> -</span><span style='color: #BB0000;text-decoration: underline;'>21</span><span style='color: #BB0000;'>849.</span><span>        -</span><span style='color: #BB0000;'>11.8</span><span>  -</span><span style='color: #BB0000;text-decoration: underline;'>1</span><span style='color: #BB0000;'>907.</span><span>      -</span><span style='color: #BB0000;text-decoration: underline;'>2</span><span style='color: #BB0000;'>726.</span><span>
+#&gt; </span><span style='color: #555555;'># … with 14 more variables: health[,1] </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, health_lag[,1] </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,</span><span>
+#&gt; </span><span style='color: #555555;'>#   pubhealth[,1] </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, roads[,1] </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, cerebvas[,1] </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>,</span><span>
+#&gt; </span><span style='color: #555555;'>#   assault[,1] </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, external[,1] </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, txp_pop[,1] </span><span style='color: #555555;font-style: italic;'>&lt;dbl&gt;</span><span style='color: #555555;'>, world </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,</span><span>
+#&gt; </span><span style='color: #555555;'>#   opt </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, consent_law </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, consent_practice </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>, consistent </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span style='color: #555555;'>,</span><span>
+#&gt; </span><span style='color: #555555;'>#   ccode </span><span style='color: #555555;font-style: italic;'>&lt;chr&gt;</span><span></div></span></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -183,7 +186,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.9000.</p>
 </div>
 
       </footer>
