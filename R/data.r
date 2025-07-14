@@ -551,7 +551,7 @@
 ##' @source American Bar Association
 "lawschools"
 
-##' Life Expectancy in the OECD, 1960-2015.
+##' Life Expectancy in the OECD, 1960-2023.
 ##'
 ##' Life expectancy data for individual countries.
 ##'
@@ -566,12 +566,12 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name oecd_le
-##' @format A tibble with 1,746 rows and 4 columns.
+##' @format A tibble with 2,203 rows and 4 columns.
 ##' @source OECD
 "oecd_le"
 
 
-##' Life Expectancy in the OECD, 1960-2015
+##' Life Expectancy in the OECD, 1960-2023
 ##'
 ##' Life expectancy data summary table.
 ##'
@@ -588,7 +588,7 @@
 ##' @docType data
 ##' @keywords datasets
 ##' @name oecd_sum
-##' @format A tibble with 57 rows and 5 columns.
+##' @format A tibble with 64 rows and 5 columns.
 ##' @source OECD
 "oecd_sum"
 
