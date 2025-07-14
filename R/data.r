@@ -1,3 +1,39 @@
+#' US County Poverty Rates by Age Group
+#'
+#' A dataset of US poverty rates by selected age groups within counties.
+#'
+#' \itemize{
+#' \item geoid. County FIPS code.
+#' \item age_group. Adults 18-64, Children <18, Seniors 65+.
+#' \item age_rate. Poverty rate (percent) for `age_group` in county.
+#' \item total_rate. Poverty rate (percent) for all ages in county.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name acs_poverty
+#' @format A tibble with 9,666 rows and 4 columns.
+#' @source American Community Survey 2023 ACS 5-year estimates, Table B17018.
+"acs_poverty"
+
+#' US County Poverty Rates by Age Group, Longer Version
+#'
+#' A dataset of US poverty rates by selected age groups within counties.
+#'
+#' \itemize{
+#' \item geoid. County FIPS code.
+#' \item age_group. Adults 18-64, Children <18, Seniors 65+, All Ages.
+#' \item prop_poor. Proportion (0-1) of `age_group` in poverty within county.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name acs_poverty_lon
+#' @format A tibble with 12,888 rows and 3 columns.
+#' @source American Community Survey 2023 ACS 5-year estimates, Table B17018.
+"acs_poverty"
+
+
 #' General Social Survey data, 2016
 #'
 #' A dataset containing an extract from the 2016 General Social
@@ -45,7 +81,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name gss_sm
-#' @format A data frame with 2538 rows and 26 variables.
+#' @format A data frame with 2538 rows and 26 columns.
 #' @source National Opinion Research Center, http://gss.norc.org.
 "gss_sm"
 
@@ -89,7 +125,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name gss_lon
-#' @format A data frame with 62,366 rows and 26 variables.
+#' @format A data frame with 62,366 rows and 26 columns.
 #' @source National Opinion Research Center, http://gss.norc.org.
 "gss_lon"
 
@@ -114,7 +150,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name gss_sib
-#' @format A data frame with 60,423 rows and 7 variables.
+#' @format A data frame with 60,423 rows and 7 columns.
 #' @source National Opinion Research Center, http://gss.norc.org.
 "gss_sib"
 
@@ -152,7 +188,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name election
-#' @format A (tibble) data frame with 51 rows and 22 variables.
+#' @format A (tibble) data frame with 51 rows and 22 columns.
 #' @source Vote data from Dave Leip, US Election Atlas, http://uselectionatlas.org.
 "election"
 
@@ -195,7 +231,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name elections_historic
-#' @format A (tibble) data frame with 237 rows and 21 variables.
+#' @format A (tibble) data frame with 237 rows and 21 columns.
 #' @source https://en.wikipedia.org/wiki/List_of_United_States_presidential_elections_by_popular_vote_margin.
 "elections_historic"
 
@@ -232,7 +268,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name organdata
-#' @format A (tibble) data frame with 237 rows and 21 variables.
+#' @format A (tibble) data frame with 237 rows and 21 columns.
 #' @source Macro-economic and spending data: OECD. Other data: Kieran Healy.
 "organdata"
 
