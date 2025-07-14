@@ -17,6 +17,9 @@ reference:
     desc: >
       Included datasets.
     contents:
+      - acs_poverty
+      - acs_poverty_lon
+      - county_comp
       - asasec
       - bad_date
       - boomer

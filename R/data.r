@@ -31,8 +31,30 @@
 #' @name acs_poverty_lon
 #' @format A tibble with 12,888 rows and 3 columns.
 #' @source American Community Survey 2023 ACS 5-year estimates, Table B17018.
-"acs_poverty"
+"acs_poverty_lon"
 
+
+#' US County Components of Population Change
+#'
+#' A dataset of components of population change (rates only) for US Counties in 2023.
+#'
+#' \itemize{
+#' \item geoid. County FIPS code.
+#' \item name. County name and state.
+#' \item rbirth. Birth rate.
+#' \item rdeath. Death rate.
+#' \item rnaturalchg. Natural change rate.
+#' \item rinternationalmig. International migration rate.
+#' \item rdomesticmig. Domestic migration rate.
+#' \item rnetmig. Net migration rate.
+#' }
+#'
+#' @docType data
+#' @keywords datasets
+#' @name county_comp
+#' @format A tibble with 3,144 rows and 8 columns.
+#' @source US Census Bureau Components of Population Change 2023 estimates.
+"county_comp"
 
 #' General Social Survey data, 2016
 #'
