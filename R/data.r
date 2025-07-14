@@ -40,7 +40,8 @@
 #'
 #' \itemize{
 #' \item geoid. County FIPS code.
-#' \item name. County name and state.
+#' \item county. County name.
+#' \item state. State abbreviation.
 #' \item rbirth. Birth rate.
 #' \item rdeath. Death rate.
 #' \item rnaturalchg. Natural change rate.
