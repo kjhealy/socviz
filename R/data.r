@@ -44,9 +44,9 @@
 #' \item state. State abbreviation.
 #' \item rbirth. Birth rate.
 #' \item rdeath. Death rate.
-#' \item rnaturalchg. Natural change rate.
-#' \item rinternationalmig. International migration rate.
-#' \item rdomesticmig. Domestic migration rate.
+#' \item rnatchg. Natural change rate.
+#' \item rintl. International migration rate.
+#' \item rdom. Domestic migration rate.
 #' \item rnetmig. Net migration rate.
 #' }
 #'
