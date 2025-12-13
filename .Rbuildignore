@@ -9,3 +9,4 @@ cran-comments.md
 ^temp$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^data-raw$
