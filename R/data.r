@@ -216,13 +216,11 @@
 "election"
 
 
-
 #' US Presidential Election vote shares
 #'
-#' A dataset of US presidential elections from 1824 to 2016, with
+#' A dataset of US presidential elections from 1824 to 2024, with
 #'  information on the winner, runner up, and various measures of vote
-#'  share. Data for 2016 are provisional as of early December 2016.
-#'  The variables are as follows:
+#'  share. The variables are as follows:
 #'
 #' \itemize{
 #' \item election. Number of the election counting from the first US
@@ -230,31 +228,27 @@
 #' \item year. Year.
 #' \item winner. Full name of winner.
 #' \item win_party. Party affiliation of winner.
-#' \item ec_pct. Winner's share of electoral college vote.
-#' (Range is 0 to 1.)
-#' \item popular_pct. Winner's share of popular vote. (Range is 0 to 1.)
-#' \item popular_margin. Winner's point margin in the popular vote.
-#' Can be positive or negative.
+#' \item ec_votes. Electoral college votes for winner.
+#' \item ec_denom. Number of votes in the electoral college.
+#' \item ec_pct. Winner's share of electoral college vote. (A proportion. Range is 0 to 1.)
+#' \item popular_pct. Winner's share of popular vote. (A proportion. Range is 0 to 1.)
+#' \item popular_margin. Winner's margin of the popular vote, expressed as a proportion. Can be positive or negative.
 #' \item votes. Total votes cast in the election.
 #' \item margin. Winner's vote margin in the popular vote.
 #' \item runner_up. Runner up candidate.
 #' \item ru_part. Party affiliation of runner up candidate.
-#' \item turnout_pct. Voter turnout as a proportion of eligible
-#' voters. (Rate is 0 to 1.)
+#' \item turnout_pct. Voter turnout as a proportion of eligible voters. (A proportion. Range is 0 to 1.)
 #' \item winner_lname Last name of winner.
 #' \item winner_label Winner's last name and election year.
 #' \item ru_lastname. Runner up's last name.
 #' \item ru_label. Runner up's last name and election year.
-#' \item two_term. Is this a two term presidency? (TRUE/FALSE.) Note
-#' that F.D. Roosevelt was elected four times.
-#' \item ec_votes. Electoral college votes cast for winner.
-#' \item ec_denom. Total number of electoral college votes.
+#' \item two_term. Is this a two term presidency? (TRUE/FALSE.) Note that F.D. Roosevelt was elected four times.
 #' }
 #'
 #' @docType data
 #' @keywords datasets
 #' @name elections_historic
-#' @format A (tibble) data frame with 237 rows and 21 columns.
+#' @format A (tibble) data frame with 51 rows and 19 columns.
 #' @source https://en.wikipedia.org/wiki/List_of_United_States_presidential_elections_by_popular_vote_margin.
 "elections_historic"
 
@@ -384,7 +378,6 @@
 "edu"
 
 
-
 ##' Mauna Loa Atmospheric CO2 Concentration
 ##'
 ##' A subset of the co2 data in base R's [datasets] package, in
@@ -409,7 +402,6 @@
 ##' @format A data frame with 5 columns and 357 rows.
 ##' @source FRED data.
 "fredts"
-
 
 
 ##' Yahoo Revenue and Employees
@@ -543,7 +535,6 @@
 ##' @format A data frame with 191,372 rows and 7 columns.
 ##' @source Eric Celeste
 "county_map"
-
 
 
 ##' Opiate-Related Deaths in the United States, 1999-2014
