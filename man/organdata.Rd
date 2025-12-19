@@ -5,7 +5,7 @@
 \alias{organdata}
 \title{Organ donation in the OECD}
 \format{
-A (tibble) data frame with 237 rows and 21 variables.
+A (tibble) data frame with 237 rows and 21 columns.
 }
 \source{
 Macro-economic and spending data: OECD. Other data: Kieran Healy.

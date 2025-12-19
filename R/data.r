@@ -153,30 +153,6 @@
 "gss_lon"
 
 
-#' General Social Survey data, 1972-2016
-#'
-#' A dataset containing an extract from the General Social
-#' Survey. See http://gss.norc.org/Get-Documentation for full
-#' documentation of the variables. This data contains seven
-#' variables from `gss_lon` with all NA values omitted.
-#'
-#' \itemize{
-#' \item year. gss year for this respondent.
-#' \item id. respondent id number.
-#' \item age. age of respondent.
-#' \item race. race of respondent.
-#' \item sex. respondent's sex.
-#' \item siblings. Number of brothers and sisters (recoded from SIBS).
-#' \item kids. Number of children (recoded from CHILDS).
-#' }
-#'
-#' @docType data
-#' @keywords datasets
-#' @name gss_sib
-#' @format A data frame with 60,423 rows and 7 columns.
-#' @source National Opinion Research Center, http://gss.norc.org.
-"gss_sib"
-
 #' US Presidential Election 2016, State-level results
 #'
 #' State-level vote totals and shares for the 2016 US Presidential election.
@@ -322,7 +298,7 @@
 #' @docType data
 #' @keywords datasets
 #' @name preg2
-#' @format An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) with 2 rows and 4 columns.
+#' @format An tbl_df object (inherits from tbl, data.frame) with 2 rows and 4 columns.
 #' @source Hadley Wickham (2014).
 "preg2"
 

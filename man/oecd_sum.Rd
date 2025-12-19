@@ -3,9 +3,9 @@
 \docType{data}
 \name{oecd_sum}
 \alias{oecd_sum}
-\title{Life Expectancy in the OECD, 1960-2015}
+\title{Life Expectancy in the OECD, 1960-2023}
 \format{
-A tibble with 57 rows and 5 columns.
+A tibble with 64 rows and 5 columns.
 }
 \source{
 OECD

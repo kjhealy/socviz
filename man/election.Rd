@@ -5,7 +5,7 @@
 \alias{election}
 \title{US Presidential Election 2016, State-level results}
 \format{
-A (tibble) data frame with 51 rows and 22 variables.
+A (tibble) data frame with 51 rows and 22 columns.
 }
 \source{
 Vote data from Dave Leip, US Election Atlas, http://uselectionatlas.org.

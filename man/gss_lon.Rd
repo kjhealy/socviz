@@ -5,7 +5,7 @@
 \alias{gss_lon}
 \title{General Social Survey data, 1972-2016}
 \format{
-A data frame with 62,366 rows and 26 variables.
+A data frame with 62,366 rows and 26 columns.
 }
 \source{
 National Opinion Research Center, http://gss.norc.org.

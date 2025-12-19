@@ -5,7 +5,7 @@
 \alias{preg2}
 \title{A wider table of untidy data}
 \format{
-An object of class \\code{tbl_df} (inherits from \\code{tbl}, \\code{data.frame}) with 2 rows and 4 columns.
+An tbl_df object (inherits from tbl, data.frame) with 2 rows and 4 columns.
 }
 \source{
 Hadley Wickham (2014).
