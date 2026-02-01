@@ -24,15 +24,15 @@ State-level vote totals and shares for the 2016 US Presidential election.
 \item vote_margin. Winner's vote margin
 \item winner. Winning candidate.
 \item party. Winning party.
-\item pct_margin. Winner's percentage margin (of total vote)
+\item pct_margin. Winner's percentage margin (proportion of total vote)
 \item r_points. Percentage point difference between Trump % vote
  share and Clinton % vote share
 \item d_points. Percentage point difference between Clinton % vote
  share and Trump % vote share.
-\item pct_clinton. Clinton vote share (%)
-\item pct_trump. Trump vote share (%)
-\item pct_johnson. Johnson vote share (%)
-\item pct_other. Other vote share (%)
+\item pct_clinton. Clinton vote share (proportion)
+\item pct_trump. Trump vote share (proportion)
+\item pct_johnson. Johnson vote share (proportion)
+\item pct_other. Other vote share (proportion)
 \item clinton_vote. Clinton vote total
 \item trump_vote. Trump vote total
 \item johnson_vote. Johnson vote total

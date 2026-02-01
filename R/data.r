@@ -165,15 +165,15 @@
 #' \item vote_margin. Winner's vote margin
 #' \item winner. Winning candidate.
 #' \item party. Winning party.
-#' \item pct_margin. Winner's percentage margin (of total vote)
+#' \item pct_margin. Winner's percentage margin (proportion of total vote)
 #' \item r_points. Percentage point difference between Trump % vote
 #'  share and Clinton % vote share
 #' \item d_points. Percentage point difference between Clinton % vote
 #'  share and Trump % vote share.
-#' \item pct_clinton. Clinton vote share (%)
-#' \item pct_trump. Trump vote share (%)
-#' \item pct_johnson. Johnson vote share (%)
-#' \item pct_other. Other vote share (%)
+#' \item pct_clinton. Clinton vote share (proportion)
+#' \item pct_trump. Trump vote share (proportion)
+#' \item pct_johnson. Johnson vote share (proportion)
+#' \item pct_other. Other vote share (proportion)
 #' \item clinton_vote. Clinton vote total
 #' \item trump_vote. Trump vote total
 #' \item johnson_vote. Johnson vote total
@@ -190,6 +190,41 @@
 #' @format A (tibble) data frame with 51 rows and 22 columns.
 #' @source Vote data from Dave Leip, US Election Atlas, http://uselectionatlas.org.
 "election"
+
+#' US Presidential Election 2024, State-level results
+#'
+#' State-level vote totals and shares for the 2024 US Presidential election.
+#'
+#' @format ## `election24`
+#' A data frame with 51 rows and 20 columns:
+#' \describe{
+#'   \item{state}{State name.}
+#'   \item{st}{State abbreviation.}
+#'   \item{fips}{State FIPS code (character).}
+#'   \item{total_vote}{Total votes case.}
+#'   \item{vote_margin}{Vote margin (Trump positive values; Harris negative.)}
+#'   \item{winner}{Winning candidate.}
+#'   \item{party}{Winning party.}
+#'   \item{pct_margin}{Winner's percentage margin (proportion of total vote)}
+#'   \item{r_points}{Percentage point difference between Trump vote percent and Harris vote percent}
+#'   \item{d_points}{Percentage point difference between Harris vote percent and Trump vote percent}
+#'   \item{pct_harris}{Harris vote share (proportion)}
+#'   \item{pct_trump}{Trump vote share (proportion)}
+#'   \item{pct_other}{Other vote share (proportion)}
+#'   \item{harris_vote}{Harris vote total}
+#'   \item{trump_vote}{Trump vote total}
+#'   \item{other_vote}{Other vote total}
+#'   \item{ev_dem}{Electoral votes for Harris}
+#'   \item{ev_rep}{Electoral votes for Trump}
+#'   \item{ev_other}{Electoral votes for Others}
+#'   \item{census}{Census region}
+#' }
+#' @docType data
+#' @keywords datasets
+#' @name election24
+#' @author Kieran Healy
+#' @source Vote data from Wikipedia, https://en.wikipedia.org/wiki/2024_United_States_presidential_election
+"election24"
 
 
 #' US Presidential Election vote shares
