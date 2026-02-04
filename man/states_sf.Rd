@@ -22,10 +22,10 @@ US Census Bureau.
 states_sf
 }
 \description{
-US State map data
+US State map data payer
 }
 \details{
-A spatial data frame for use with the `sf` package. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area.
+A spatial data frame for use with the `sf` package. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included.
 }
 \author{
 Kieran Healy

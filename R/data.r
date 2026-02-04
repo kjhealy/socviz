@@ -457,7 +457,7 @@
 
 #' US State geographies
 #'
-#' US State map data
+#' US State map data payer
 #'
 #' @format ## `states_sf`
 #' A spatial data frame with 51 rows and 5 columns:
@@ -468,10 +468,26 @@
 #'   \item{census}{Census region}
 #'   \item{geometry}{Geometry}
 #' }
-#' @details A spatial data frame for use with the `sf` package. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area.
+#' @details A spatial data frame for use with the `sf` package. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included.
 #' @author Kieran Healy
 #' @source US Census Bureau.
 "states_sf"
+
+#' US County geographies
+#'
+#' US County map data layer
+#'
+#' @format ## `counties_sf`
+#' A data frame with 3,144 rows and 3 columns:
+#' \describe{
+#'   \item{fips}{County FIPS}
+#'   \item{state}{State name}
+#'   \item{geometry}{Geometry}
+#' }
+#' @details A spatial data frame for use with the `sf` package. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area.  Alaska's Aleutian islands are not included.
+#' @author Kieran Healy
+#' @source US Census Bureau.
+"counties_sf"
 
 ##' Census Data on US Counties
 ##'
