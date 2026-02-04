@@ -455,6 +455,24 @@
 "asasec"
 
 
+#' US State geographies
+#'
+#' US State map data
+#'
+#' @format ## `states_sf`
+#' A spatial data frame with 51 rows and 5 columns:
+#' \describe{
+#'   \item{fips}{State FIPS code}
+#'   \item{st}{State name abbreviation}
+#'   \item{state}{State name}
+#'   \item{census}{Census region}
+#'   \item{geometry}{Geometry}
+#' }
+#' @details A spatial data frame for use with the `sf` package. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area.
+#' @author Kieran Healy
+#' @source US Census Bureau.
+"states_sf"
+
 ##' Census Data on US Counties
 ##'
 ##' Selected county data (including state-level observations on some
