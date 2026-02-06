@@ -3,10 +3,10 @@
 \docType{data}
 \name{states_sf}
 \alias{states_sf}
-\title{US State geographies}
+\title{US State geometries}
 \format{
 ## `states_sf`
-A spatial data frame with 51 rows and 5 columns:
+A simple features object with 51 rows and 5 columns:
 \describe{
   \item{fips}{State FIPS code}
   \item{st}{State name abbreviation}
@@ -22,10 +22,10 @@ US Census Bureau.
 states_sf
 }
 \description{
-US State map data payer
+US State map data layer
 }
 \details{
-A spatial data frame for use with the `sf` package. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included.
+A simple features object. Load the `sf` package before using. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included.
 }
 \author{
 Kieran Healy

@@ -455,12 +455,12 @@
 "asasec"
 
 
-#' US State geographies
+#' US State geometries
 #'
-#' US State map data payer
+#' US State map data layer
 #'
 #' @format ## `states_sf`
-#' A spatial data frame with 51 rows and 5 columns:
+#' A simple features object with 51 rows and 5 columns:
 #' \describe{
 #'   \item{fips}{State FIPS code}
 #'   \item{st}{State name abbreviation}
@@ -468,31 +468,45 @@
 #'   \item{census}{Census region}
 #'   \item{geometry}{Geometry}
 #' }
-#' @details A spatial data frame for use with the `sf` package. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included.
+#' @details A simple features object. Load the `sf` package before using. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included.
 #' @author Kieran Healy
 #' @source US Census Bureau.
 "states_sf"
 
-#' US County geographies
+#' US County geometries and demographic data
 #'
-#' US County map data layer
+#' US County map data layer with selected Census Bureau demographic variables.
 #'
 #' @format ## `counties_sf`
-#' A data frame with 3,144 rows and 3 columns:
+#' A simple features object 3,144 rows and 15 columns:
 #' \describe{
-#'   \item{fips}{County FIPS}
-#'   \item{state}{State name}
-#'   \item{geometry}{Geometry}
+#'   \item{fips}{FIPS code.}
+#'   \item{name}{County name.}
+#'   \item{area_sqmi}{Area in square miles.}
+#'   \item{white}{N White population.}
+#'   \item{black}{N Black population.}
+#'   \item{asian}{N Asian population.}
+#'   \item{nh_white}{N Non-Hispanic White population.}
+#'   \item{hispanic}{N Hispanic population.}
+#'   \item{pop}{Total population.}
+#'   \item{black_disc}{Percent Black, discretized.}
+#'   \item{hisp_disc}{Percent Hispanic, discretized.}
+#'   \item{nhwhite_disc}{Percent Non-Hispanic White, discretized.}
+#'   \item{asian_disc}{Percent Asian, discretized.}
+#'   \item{pop_dens}{Population density per square mile.}
+#'   \item{pop_dens_disc}{Population density per square mile, discretized.}
+#'   \item{geometry}{Geometry.}
 #' }
-#' @details A spatial data frame for use with the `sf` package. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area.  Alaska's Aleutian islands are not included.
+#' @details A simple features object. Load the `sf` package before using. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included. Population counts and other demographic information are from the 2024 5-year ACS estimates.
 #' @author Kieran Healy
 #' @source US Census Bureau.
 "counties_sf"
 
+
 ##' Census Data on US Counties
 ##'
 ##' Selected county data (including state-level observations on some
-##' variables)
+##' variables). Preserved for use with the first edition of the book only.
 ##'
 ##' The variables are as follows:
 ##' \itemize{
@@ -549,7 +563,7 @@
 ##' \item partywinner16. Winning party, 2016 Presidental Election.
 ##' \item winner12. Winning candidate, 2012 Presidental Election.
 ##' \item partywinner12. Winning party, 2012 Presidental Election.
-##' \item fipped. Did the area flip parties from 2012 to 2016.
+##' \item flipped. Did the area flip parties from 2012 to 2016.
 ##' }
 ##'
 ##' @docType data

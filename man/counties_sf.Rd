@@ -3,14 +3,27 @@
 \docType{data}
 \name{counties_sf}
 \alias{counties_sf}
-\title{US County geographies}
+\title{US County geometries and demographic data}
 \format{
 ## `counties_sf`
-A data frame with 3,144 rows and 3 columns:
+A simple features object 3,144 rows and 15 columns:
 \describe{
-  \item{fips}{County FIPS}
-  \item{state}{State name}
-  \item{geometry}{Geometry}
+  \item{fips}{FIPS code.}
+  \item{name}{County name.}
+  \item{area_sqmi}{Area in square miles.}
+  \item{white}{N White population.}
+  \item{black}{N Black population.}
+  \item{asian}{N Asian population.}
+  \item{nh_white}{N Non-Hispanic White population.}
+  \item{hispanic}{N Hispanic population.}
+  \item{pop}{Total population.}
+  \item{black_disc}{Percent Black, discretized.}
+  \item{hisp_disc}{Percent Hispanic, discretized.}
+  \item{nhwhite_disc}{Percent Non-Hispanic White, discretized.}
+  \item{asian_disc}{Percent Asian, discretized.}
+  \item{pop_dens}{Population density per square mile.}
+  \item{pop_dens_disc}{Population density per square mile, discretized.}
+  \item{geometry}{Geometry.}
 }
 }
 \source{
@@ -20,10 +33,10 @@ US Census Bureau.
 counties_sf
 }
 \description{
-US County map data layer
+US County map data layer with selected Census Bureau demographic variables.
 }
 \details{
-A spatial data frame for use with the `sf` package. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area.  Alaska's Aleutian islands are not included.
+A simple features object. Load the `sf` package before using. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included. Population counts and other demographic information are from the 2024 5-year ACS estimates.
 }
 \author{
 Kieran Healy

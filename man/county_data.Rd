@@ -15,7 +15,7 @@ county_data
 }
 \description{
 Selected county data (including state-level observations on some
-variables)
+variables). Preserved for use with the first edition of the book only.
 }
 \details{
 The variables are as follows:
@@ -73,7 +73,7 @@ Presidental vote.
 \item partywinner16. Winning party, 2016 Presidental Election.
 \item winner12. Winning candidate, 2012 Presidental Election.
 \item partywinner12. Winning party, 2012 Presidental Election.
-\item fipped. Did the area flip parties from 2012 to 2016.
+\item flipped. Did the area flip parties from 2012 to 2016.
 }
 }
 \keyword{datasets}
