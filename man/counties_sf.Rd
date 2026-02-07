@@ -23,6 +23,11 @@ A simple features object 3,144 rows and 15 columns:
   \item{asian_disc}{Percent Asian, discretized.}
   \item{pop_dens}{Population density per square mile.}
   \item{pop_dens_disc}{Population density per square mile, discretized.}
+\item{su_gun6}{Firearm-related suicides per 100,000 population,
+1999-2015. Factor variable cut into six categories. Note that the
+values in this variable contain an inaccurate bottom-quartile
+coding by construction. Do not present this variable as an
+accurate measure of the firearm-related suicide rate.}
   \item{geometry}{Geometry.}
 }
 }

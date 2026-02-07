@@ -14,7 +14,7 @@ Centers for Disease Control CDC WONDER data
 opiates
 }
 \description{
-State-level data on optiate related deaths in the US, from the CDC
+State-level data on opiate related deaths in the US, from the CDC
 Wonder database. Query details: Dataset is Multiple causes of
 death, 1999-2014; 2006 Urbanization; Autopsy, Gender, Place of
 Death, States, 10-year age groups, and Hisipanic Origin, Weekday,
