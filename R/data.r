@@ -478,7 +478,7 @@
 #' US County map data layer with selected Census Bureau demographic variables.
 #'
 #' @format ## `counties_sf`
-#' A simple features object 3,144 rows and 15 columns:
+#' A simple features object 3,144 rows and 16 columns:
 #' \describe{
 #'   \item{fips}{FIPS code.}
 #'   \item{name}{County name.}
@@ -500,9 +500,10 @@
 #' values in this variable contain an inaccurate bottom-quartile
 #' coding by construction. Do not present this variable as an
 #' accurate measure of the firearm-related suicide rate.}
+#' \item{pop_dens6}{Population density per square mile, discretized into six categories, 2014 estimates.}
 #'   \item{geometry}{Geometry.}
 #' }
-#' @details A simple features object. Load the `sf` package before using. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included. Population counts and other demographic information are from the 2024 5-year ACS estimates.
+#' @details A simple features object. Load the `sf` package before using. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included. Except where noted, population counts and other demographic information are from the 2024 5-year ACS estimates.
 #' @author Kieran Healy
 #' @source US Census Bureau.
 "counties_sf"
@@ -523,6 +524,8 @@
 ##' (seven categories).
 ##' \item pct_black. Percent black population, 2014 estimate (seven
 ##' category factor)
+##' \item pop_dens6. Population density per square mile, 2014 estimate
+##' (six categories)
 ##' \item su_gun6. Firearm-related suicides per 100,000 population,
 ##' 1999-2015. Factor variable cut into six categories. Note that the
 ##' values in this variable contain an inaccurate bottom-quartile

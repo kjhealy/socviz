@@ -28,6 +28,8 @@ The variables are as follows:
 (seven categories).
 \item pct_black. Percent black population, 2014 estimate (seven
 category factor)
+\item pop_dens6. Population density per square mile, 2014 estimate
+(six categories)
 \item su_gun6. Firearm-related suicides per 100,000 population,
 1999-2015. Factor variable cut into six categories. Note that the
 values in this variable contain an inaccurate bottom-quartile

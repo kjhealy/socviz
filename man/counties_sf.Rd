@@ -6,7 +6,7 @@
 \title{US County geometries and demographic data}
 \format{
 ## `counties_sf`
-A simple features object 3,144 rows and 15 columns:
+A simple features object 3,144 rows and 16 columns:
 \describe{
   \item{fips}{FIPS code.}
   \item{name}{County name.}
@@ -28,6 +28,7 @@ A simple features object 3,144 rows and 15 columns:
 values in this variable contain an inaccurate bottom-quartile
 coding by construction. Do not present this variable as an
 accurate measure of the firearm-related suicide rate.}
+\item{pop_dens6}{Population density per square mile, discretized into six categories, 2014 estimates.}
   \item{geometry}{Geometry.}
 }
 }
@@ -41,7 +42,7 @@ counties_sf
 US County map data layer with selected Census Bureau demographic variables.
 }
 \details{
-A simple features object. Load the `sf` package before using. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included. Population counts and other demographic information are from the 2024 5-year ACS estimates.
+A simple features object. Load the `sf` package before using. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included. Except where noted, population counts and other demographic information are from the 2024 5-year ACS estimates.
 }
 \author{
 Kieran Healy
