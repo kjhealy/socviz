@@ -582,43 +582,27 @@
 #' @source Geometries from US Census Bureau; vote data from Tony McGovern, `https://github.com/tonmcg/US_County_Level_Election_Results_08-24`
 "elections24_county_sf"
 
-##' Opiate-Related Deaths in the United States, 1999-2014
-##'
-##' State-level data on opiate related deaths in the US, from the CDC
-##' Wonder database. Query details: Dataset is Multiple causes of
-##' death, 1999-2014; 2006 Urbanization; Autopsy, Gender, Place of
-##' Death, States, 10-year age groups, and Hisipanic Origin, Weekday,
-##' Year/Month set to ALL. Standard Population 2000 US Std Population.
-##' Default intercensal populations for years 2001-2009 except Infant
-##' age groups. Rates per 100,000 population.
-##' MCD ICD-10 Codes selected: T40.0 (Opium), T40.1 (Heroin), T40.2
-##' (Other opioids), T40.3 (Methadone), T40.4 (Other synthetic
-##' narcotics), T40.6 (Other and unspecified narcotics). UCD - ICD-10
-##' Codes selected: X40-X44, X60-X64, X85, Y10-Y14.
-##'
-##' The variables are as follows:
-##'
-##' \itemize{
-##' \item year. Year
-##' \item state. State name.
-##' \item fips. State FIPS code.
-##' \item deaths. Number of opiate-related deaths.
-##' \item population. Population.
-##' \item crude. Crude death rate.
-##' \item adjusted. Adjusted death rate.
-##' \item adjusted.se. Standard error of Adjusted death rate.
-##' \item region. Census region. (Stored as an ordered factor.)
-##' \item abbr. Abbreviated state name.
-##' \item division_name. Census Division. (Character.)
-##' }
-##'
-##' @docType data
-##' @keywords datasets
-##' @name opiates
-##' @format A tibble with 800 rows and 10 columns.
-##' @source Centers for Disease Control CDC WONDER data
-"opiates"
 
+#' Opiate-Related Deaths in the United States, 1999-2020
+#'
+#' State-level data on opiate related deaths in the US, from the CDC WONDER database.
+#'
+#' @format ## `opiates`
+#' A tibble frame with 1,122 rows and 8 columns:
+#' \describe{
+#'   \item{fips}{State FIPS code.}
+#'   \item{st}{State abbreviation.}
+#'   \item{year}{Year.}
+#'   \item{deaths}{N opiate-related deaths.}
+#'   \item{crude}{Crude death rate per 100,000 population.}
+#'   \item{adjusted}{Adjusted death rate.}
+#'   \item{region}{Census region.}
+#'   \item{division_name}{Census division.}
+#' }
+#' @details Dataset is Multiple Cause of Death, 1999-2020. Standard Population: 2000 U.S. Std. Population. Rates per 100,000. Default intercensal populations for years 2001-2009. MCD ICD-10 Codes selected: T40.0 (Opium), T40.1 (Heroin), T40.2 (Other opioids), T40.3 (Methadone), T40.4 (Other synthetic narcotics), T40.6 (Other and unspecified narcotics). UCD ICD-10 Codes selected: X40-X44, X60-X64, X85, Y10-Y14.
+#' @author Kieran Healy
+#' @source CDC WONDER, http://wonder.cdc.gov/mcd-icd10.html
+"opiates"
 
 ##' US Law School Enrollments 1963-2015
 ##'
