@@ -440,20 +440,29 @@
 ##' @source Federal Reserve Bank of New York
 "studebt"
 
-
-##' American Sociological Association Section Membership
-##'
-##' Membership (2005-2015) and some financial information for sections
-##' of the American Sociolgical Association
-##'
-##'
-##' @docType data
-##' @keywords datasets
-##' @name asasec
-##' @format A data frame with 572 rows and 9 columns.
-##' @source ASA Annual Report 2016
+#' American Sociological Association Section Membership
+#'
+#' Membership and some financial information for sections
+#' of the American Sociological Association in 2014.
+#'
+#' @format ## `asasec`
+#' A data frame with 52 rows and 9 columns:
+#' \describe{
+#'   \item{Section}{Section name.}
+#'   \item{Sname}{Short name.}
+#'   \item{Beginning}{Cash on hand at beginning of year.}
+#'   \item{Revenues}{Membership revenues.}
+#'   \item{Expenses}{Section expenses.}
+#'   \item{Ending}{Cash on hand at end of year.}
+#'   \item{Journal}{Does the Section run a journal?}
+#'   \item{Year}{Year.}
+#'   \item{Members}{Number of members.}
+#' }
+#'
+#' @details Data from the American Sociological Association.
+#' @author Kieran Healy
+#' @source ASA Annual Report 2016.
 "asasec"
-
 
 #' US State geometries
 #'
