@@ -576,7 +576,7 @@
 #'
 #' A tibble with US presidential election data
 #'
-#' @format ## `elections24_county_df`
+#' @format ## `election24_county_df`
 #' A tibble object with 3,153 rows and 6 columns:
 #' \describe{
 #'   \item{county_fips}{County FIPS code.}
@@ -589,7 +589,7 @@
 #' @details A tibble.
 #' @author Kieran Healy
 #' @source Election data derived from https://doi.org/10.7910/DVN/VOQCHQ
-"elections24_county_df"
+"election24_county_df"
 
 
 #' Opiate-Related Deaths in the United States, 1999-2020
