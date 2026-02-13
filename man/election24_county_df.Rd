@@ -8,7 +8,7 @@
 ## `election24_county_df`
 A tibble object with 3,153 rows and 6 columns:
 \describe{
-  \item{county_fips}{County FIPS code.}
+  \item{fips}{County FIPS code.}
   \item{votes_dem}{Votes for Harris/Walz ticket.}
   \item{votes_gop}{Votes for Trump/Vance ticket.}
   \item{total_votes}{Total votes cast.}
