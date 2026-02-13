@@ -574,22 +574,22 @@
 
 #' US County-level Presidential Election data, 2024
 #'
-#' A simple features object with US presidential election data
+#' A tibble with US presidential election data
 #'
-#' @format ## `elections24_county_sf`
-#' A simple features object with 3,154 rows and 6 columns:
+#' @format ## `elections24_county_df`
+#' A tibble object with 3,153 rows and 6 columns:
 #' \describe{
 #'   \item{county_fips}{County FIPS code.}
-#'   \item{total_votes}{Total votes cast.}
 #'   \item{votes_dem}{Votes for Harris/Walz ticket.}
 #'   \item{votes_gop}{Votes for Trump/Vance ticket.}
+#'   \item{total_votes}{Total votes cast.}
 #'   \item{winner}{Winning party.}
-#'   \item{geometry}{Geometry.}
+#'   \item{flipped}{Did the party winner change from the winner in 2020? (Yes/No)}
 #' }
-#' @details A simple features object. Load the `sf` package before using. Alaska and Hawaii have had their geometries scaled and shifted to the bottom left of the map area. Alaska's Aleutian islands are not included. Alaska boundaries are for Alaskan House Districts, not counties.
+#' @details A tibble.
 #' @author Kieran Healy
-#' @source Geometries from US Census Bureau; vote data from Tony McGovern, `https://github.com/tonmcg/US_County_Level_Election_Results_08-24`
-"elections24_county_sf"
+#' @source Election data derived from https://doi.org/10.7910/DVN/VOQCHQ
+"elections24_county_df"
 
 
 #' Opiate-Related Deaths in the United States, 1999-2020
