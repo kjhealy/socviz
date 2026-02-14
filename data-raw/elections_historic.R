@@ -3,27 +3,6 @@ library(tidyverse)
 library(rvest)
 library(here)
 
-#elections_firsted <- socviz::elections_historic
-#write_csv(elections_firsted, here("data-raw", "raw", "elections_firsted_df.csv"))
-
-elections_firsted_df <- read_csv(here(
-  "data-raw",
-  "raw",
-  "elections_firsted_df.csv"
-))
-
-
-# elections_raw_url <- read_html("https://en.wikipedia.org/wiki/List_of_United_States_presidential_elections_by_popular_vote_margin")
-# elections_raw_df <- elections_raw_url |>
-#   # Get all the tables classed as `.wikitable` on the page
-#   html_elements(".wikitable") |>
-#   pluck(2) |>
-#   html_table() |>
-#   janitor::clean_names() |>
-#   slice(-10:-1)
-
-#write_csv(elections_raw_df, here("data-raw", "raw", "elections_raw_df.csv"))
-
 elections_raw_df <- read_csv(here("data-raw", "raw", "elections_raw_df.csv"))
 
 elections_new_tmp <- elections_raw_df |>

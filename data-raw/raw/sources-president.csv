@@ -1,0 +1,52 @@
+State,Source,Is certified?,notes,missing votes?
+AK,https://www.elections.alaska.gov/results/20GENR/index.php,yes,,
+AL,https://www.sos.alabama.gov/sites/default/files/election-2020/Final%20Canvass%20of%20Results-Merged.pdf,yes,final canvas,
+AR,https://results.enr.clarityelections.com/AR/106124/web.264614/#/summary,official,scytl site,TRUE
+AZ,https://azsos.gov/node/1251,official,,
+CA,https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/general-election-november-3-2020/statement-vote,official,,
+CO,https://www.sos.state.co.us/pubs/elections/resultsData.html,official,,TRUE
+CT,https://ctemspublic.pcctg.net/#/home,official,says official but no statement of votes,
+DE,https://elections.delaware.gov/results/html/index.shtml?electionId=GE2020,official,write in numbers from https://elections.delaware.gov/archive/elect20/elect20_election_index.shtml,
+DC,https://electionresults.dcboe.org/election_results/2020-General-Election,official,,
+FL,https://results.elections.myflorida.com/Index.asp?ElectionDate=11/3/2020&DATAMODE=,official,,
+GA,https://results.enr.clarityelections.com/GA/107231/web.264614/#/detail/5000,official recount,write in from https://sos.ga.gov/index.php/elections/2020_votes_cast_for_certified_write-in_candidates,
+HI,https://elections.hawaii.gov/election-results/,official,,
+ID,https://sos.idaho.gov/elections-division/2020-results-statewide/,official,,
+IL,https://www.elections.il.gov/ElectionOperations/DownloadVoteTotals.aspx?MID=vvc3ru6lLPI%3d&T=637438816257575621,official,missing scatter,TRUE
+IN,https://enr.indianavoters.in.gov/site/index.html,official,,
+IA,https://sos.iowa.gov/elections/results/index.html#19,official,,
+KS,https://sos.ks.gov/elections/elections-statistics.html,official,,TRUE
+KY,https://elect.ky.gov/results/2020-2029/Pages/2020.aspx,official,missing scatter,TRUE
+LA,https://voterportal.sos.la.gov/static/2020-11-03/resultsRace/Presidential,official,,TRUE
+ME,https://www.maine.gov/sos/cec/elec/results/results20.html#novtab,official,,
+MD,https://elections.maryland.gov/elections/2020/election_data/index.html,doesnt say,,
+MA,https://electionstats.state.ma.us/elections/view/140751/,,no write in breakdown,
+MN,https://electionresults.sos.state.mn.us/20201103,,,
+MI,https://mielections.us/election/results/2020GEN_CENR.html#,yes,missing scatter,TRUE
+MS,https://www.sos.ms.gov/Elections-Voting/Pages/2020-General-Election.aspx,yes,,TRUE
+MO,https://enr.sos.mo.gov/,YES,,
+MT,https://sosmt.gov/elections/results/,yes,,
+NE,https://sos.nebraska.gov/elections/2020-elections,yes,,
+NV,https://silverstateelection.nv.gov/USPresidential/,yes,,
+NH,https://sos.nh.gov/elections/elections/election-results/2020/general-election/,yes,,
+NJ,https://nj.gov/state/elections/election-information-2020.shtml#general,yes,no write-in,TRUE
+NM,https://electionresults.sos.state.nm.us/resultsSW.aspx?type=FED&map=CTY,yes,no write-in,TRUE
+NY,https://www.elections.ny.gov/2020ElectionResults.html,yes,,
+NC,https://er.ncsbe.gov/?election_dt=11/03/2020&county_id=0&office=FED&contest=1373,yes,,
+ND,https://results.sos.nd.gov/ResultsSW.aspx?text=All&type=SW&map=CTY,yes,,
+OH,https://www.ohiosos.gov/elections/election-results-and-data/2020/,yes,,
+OK,https://results.okelections.us/OKER/?elecDate=20201103,yes,no write-in or scatter,TRUE
+OR,https://sos.oregon.gov/elections/Pages/electionhistory.aspx,yes,,
+PA,https://www.electionreturns.pa.gov/General/OfficeResults?OfficeID=1&ElectionID=83&ElectionType=G&IsActive=1,yes,these are the certified results https://www.media.pa.gov/pages/state-details.aspx?newsid=435,TRUE
+RI,https://www.ri.gov/election/results/2020/general_election/,yes,,
+SC,https://www.enr-scvotes.org/SC/106502/Web02-state.264691/#/?undefined,yes,,
+SD,http://electionresults.sd.gov/,unofficial,no write-in or scatter,TRUE
+TN,https://sos.tn.gov/elections/results,does not say,no scatter,TRUE
+TX,https://results.texas-election.com/races,official,no write-in or scatter,TRUE
+UT,https://voteinfo.utah.gov/election-results-data-historical-information/,official,,
+VT,https://electionresults.vermont.gov/Index.html#/reports,official,,
+VA,https://results.elections.virginia.gov/vaelections/2020%20November%20General/Site/Presidential.html,official,,
+WA,https://results.vote.wa.gov/results/20201103/export.html,,does not say,
+WV,https://results.enr.clarityelections.com/WV/106210/web.264614/#/detail/100,official,no write-in or scatter,TRUE
+WI,https://elections.wi.gov/elections-voting/results,official,,
+WY,https://sos.wyo.gov/Elections/Docs/2020/2020GeneralResults.aspx,official,,
