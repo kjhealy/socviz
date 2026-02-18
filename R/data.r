@@ -705,3 +705,21 @@
 ##' @format A tibble with 1,644 rows and 6 columns.
 ##' @source UK Office of National Statistics; US Census Bureau.
 "boomer"
+
+
+#' Child Pedestrians involved in Fatal Motor Vehicle Crashes, 2009-2023
+#'
+#' Daily data on child pedestrians (aged 0-17 years) involved in a motor vehicle crash that resulted in a fatality.
+#'
+#' @format ## `farsinvolved`
+#' A data frame with 5,490 rows and 4 columns:
+#' \describe{
+#'   \item{month}{Month (character)}
+#'   \item{day}{Day of the month (character)}
+#'   \item{year}{Year (character)}
+#'   \item{n}{Number of pedestrians}
+#' }
+#' @details Each row is a day of the year between January 1st 2009 and December 31st 2023. The `n` column is the number of pedestrians in the United States who were involved in a motor vehicle crash that day, where the event resulted in a fatality and where the pedestrian was aged between 0 and 17 years old. The person killed is not necessarily the pedestrian.
+#' @author Kieran Healy
+#' @source National Highway Traffic Safety Administration (NHTSA) Motor Vehicle Crash Data Querying and Reporting
+"farsinvolved"
