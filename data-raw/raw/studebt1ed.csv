@@ -1,0 +1,17 @@
+Debt,type,pct,Debtrc
+Under $5,Borrowers,20,Under $5
+$5-$10,Borrowers,17,$5-$10
+$10-$25,Borrowers,28,$10-$25
+$25-$50,Borrowers,19,$25-$50
+$50-$75,Borrowers,8,$50-$75
+$75-$100,Borrowers,3,$75-$100
+$100-$200,Borrowers,4,$100-$200
+Over $200,Borrowers,1,Over $200
+Under $5,Balances,2,Under $5
+$5-$10,Balances,4,$5-$10
+$10-$25,Balances,15,$10-$25
+$25-$50,Balances,23,$25-$50
+$50-$75,Balances,16,$50-$75
+$75-$100,Balances,10,$75-$100
+$100-$200,Balances,19,$100-$200
+Over $200,Balances,11,Over $200

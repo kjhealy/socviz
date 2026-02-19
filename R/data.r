@@ -428,16 +428,22 @@
 "yahoo"
 
 
-##' Student debt data
-##'
-##' Outstanding student debts in 2016 across 8 income categories, by
-##' percent of all borrowers and percent of all balances.
-##'
-##' @docType data
-##' @keywords datasets
-##' @name studebt
-##' @format A tibble with 16 rows and 4 columns.
-##' @source Federal Reserve Bank of New York
+#' Student debt data
+#'
+#' Outstanding student debts in 2016 across 8 income categories, by
+#' percent of all borrowers and percent of all balances.
+#' @format ## `studebt`
+#' A data frame with 16 rows and 4 columns:
+#' \describe{
+#'   \item{Debt}{Debt categories (character)}
+#'   \item{type}{Pct in terms of Borrowers or Balances}
+#'   \item{pct}{Percentage of all type}
+#'   \item{Debtrc}{Debt categories (ordered factor)}
+#' }
+#' @docType data
+#' @keywords datasets
+#' @name studebt
+#' @source Federal Reserve Bank of New York.
 "studebt"
 
 #' American Sociological Association Section Membership

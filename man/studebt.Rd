@@ -5,10 +5,17 @@
 \alias{studebt}
 \title{Student debt data}
 \format{
-A tibble with 16 rows and 4 columns.
+## `studebt`
+A data frame with 16 rows and 4 columns:
+\describe{
+  \item{Debt}{Debt categories (character)}
+  \item{type}{Pct in terms of Borrowers or Balances}
+  \item{pct}{Percentage of all type}
+  \item{Debtrc}{Debt categories (ordered factor)}
+}
 }
 \source{
-Federal Reserve Bank of New York
+Federal Reserve Bank of New York.
 }
 \usage{
 studebt
