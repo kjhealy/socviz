@@ -10,22 +10,17 @@ df <- read_csv(
     pct = col_integer(),
     Debtrc = col_character()
   )
-)
+) |>
+  mutate(
+    Debtrc = str_replace(Debtrc, "(\\d{1})$", "\\1k"),
+    Debtrc = str_replace(Debtrc, "(\\d{1})-", "\\1k-")
+  )
 
-debt_levs <- c(
-  "Under $5",
-  "$5-$10",
-  "$10-$25",
-  "$25-$50",
-  "$50-$75",
-  "$75-$100",
-  "$100-$200",
-  "Over $200"
-)
+debt_levs <- unique(df$Debtrc)
 
-df <- df |>
+df2 <- df |>
   mutate(Debtrc = factor(Debtrc, levels = debt_levs, ordered = TRUE))
 
-studebt <- df
+studebt <- df2
 
 usethis::use_data(studebt, overwrite = TRUE)
