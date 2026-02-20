@@ -688,29 +688,29 @@
 "oecd_sum"
 
 
-##' Monthly Births in the US, and England & Wales
-##'
-##' Births by month, 1933-2015 (United States) and 1938-1991 (England
-##' & Wales)
-##'
-##' The variables are as follows:
-##'
-##' \itemize{
-##' \item  date. Year and month. (Day is arbitrarily set to 01 for all observations,
-##' data are monthly.)
-##' \item  month. Month of the year (1-12).
-##' \item n_days. The number of days in a given month/year date.
-##' \item births. Total live births for that month.
-##' \item  total_pop. National population estimate for that month.
-##' \item country. United States or England & Wales.
-##' }
-##'
-##' @docType data
-##' @keywords datasets
-##' @name boomer
-##' @format A tibble with 1,644 rows and 6 columns.
-##' @source UK Office of National Statistics; US Census Bureau.
-"boomer"
+#' Monthly Births in the U.S., 1933-2015
+#'
+#' Births by month, 1933-2015, with decomposition components.
+#'
+#' @format ## `okboomer`
+#' A data frame with 996 rows and 11 columns:
+#' \describe{
+#'   \item{date}{Date in date format}
+#'   \item{year_fct}{Year as ordered factor}
+#'   \item{month_fct}{Month as ordered factor}
+#'   \item{n_days}{N of days in this month}
+#'   \item{births}{Total births in this month}
+#'   \item{total_pop}{Population}
+#'   \item{births_pct}{Births as a proportion of total population}
+#'   \item{births_pct_day}{Average daily births per million population}
+#'   \item{seasonal}{Seasonal component from an STL decomposition of `births_pct_day`}
+#'   \item{trend}{Trend component from an STL decomposition of `births_pct_day`}
+#'   \item{remainder}{Remainder component from an STL decomposition of `births_pct_day`}
+#' }
+#' @details Dataset originally constructed to reproduce a visualization exercise by Aaron Penne.
+#' @author Kieran Healy
+#' @source U.S. Census Bureau.
+"okboomer"
 
 
 #' Child Pedestrians involved in Fatal Motor Vehicle Crashes, 2009-2023
