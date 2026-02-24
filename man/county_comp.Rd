@@ -18,7 +18,7 @@ A dataset of components of population change (rates only) for US Counties in 202
 }
 \details{
 \itemize{
-\item geoid. County FIPS code.
+\item fips. County FIPS code.
 \item county. County name.
 \item state. State abbreviation.
 \item rbirth. Birth rate.

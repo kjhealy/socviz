@@ -3,7 +3,7 @@
 #' A dataset of US poverty rates by selected age groups within counties.
 #'
 #' \itemize{
-#' \item geoid. County FIPS code.
+#' \item fips. County FIPS code.
 #' \item age_group. Adults 18-64, Children <18, Seniors 65+.
 #' \item age_rate. Poverty rate (percent) for `age_group` in county.
 #' \item total_rate. Poverty rate (percent) for all ages in county.
@@ -39,7 +39,7 @@
 #' A dataset of components of population change (rates only) for US Counties in 2023.
 #'
 #' \itemize{
-#' \item geoid. County FIPS code.
+#' \item fips. County FIPS code.
 #' \item county. County name.
 #' \item state. State abbreviation.
 #' \item rbirth. Birth rate.

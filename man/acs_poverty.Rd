@@ -18,7 +18,7 @@ A dataset of US poverty rates by selected age groups within counties.
 }
 \details{
 \itemize{
-\item geoid. County FIPS code.
+\item fips. County FIPS code.
 \item age_group. Adults 18-64, Children <18, Seniors 65+.
 \item age_rate. Poverty rate (percent) for `age_group` in county.
 \item total_rate. Poverty rate (percent) for all ages in county.
