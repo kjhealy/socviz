@@ -23,13 +23,16 @@ reference:
       - asasec
       - bad_date
       - color_table
+      - counties_sf
       - county_data
       - county_map
       - edu
       - election
+      - election24
+      - election24_county_df
       - elections_historic
+      - farsinvolved
       - fredts
-      - gss_sib
       - gss_sm
       - gss_lon
       - lawschools
@@ -41,6 +44,7 @@ reference:
       - organdata
       - preg
       - preg2
+      - states_sf
       - studebt
       - titanic
       - yahoo
