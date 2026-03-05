@@ -8,8 +8,8 @@ Maintainer: Kieran Healy <kjhealy@gmail.com>
 Description: Supporting materials for a course and book on data visualization. Second edition. It contains utility functions for graphs and several sample data sets. See Healy (2019) <ISBN 978-0691181622>.
 License: MIT + file LICENSE
 Depends: R (>= 4.5)
-Imports: dplyr, fs, graphics, magrittr, rlang, tibble
-Suggests: ggplot2
+Imports: dplyr, fs, ggplot2 (>= 4.0.0), graphics, grid, magrittr,
+    rlang, systemfonts, tibble
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz

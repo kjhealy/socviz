@@ -59,6 +59,11 @@ reference:
       - prefix_strip
       - setup_course_notes
       - tw_tab
+  - title: "Themes"
+    desc: ggplot2 themes.
+    contents:
+      - theme_socviz
+      - theme_socviz_map
 
 
 navbar:
