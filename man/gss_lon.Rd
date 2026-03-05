@@ -3,9 +3,9 @@
 \docType{data}
 \name{gss_lon}
 \alias{gss_lon}
-\title{General Social Survey data, 1972-2016}
+\title{General Social Survey data, 1972-2024}
 \format{
-A data frame with 62,366 rows and 26 variables.
+A data frame with 75,699 rows and 25 columns.
 }
 \source{
 National Opinion Research Center, http://gss.norc.org.
@@ -16,35 +16,35 @@ gss_lon
 \description{
 A dataset containing an extract from the General Social
 Survey. See http://gss.norc.org/Get-Documentation for full
-documentation of the variables. This data contains the same
-variables as `gss_sm`, but for all available years from 1972-2016.
+documentation of the variables. This data contains many of the same
+variables as `gss_sm`, but for all available years from 1972-2024.
 }
 \details{
 \itemize{
-\item year. gss year for this respondent.
-\item id. respondent id number.
-\item ballot. ballot used for interview.
-\item age. age of respondent.
-\item degree. Rs highest degree.
-\item race. race of respondent.
-\item sex. respondent's sex.
+\item year. GSS year for this respondent.
+\item id. Respondent id number.
+\item ballot. Ballot used for interview.
+\item age. Age of respondent.
+\item degree. R's highest degree.
+\item race. Race of respondent.
+\item sex. Respondent's sex.
 \item siblings. Number of brothers and sisters (recoded from SIBS).
 \item kids. Number of children (recoded from CHILDS).
-\item bigregion. region of interview (recoded from REGION).
-\item income16. total family income.
-\item religion. rs religious preference (recoded from RELIGION)
-\item marital. marital status.
-\item padeg. fathers highest degree.
-\item madeg. mothers highest degree.
-\item partyid. political party affiliation.
-\item polviews. think of self as liberal or conservative.
-\item happy. general happiness.
-\item partners_rc. how many sex partners r had in last year.
-(Recoded from PARTNERS)
-\item grass. should marijuana be made legal.
-\item zodiac. respondents astrological sign.
-\item pres12. R's stated vote in the 2012 Presidential election
-\item wtssall. weight variable.
+\item bigregion. Region of interview (identical with REGION).
+\item region. Region of interview.
+\item income16. Total family income.
+\item religion. R's religious preference (recoded from RELIGION)
+\item marital. Marital status.
+\item padeg. Father's highest degree.
+\item madeg. Mother's highest degree.
+\item partyid. Political party affiliation.
+\item polviews. Think of self as liberal or conservative.
+\item happy. General happiness.
+\item partners_rc. How many sex partners r had in last year. (Recoded from PARTNERS)
+\item grass. Should marijuana be made legal.
+\item zodiac. Respondent's astrological sign.
+\item wtssall. Person weight variable (1972-2018).
+\item wtssps. Person weight variable (1972-2024).
 \item vpsu. Sampling unit
 \item vstrat. Stratification unit
 }

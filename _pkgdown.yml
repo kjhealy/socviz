@@ -1,0 +1,82 @@
+destination: docs
+authors:
+  Kieran Healy:
+    href: http://kieranhealy.org
+
+url: https://kjhealy.github.io/socviz
+
+template:
+  bootstrap: 5
+  bslib:
+    base_font: {google: "IBM Plex Sans"}
+    heading_font: {google: "IBM Plex Sans"}
+    code_font: {google: "IBM Plex Mono"}
+
+reference:
+  - title: "Datasets"
+    desc: >
+      Included datasets.
+    contents:
+      - acs_poverty
+      - acs_poverty_lon
+      - county_comp
+      - asasec
+      - bad_date
+      - boomer
+      - color_table
+      - county_data
+      - county_map
+      - edu
+      - election
+      - elections_historic
+      - fredts
+      - gss_sib
+      - gss_sm
+      - gss_lon
+      - lawschools
+      - maunaloa
+      - oecd_le
+      - oecd_sum
+      - opiates
+      - organdata
+      - preg
+      - preg2
+      - studebt
+      - titanic
+      - yahoo
+  - title: "Functions"
+    desc: Utility functions.
+    contents:
+      - starts_with("%")
+      - center_df
+      - color_comp
+      - color_pal
+      - freq_tab
+      - int_to_year
+      - lay_out
+      - round_df
+      - prefix_replace
+      - prefix_strip
+      - setup_course_notes
+      - tw_tab
+  - title: "Themes"
+    desc: ggplot2 themes.
+    contents:
+      - theme_socviz
+      - theme_socviz_map
+
+
+navbar:
+  right:
+   - icon: fa-github
+     href: https://github.com/kjhealy/socviz
+
+figures:
+  dev: grDevices::png
+  dpi: 200
+  dev.args: []
+  fig.ext: png
+  fig.width: 7.2916667
+  fig.height: ~
+  fig.retina: 2
+  fig.asp: 1.618

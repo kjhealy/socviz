@@ -14,8 +14,8 @@ US Census Bureau, Centers for Disease Control
 county_data
 }
 \description{
-Selected county data (including state-level observations on some
-variables)
+Selected county data (including US and state-level observations on some
+variables). Preserved for use with the first edition of the book only.
 }
 \details{
 The variables are as follows:
@@ -26,54 +26,15 @@ The variables are as follows:
 \item census_region. Census region
 \item pop_dens. Population density per square mile, 2014 estimate
 (seven categories).
-\item pop_dens4. Population density per square mile, 2014 estimate (quartiles)
-\item pop_dens6. Poptulation density per square mile, 2014
-estimate (six categories)
 \item pct_black. Percent black population, 2014 estimate (seven
 category factor)
-\item pop. Population, 2014 estimate
-\item female. Female persons, percent, 2013
-\item white. White alone, percent, 2013
-\item black. Black alone, percent, 2013
-\item travel_time. Mean travel time to work (minutes), workers age 16+, 2009-2013
-\item land_area. Land area in square miles, 2010
-\item hh_income. Median household income, 2009-2013
-\item su_gun4. Firearm-related suicides per 100,000 population,
-1999-2015. Factor variable cut into quartiles. Note that the
-values in this variable contain an inaccurate bottom-quartile
-coding by construction. Do not present this variable as an
-accurate measure of the firearm-related suicide rate.
+\item pop_dens6. Population density per square mile, 2014 estimate
+(six categories)
 \item su_gun6. Firearm-related suicides per 100,000 population,
 1999-2015. Factor variable cut into six categories. Note that the
 values in this variable contain an inaccurate bottom-quartile
 coding by construction. Do not present this variable as an
 accurate measure of the firearm-related suicide rate.
-\item fips. FIPS code (integer).
-\item votes_dem_2016. Provisional count of Democratic votes in the
-2016 Presidential election.
-\item votes_gop_2016. Provisional count of Republican votes in the
-2016 Presidential election.
-\item total_votes_2016. Provitional count of votes cast in the
-2016 Presidential election.
-\item per_dem_2016. Democratic Presidential vote, percent.
-\item per_gop_2016. Republican Presidental vote, percent.
-\item diff_2016. Difference between Democratic and Republican
-Presidental vote.
-\item votes_dem_2012. Provisional count of Democratic votes in the
-2012 Presidential election.
-\item votes_gop_2012. Provisional count of Republican votes in the
-2012 Presidential election.
-\item total_votes_2012. Provitional count of votes cast in the
-2012 Presidential election.
-\item per_dem_2012. Democratic Presidential vote, percent.
-\item per_gop_2012. Republican Presidental vote, percent.
-\item diff_2012. Difference between Democratic and Republican
-Presidental vote.
-\item winner. Winning candidate, 2016 Presidental Election.
-\item partywinner16. Winning party, 2016 Presidental Election.
-\item winner12. Winning candidate, 2012 Presidental Election.
-\item partywinner12. Winning party, 2012 Presidental Election.
-\item fipped. Did the area flip parties from 2012 to 2016.
 }
 }
 \keyword{datasets}

@@ -5,16 +5,34 @@
 \alias{asasec}
 \title{American Sociological Association Section Membership}
 \format{
-A data frame with 572 rows and 9 columns.
+## `asasec`
+A data frame with 52 rows and 9 columns:
+\describe{
+  \item{Section}{Section name.}
+  \item{Sname}{Short name.}
+  \item{Beginning}{Cash on hand at beginning of year (2015).}
+  \item{Revenues}{Membership revenues.}
+  \item{Expenses}{Section expenses.}
+  \item{Ending}{Cash on hand at end of year (2015).}
+  \item{Journal}{Does the Section run a journal?}
+  \item{Year}{Membership year.}
+  \item{Members}{Number of members (2014).}
+}
 }
 \source{
-ASA Annual Report 2016
+ASA Annual Report 2016.
 }
 \usage{
 asasec
 }
 \description{
-Membership (2005-2015) and some financial information for sections
-of the American Sociolgical Association
+Membership and some financial information for sections
+of the American Sociological Association in 2014/15.
+}
+\details{
+Data from the American Sociological Association.
+}
+\author{
+Kieran Healy
 }
 \keyword{datasets}

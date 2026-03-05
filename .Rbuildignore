@@ -9,3 +9,7 @@ cran-comments.md
 ^temp$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^data-raw$
+claude.md
+^\.claude$
+^_pkgdown\.yml$
