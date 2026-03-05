@@ -1,6 +1,8 @@
-pandoc: 2.7.3
-pkgdown: 1.5.1.9000
-pkgdown_sha: e38950d5d22babc2a245cb95b1e0480f073f2b80
-articles: []
-last_built: 2020-07-16T16:01Z
-
+pandoc: 3.1.11
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles: {}
+last_built: 2026-03-05T13:13Z
+urls:
+  reference: https://kjhealy.github.io/socviz/reference
+  article: https://kjhealy.github.io/socviz/articles

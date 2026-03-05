@@ -1,0 +1,25 @@
+# US County Poverty Rates by Age Group, Longer Version
+
+A dataset of US poverty rates by selected age groups within counties.
+
+## Usage
+
+``` r
+acs_poverty_lon
+```
+
+## Format
+
+A tibble with 12,888 rows and 3 columns.
+
+## Source
+
+American Community Survey 2023 ACS 5-year estimates, Table B17018.
+
+## Details
+
+- geoid. County FIPS code.
+
+- age_group. Adults 18-64, Children \<18, Seniors 65+, All Ages.
+
+- prop_poor. Proportion (0-1) of \`age_group\` in poverty within county.
