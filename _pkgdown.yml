@@ -22,7 +22,6 @@ reference:
       - county_comp
       - asasec
       - bad_date
-      - boomer
       - color_table
       - county_data
       - county_map
@@ -37,6 +36,7 @@ reference:
       - maunaloa
       - oecd_le
       - oecd_sum
+      - okboomer
       - opiates
       - organdata
       - preg
