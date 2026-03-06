@@ -52,13 +52,12 @@
 </div>
 <!-- badges: start -->
 
-<p>This is an R package of datasets, functions, and course materials to go along with the book <em><a href="https://amzn.to/2vfAixM" class="external-link">Data Visualization: A Practical Introduction</a></em> (Princeton University Press, 2019).</p>
+<p>This is an R package of datasets, functions, and course materials to go along with the second edition of the book <em><a href="https://amzn.to/2vfAixM" class="external-link">Data Visualization: A Practical Introduction</a></em> (Princeton University Press, 2026).</p>
 <p><img src="https://socviz.co/assets/cover/dv-cover-pupress.jpg" width="75%"></p>
 <div class="section level2">
 <h2 id="whats-in-this-package">What’s in this Package<a class="anchor" aria-label="anchor" href="#whats-in-this-package"></a>
 </h2>
-<p>The <code>socviz</code> package contains about twenty five datasets and a number of utility and convenience functions. Most of them are used in <em><a href="https://amzn.to/2vfAixM" class="external-link">Data Visualization: A Practical Introduction</a></em> (<code>http://socviz.co</code>), and there are also a few others as well for self-learners and students to practice their skills on.</p>
-<p>A course packet is also included. This is a zipped file containing an <a href="http://rstudio.com" class="external-link">R Studio</a> project consisting of a nine <a href="http://rmarkdown.rstudio.com" class="external-link">R Markdown</a> documents that parallel the chapters in the book. They contain the code for almost all the figures in the book (and a few more besides). Some support files are also included, to help demonstrate things like reading in your own data locally in R.</p>
+<p>The <code>socviz</code> package contains about thirty datasets and a number of utility and convenience functions. Most of them are used in <em><a href="https://amzn.to/2vfAixM" class="external-link">Data Visualization: A Practical Introduction</a></em> (<code>http://socviz.co</code>), and there are also a few others as well for self-learners and students to practice their skills on.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -67,29 +66,17 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span></span>
-<span><span class="va">my_packages</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"tidyverse"</span>, <span class="st">"fs"</span>, <span class="st">"devtools"</span><span class="op">)</span></span>
+<span><span class="va">my_packages</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"tidyverse"</span>, <span class="st">"fs"</span>, <span class="st">"devtools"</span>, <span class="st">"sf"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="va">my_packages</span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"socviz"</span><span class="op">)</span></span></code></pre></div>
 <p>To install the development version of <code>socviz</code>, instead of <code>install.packages("socviz")</code> do the following:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"kjhealy/socviz"</span><span class="op">)</span></span></code></pre></div>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"kjhealy/socviz"</span><span class="op">)</span></span></code></pre></div>
 <p>Once everything has downloaded and been installed (which may take a little while), load the <code>socviz</code> package:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://kjhealy.github.io/socviz/" class="external-link">socviz</a></span><span class="op">)</span></span></code></pre></div>
-</div>
-<div class="section level2">
-<h2 id="the-course-packet">The Course Packet<a class="anchor" aria-label="anchor" href="#the-course-packet"></a>
-</h2>
-<p>The supporting materials are contained in a compressed <code>.zip</code> file. To extract them to your Desktop, make sure the <code>socviz</code> package is loaded as described above. Then do something like this:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span></span>
-<span><span class="fu"><a href="reference/setup_course_notes.html">setup_course_notes</a></span><span class="op">(</span>folder <span class="op">=</span> <span class="st">"~/Desktop"</span><span class="op">)</span></span></code></pre></div>
-<p>You can choose the destination folder, but you must supply one. Here, the <code>dataviz_course_notes.zip</code> file will be copied to your Desktop, and uncompressed there into a folder called <code>dataviz_course_notes</code>. Open the folder, and double-click the file named <code>dataviz.Rproj</code> to launch the project as a new RStudio session. If you want to uncompress the file somewhere other than your Desktop, e.g. your Documents folder, you can do this:</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span></span>
-<span><span class="fu"><a href="reference/setup_course_notes.html">setup_course_notes</a></span><span class="op">(</span>folder <span class="op">=</span> <span class="st">"~/Documents"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="more-about-the-datasets-and-functions">More about the Datasets and Functions<a class="anchor" aria-label="anchor" href="#more-about-the-datasets-and-functions"></a>
