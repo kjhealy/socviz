@@ -1,6 +1,6 @@
 # A map theme for socviz
 
-A theme based on \[theme_socviz()\] with all axes, grids, and borders
+A theme based on \[theme_socviz\] with all axes, grids, and borders
 removed, suitable for plotting maps.
 
 ## Usage
@@ -55,7 +55,7 @@ theme_socviz_map(
 
 ## Value
 
-A \[ggplot2::theme()\] object.
+A ggplot2 theme object.
 
 ## Examples
 
