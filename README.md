@@ -10,27 +10,19 @@ status](https://github.com/kjhealy/socviz/workflows/R-CMD-check/badge.svg)](http
 <!-- badges: end -->
 
 This is an R package of datasets, functions, and course materials to go
-along with the book *[Data Visualization: A Practical
-Introduction](https://amzn.to/2vfAixM)* (Princeton University Press,
-2019).
+along with the second edition of the book *[Data Visualization: A
+Practical Introduction](https://amzn.to/2vfAixM)* (Princeton University
+Press, 2026).
 
 <img src="https://socviz.co/assets/cover/dv-cover-pupress.jpg" width = "75%"/>
 
 ## What’s in this Package
 
-The `socviz` package contains about twenty five datasets and a number of
+The `socviz` package contains about thirty datasets and a number of
 utility and convenience functions. Most of them are used in *[Data
 Visualization: A Practical Introduction](https://amzn.to/2vfAixM)*
 (`http://socviz.co`), and there are also a few others as well for
 self-learners and students to practice their skills on.
-
-A course packet is also included. This is a zipped file containing an [R
-Studio](http://rstudio.com) project consisting of a nine [R
-Markdown](http://rmarkdown.rstudio.com) documents that parallel the
-chapters in the book. They contain the code for almost all the figures
-in the book (and a few more besides). Some support files are also
-included, to help demonstrate things like reading in your own data
-locally in R.
 
 ## Installation
 
@@ -46,7 +38,7 @@ hitting return at the end of each line:
 ``` r
 
 
-my_packages <- c("tidyverse", "fs", "devtools")
+my_packages <- c("tidyverse", "fs", "devtools", "sf")
 install.packages(my_packages)
 
 install.packages("socviz")
@@ -57,7 +49,7 @@ To install the development version of `socviz`, instead of
 
 ``` r
 
-devtools::install_github("kjhealy/socviz")
+remotes::install_github("kjhealy/socviz")
 ```
 
 Once everything has downloaded and been installed (which may take a
@@ -65,30 +57,6 @@ little while), load the `socviz` package:
 
 ``` r
 library(socviz)
-```
-
-## The Course Packet
-
-The supporting materials are contained in a compressed `.zip` file. To
-extract them to your Desktop, make sure the `socviz` package is loaded
-as described above. Then do something like this:
-
-``` r
-
-setup_course_notes(folder = "~/Desktop")
-```
-
-You can choose the destination folder, but you must supply one. Here,
-the `dataviz_course_notes.zip` file will be copied to your Desktop, and
-uncompressed there into a folder called `dataviz_course_notes`. Open the
-folder, and double-click the file named `dataviz.Rproj` to launch the
-project as a new RStudio session. If you want to uncompress the file
-somewhere other than your Desktop, e.g. your Documents folder, you can
-do this:
-
-``` r
-
-setup_course_notes(folder = "~/Documents")
 ```
 
 ## More about the Datasets and Functions
