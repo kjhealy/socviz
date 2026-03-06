@@ -40,10 +40,10 @@ elements. Default is `"black"`.}
 `"#0072B2"`.}
 }
 \value{
-A [ggplot2::theme()] object.
+A ggplot2 theme object.
 }
 \description{
-A theme based on [theme_socviz()] with all axes, grids, and
+A theme based on [theme_socviz] with all axes, grids, and
 borders removed, suitable for plotting maps.
 }
 \examples{

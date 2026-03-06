@@ -5,7 +5,7 @@ NULL
 
 #' A ggplot2 theme for socviz
 #'
-#' A custom theme built on [ggplot2::theme_minimal()] with
+#' A ggplot theme with
 #' defaults for axis styling, legends, panels,
 #' strips, and plot chrome. Requires ggplot2 >= 4.0.0.
 #'
@@ -13,7 +13,7 @@ NULL
 #' font family and Source Sans 3 Semibold as the header family.
 #' If the fonts are not installed, they will be downloaded
 #' automatically from Google Fonts via
-#' [systemfonts::require_font()].
+#' [systemfonts::require_font].
 #'
 #' @param base_size Base font size in points. Default is 12.
 #' @param base_family Base font family. Default is
@@ -31,7 +31,7 @@ NULL
 #' @param accent Accent color for geom defaults. Default is
 #'   `"#0072B2"`.
 #'
-#' @return A [ggplot2::theme()] object.
+#' @return A ggplot2 theme object.
 #'
 #' @examples
 #' \dontrun{
@@ -310,12 +310,12 @@ theme_socviz <- function(
 
 #' A map theme for socviz
 #'
-#' A theme based on [theme_socviz()] with all axes, grids, and
+#' A theme based on [theme_socviz] with all axes, grids, and
 #' borders removed, suitable for plotting maps.
 #'
 #' @inheritParams theme_socviz
 #'
-#' @return A [ggplot2::theme()] object.
+#' @return A ggplot2 theme object.
 #'
 #' @examples
 #' \dontrun{

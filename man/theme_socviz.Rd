@@ -40,11 +40,11 @@ elements. Default is `"black"`.}
 `"#0072B2"`.}
 }
 \value{
-A [ggplot2::theme()] object.
+A ggplot2 theme object.
 }
 \description{
-A custom theme built on [ggplot2::theme_minimal()] with
-opinionated defaults for axis styling, legends, panels,
+A ggplot theme with
+defaults for axis styling, legends, panels,
 strips, and plot chrome. Requires ggplot2 >= 4.0.0.
 }
 \details{
@@ -52,7 +52,7 @@ The theme uses Source Sans 3 (regular weight) as the base
 font family and Source Sans 3 Semibold as the header family.
 If the fonts are not installed, they will be downloaded
 automatically from Google Fonts via
-[systemfonts::require_font()].
+[systemfonts::require_font].
 }
 \examples{
 \dontrun{
