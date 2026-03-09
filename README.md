@@ -14,7 +14,7 @@ along with the second edition of the book *[Data Visualization: A
 Practical Introduction](https://amzn.to/2vfAixM)* (Princeton University
 Press, 2026).
 
-<img src="https://socviz.co/assets/cover/dv-cover-pupress.jpg" width = "75%"/>
+<img src="https://socviz.co/assets/cover/dv-cover-2esample.png" width = "75%"/>
 
 ## What’s in this Package
 

@@ -34,7 +34,7 @@ get_badge <- function (pkg, type = c("last-month", "last-week", "grand-total"),
 This is an R package of datasets, functions, and course materials to go along with the second edition of the book _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (Princeton University Press, 2026).
 
 
-<img src="https://socviz.co/assets/cover/dv-cover-pupress.jpg" width = "75%"/>
+<img src="https://socviz.co/assets/cover/dv-cover-2esample.png" width = "75%"/>
 
 ## What's in this Package
 
