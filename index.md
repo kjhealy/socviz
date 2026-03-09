@@ -5,7 +5,7 @@ along with the second edition of the book *[Data Visualization: A
 Practical Introduction](https://amzn.to/2vfAixM)* (Princeton University
 Press, 2026).
 
-![](https://socviz.co/assets/cover/dv-cover-pupress.jpg)
+![](https://socviz.co/assets/cover/dv-cover-2esample.png)
 
 ## What’s in this Package
 
