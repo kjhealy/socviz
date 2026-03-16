@@ -38,7 +38,7 @@ This is an R package of datasets, functions, and course materials to go along wi
 
 ## What's in this Package
 
-The `socviz` package contains about thirty datasets and a number of utility and convenience functions. Most of them are used in _[Data Visualization: A Practical Introduction](`https://socviz.co`), and there are also a few others as well for self-learners and students to practice their skills on. 
+The `socviz` package contains about thirty datasets and a number of utility and convenience functions. Most of them are used in _[Data Visualization: A Practical Introduction](https://socviz.co), and there are also a few others as well for self-learners and students to practice their skills on. 
 
 
 ## Installation
