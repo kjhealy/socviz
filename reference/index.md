@@ -12,8 +12,6 @@ Included datasets.
   : US County Components of Population Change
 - [`asasec`](https://kjhealy.github.io/socviz/reference/asasec.md) :
   American Sociological Association Section Membership
-- [`bad_date`](https://kjhealy.github.io/socviz/reference/bad_date.md) :
-  Dates in character form
 - [`color_table`](https://kjhealy.github.io/socviz/reference/color_table.md)
   : A table of hex color values related to types of color blindness
 - [`counties_sf`](https://kjhealy.github.io/socviz/reference/counties_sf.md)
@@ -54,10 +52,6 @@ Included datasets.
   Opiate-Related Deaths in the United States, 1999-2020
 - [`organdata`](https://kjhealy.github.io/socviz/reference/organdata.md)
   : Organ donation in the OECD
-- [`preg`](https://kjhealy.github.io/socviz/reference/preg.md) : An
-  untidy table of data
-- [`preg2`](https://kjhealy.github.io/socviz/reference/preg2.md) : A
-  wider table of untidy data
 - [`states_sf`](https://kjhealy.github.io/socviz/reference/states_sf.md)
   : US State geometries
 - [`studebt`](https://kjhealy.github.io/socviz/reference/studebt.md) :
@@ -79,20 +73,14 @@ Utility functions.
   : Plot a table of color hex values as a table of colors
 - [`color_pal()`](https://kjhealy.github.io/socviz/reference/color_pal.md)
   : Draw a palette of colors
-- [`freq_tab()`](https://kjhealy.github.io/socviz/reference/freq_tab.md)
-  : Generate a tidy n-way frequency table
 - [`int_to_year()`](https://kjhealy.github.io/socviz/reference/int_to_year.md)
   : int_to_year
-- [`lay_out()`](https://kjhealy.github.io/socviz/reference/lay_out.md) :
-  Arrange ggplot2 plots in an arbitrary grid
 - [`round_df()`](https://kjhealy.github.io/socviz/reference/round_df.md)
   : round_df
 - [`prefix_replace()`](https://kjhealy.github.io/socviz/reference/prefix_replace.md)
   : prefix_replace
 - [`prefix_strip()`](https://kjhealy.github.io/socviz/reference/prefix_strip.md)
   : prefix_strip
-- [`setup_course_notes()`](https://kjhealy.github.io/socviz/reference/setup_course_notes.md)
-  : setup_course_notes
 - [`tw_tab()`](https://kjhealy.github.io/socviz/reference/tw_tab.md) :
   Quickly make a two-way table of proportions (percentages)
 
