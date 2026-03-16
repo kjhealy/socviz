@@ -14,3 +14,4 @@ claude.md
 ^\.claude$
 ^_pkgdown\.yml$
 ^pkgdown$
+.Rhistory

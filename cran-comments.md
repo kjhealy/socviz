@@ -1,14 +1,18 @@
-## Minor update
-This is a minor update of the package. It fixes errors in an included data file and updates some documentation.
+## Version update
+Package updated for the second edition of the book it accompanies. 
+
+* Datasets revised with some additions and deletions.
+* Older, no longer relevant material in `inst` deleted
+* Corresponding utility functions removed
 
 ## Test environments
 
-* Local MacOS install, R 4.0.0 on Catalina 10.15.5
+* Local MacOS install, R 4.5.3 on Tahoe 26.3.1 (25D2128)
 * Win-builder (r-release and r-devel)
-* Windows-latest (4.0.0) on GitHub Actions platform
-* MacOSS latest (4.0.0) on GitHub Actions platform
-* MacOS devel on GitHub Actions platfor
-* Ubuntu-16.04 (4.0.0) on GitHub Actions platform
+* Windows-latest (4.5.3) on GitHub Actions platform
+* MacOS-latest (4.0.3) on GitHub Actions platform
+* MacOS-devel on GitHub Actions platform
+* Ubuntu-latest (4.5.3) on GitHub Actions platform
 
 ## R CMD check results
 There were no ERRORs, WARNINGs, or NOTEs in any tested environment.

@@ -21,7 +21,6 @@ reference:
       - acs_poverty_lon
       - county_comp
       - asasec
-      - bad_date
       - color_table
       - counties_sf
       - county_data
@@ -42,8 +41,6 @@ reference:
       - okboomer
       - opiates
       - organdata
-      - preg
-      - preg2
       - states_sf
       - studebt
       - titanic
@@ -55,13 +52,10 @@ reference:
       - center_df
       - color_comp
       - color_pal
-      - freq_tab
       - int_to_year
-      - lay_out
       - round_df
       - prefix_replace
       - prefix_strip
-      - setup_course_notes
       - tw_tab
   - title: "Themes"
     desc: ggplot2 themes.

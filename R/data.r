@@ -300,43 +300,6 @@
 #' @source Macro-economic and spending data: OECD. Other data: Kieran Healy.
 "organdata"
 
-
-#' Dates in character form
-#'
-#' A table of dates and observations with the date column stored as a
-#' character string.
-#'
-#' @docType data
-#' @keywords datasets
-#' @name bad_date
-#' @format A tibble with 10 rows and two columns.
-#' @source Chris Delcher.
-"bad_date"
-
-
-#' An untidy table of data
-#'
-#' A table of data from Wickham (2014).
-#'
-#' @docType data
-#' @keywords datasets
-#' @name preg
-#' @format A tbl_df with 3 rows and 3 columns.
-#' @source Hadley Wickham (2014).
-"preg"
-
-
-#' A wider table of untidy data
-#'
-#' A second table of data from Wickham (2014).
-#'
-#' @docType data
-#' @keywords datasets
-#' @name preg2
-#' @format An tbl_df object (inherits from tbl, data.frame) with 2 rows and 4 columns.
-#' @source Hadley Wickham (2014).
-"preg2"
-
 ##' A table of survival rates from the Titanic
 ##'
 ##' A small table of survival rates from the Titanic, by sex
