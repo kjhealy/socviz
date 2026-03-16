@@ -11,10 +11,10 @@ Introduction](https://press.princeton.edu/books/paperback/9780691181622/data-vis
 ## What’s in this Package
 
 The `socviz` package contains about thirty datasets and a number of
-utility and convenience functions. Most of them are used in *[Data
-Visualization: A Practical Introduction](https://amzn.to/2vfAixM)*
-(`https://socviz.co`), and there are also a few others as well for
-self-learners and students to practice their skills on.
+utility and convenience functions. Most of them are used in \_[Data
+Visualization: A Practical Introduction](https://socviz.co), and there
+are also a few others as well for self-learners and students to practice
+their skills on.
 
 ## Installation
 
