@@ -2,7 +2,7 @@
 
 ## Authors
 
-- **[Kieran Healy](http://kieranhealy.org)**. Author, maintainer.
+- **[Kieran Healy](https://kieranhealy.org)**. Author, maintainer.
 
 ## Citation
 

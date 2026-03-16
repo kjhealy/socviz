@@ -1,4 +1,4 @@
 # License
 
-    YEAR: 2017
+    YEAR: 2026
     COPYRIGHT HOLDER: Kieran Healy; individual function authors Dirk Eddelbuettel and Winston Chang. Data sets included are in the public domain or provided for free public use by their compilers.
