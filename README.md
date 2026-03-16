@@ -11,8 +11,9 @@ status](https://github.com/kjhealy/socviz/workflows/R-CMD-check/badge.svg)](http
 
 This is an R package of datasets, functions, and course materials to go
 along with the second edition of the book *[Data Visualization: A
-Practical Introduction](https://amzn.to/2vfAixM)* (Princeton University
-Press, 2026).
+Practical
+Introduction](https://press.princeton.edu/books/paperback/9780691181622/data-visualization)*
+(Princeton University Press, 2026).
 
 <img src="https://socviz.co/assets/cover/dv-cover-2esample.png" width = "75%"/>
 
