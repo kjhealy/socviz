@@ -16,7 +16,7 @@ get_badge <- function (pkg, type = c("last-month", "last-week", "grand-total"),
     color = "green") 
 {
     type <- match.arg(type)
-    svg <- paste0("http://cranlogs.r-pkg.org/badges/", type, 
+    svg <- paste0("https://cranlogs.r-pkg.org/badges/", type, 
         "/", pkg, "?color=", color)
     url <- paste0("https://cran.r-project.org/package=", pkg)
     placeholder <- "CRAN link"
@@ -38,12 +38,12 @@ This is an R package of datasets, functions, and course materials to go along wi
 
 ## What's in this Package
 
-The `socviz` package contains about thirty datasets and a number of utility and convenience functions. Most of them are used in _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (`http://socviz.co`), and there are also a few others as well for self-learners and students to practice their skills on. 
+The `socviz` package contains about thirty datasets and a number of utility and convenience functions. Most of them are used in _[Data Visualization: A Practical Introduction](https://amzn.to/2vfAixM)_ (`https://socviz.co`), and there are also a few others as well for self-learners and students to practice their skills on. 
 
 
 ## Installation
 
-To install the package, you can follow the instructions in the Preface to the book. Alternatively, first download and install R for [MacOS](https://cran.r-project.org/bin/macosx/), [Windows](https://cran.r-project.org/bin/windows/) or [Linux](https://cran.r-project.org/bin/linux/), as appropriate. Then download and install [RStudio](http://rstudio.com/download/). Launch RStudio and then type the following code at the Console prompt (`> `), hitting return at the end of each line:
+To install the package, you can follow the instructions in the Preface to the book. Alternatively, first download and install R for [MacOS](https://cran.r-project.org/bin/macosx/), [Windows](https://cran.r-project.org/bin/windows/) or [Linux](https://cran.r-project.org/bin/linux/), as appropriate. Then download and install [RStudio](https://posit.co/downloads/). Launch RStudio and then type the following code at the Console prompt (`> `), hitting return at the end of each line:
 
 ```{r, eval = FALSE}
 
@@ -71,5 +71,5 @@ library(socviz)
 
 ## More about the Datasets and Functions
 
-The included datasets and functions are documented at <http://kjhealy.github.io/socviz/reference/>. 
+The included datasets and functions are documented at <https://kjhealy.github.io/socviz/reference/>. 
 
