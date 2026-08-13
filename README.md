@@ -14,7 +14,7 @@ This is an R package of datasets and utility functions to accompany
 Introduction](https://press.princeton.edu/books/paperback/9780691181622/data-visualization)*
 (Princeton University Press, 2026).
 
-<img src="https://socviz.co/assets/cover/dv-cover-2esample.png" width = "75%"/>
+<img src="https://socviz.co/assets/cover/dv-cover-2e.png" width = "75%"/>
 
 ## What’s in this Package
 
