@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Utilities and Data Sets for Data Visualization • socviz</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/IBM_Plex_Sans-0.4.10/font.css" rel="stylesheet">
+<link href="deps/bootstrap-5.3.8/bootstrap.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.3.8/bootstrap.bundle.min.js"></script><link href="deps/IBM_Plex_Sans-0.4.10/font.css" rel="stylesheet">
 <link href="deps/IBM_Plex_Mono-0.4.10/font.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
@@ -53,23 +53,19 @@
 </div>
 <!-- badges: start -->
 
-<p>This is an R package of datasets, functions, and course materials to go along with the second edition of the book <em><a href="https://press.princeton.edu/books/paperback/9780691181622/data-visualization" class="external-link">Data Visualization: A Practical Introduction</a></em> (Princeton University Press, 2026).</p>
+<p>This is an R package of datasets and utility functions to accompany <em><a href="https://press.princeton.edu/books/paperback/9780691181622/data-visualization" class="external-link">Data Visualization: A Practical Introduction</a></em> (Princeton University Press, 2026).</p>
 <p><img src="https://socviz.co/assets/cover/dv-cover-2esample.png" width="75%"></p>
 <div class="section level2">
 <h2 id="whats-in-this-package">What’s in this Package<a class="anchor" aria-label="anchor" href="#whats-in-this-package"></a>
 </h2>
-<p>The <code>socviz</code> package contains about thirty datasets and a number of utility and convenience functions. Most of them are used in _<a href="https://socviz.co" class="external-link">Data Visualization: A Practical Introduction</a>, and there are also a few others as well for self-learners and students to practice their skills on.</p>
+<p>The <code>socviz</code> package contains about thirty datasets and a number of utility and convenience functions used in <em><a href="https://socviz.co" class="external-link">Data Visualization: A Practical Introduction</a></em> and of use to people producing data visualizations with R and ggplot.</p>
 </div>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
-<p>To install the package, you can follow the instructions in the Preface to the book. Alternatively, first download and install R for <a href="https://cran.r-project.org/bin/macosx/" class="external-link">MacOS</a>, <a href="https://cran.r-project.org/bin/windows/" class="external-link">Windows</a> or <a href="https://cran.r-project.org/bin/linux/" class="external-link">Linux</a>, as appropriate. Then download and install <a href="https://posit.co/downloads/" class="external-link">RStudio</a>. Launch RStudio and then type the following code at the Console prompt (<code>&gt;</code>), hitting return at the end of each line:</p>
+<p>To install the package, you can follow the instructions in the Preface to the book. Alternatively, and at a minimum, first download and install R for <a href="https://cran.r-project.org/bin/macosx/" class="external-link">MacOS</a>, <a href="https://cran.r-project.org/bin/windows/" class="external-link">Windows</a> or <a href="https://cran.r-project.org/bin/linux/" class="external-link">Linux</a>, as appropriate. Launch R, then type the following code at the Console prompt (<code>&gt;</code>), hitting return at the end of each line:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
-<span></span>
-<span><span class="va">my_packages</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"tidyverse"</span>, <span class="st">"fs"</span>, <span class="st">"devtools"</span>, <span class="st">"sf"</span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="va">my_packages</span><span class="op">)</span></span>
-<span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"socviz"</span><span class="op">)</span></span></code></pre></div>
 <p>To install the development version of <code>socviz</code>, instead of <code>install.packages("socviz")</code> do the following:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
@@ -82,7 +78,7 @@
 <div class="section level2">
 <h2 id="more-about-the-datasets-and-functions">More about the Datasets and Functions<a class="anchor" aria-label="anchor" href="#more-about-the-datasets-and-functions"></a>
 </h2>
-<p>The included datasets and functions are documented at <a href="https://kjhealy.github.io/socviz/reference/" class="uri">https://kjhealy.github.io/socviz/reference/</a>.</p>
+<p>The included datasets and functions are documented in the package and at <a href="https://kjhealy.github.io/socviz/reference/" class="uri">https://kjhealy.github.io/socviz/reference/</a>.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
@@ -115,7 +111,7 @@
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://kieranhealy.org" class="external-link">Kieran Healy</a> <br><small class="roles"> Author, maintainer </small>   </li>
+<a href="https://kieranhealy.org" class="external-link">Kieran Healy</a> <br><small class="roles"> Author, maintainer, copyright holder </small>   </li>
 </ul>
 </div>
 
@@ -135,7 +131,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
 </div>
 
     </footer>

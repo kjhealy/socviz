@@ -53,6 +53,7 @@ Kieran Healy
 ## Examples
 
 ``` r
+
 with(gss_sm, tw_tab(bigregion, religion, useNA = "ifany", digs = 1))
 #>            y
 #> x           Protestant Catholic Jewish None Other <NA>

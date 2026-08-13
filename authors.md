@@ -2,7 +2,8 @@
 
 ## Authors
 
-- **[Kieran Healy](https://kieranhealy.org)**. Author, maintainer.
+- **[Kieran Healy](https://kieranhealy.org)**. Author, maintainer,
+  copyright holder.
 
 ## Citation
 
