@@ -27,7 +27,7 @@ magrittr::`%>%`
 ##' @param x An integer or vector integers.
 ##' @param month The month to be added to the year. Months 1 to 9
 ##'     should be given as character strings, i.e. "01", "02", etc,
-##'     and not 1 or 2o, etc.
+##'     and not 1 or 2, etc.
 ##' @param day The day to be added to the year. Days should be given
 ##'     as character strings, i.e., "01" or "02", etc, and not 1 or 2, etc.
 ##' @return A vector of dates where the input integer forms the year

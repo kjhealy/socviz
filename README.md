@@ -9,9 +9,8 @@
 status](https://github.com/kjhealy/socviz/workflows/R-CMD-check/badge.svg)](https://github.com/kjhealy/socviz/actions)
 <!-- badges: end -->
 
-This is an R package of datasets, functions, and course materials to go
-along with the second edition of the book *[Data Visualization: A
-Practical
+This is an R package of datasets and utility functions to accompany
+*[Data Visualization: A Practical
 Introduction](https://press.princeton.edu/books/paperback/9780691181622/data-visualization)*
 (Princeton University Press, 2026).
 
@@ -20,27 +19,21 @@ Introduction](https://press.princeton.edu/books/paperback/9780691181622/data-vis
 ## What’s in this Package
 
 The `socviz` package contains about thirty datasets and a number of
-utility and convenience functions. Most of them are used in \_[Data
-Visualization: A Practical Introduction](https://socviz.co), and there
-are also a few others as well for self-learners and students to practice
-their skills on.
+utility and convenience functions used in *[Data Visualization: A
+Practical Introduction](https://socviz.co)* and of use to people
+producing data visualizations with R and ggplot.
 
 ## Installation
 
 To install the package, you can follow the instructions in the Preface
-to the book. Alternatively, first download and install R for
-[MacOS](https://cran.r-project.org/bin/macosx/),
+to the book. Alternatively, and at a minimum, first download and install
+R for [MacOS](https://cran.r-project.org/bin/macosx/),
 [Windows](https://cran.r-project.org/bin/windows/) or
-[Linux](https://cran.r-project.org/bin/linux/), as appropriate. Then
-download and install [RStudio](https://posit.co/downloads/). Launch
-RStudio and then type the following code at the Console prompt (`>`),
-hitting return at the end of each line:
+[Linux](https://cran.r-project.org/bin/linux/), as appropriate. Launch
+R, then type the following code at the Console prompt (`>`), hitting
+return at the end of each line:
 
 ``` r
-
-
-my_packages <- c("tidyverse", "fs", "devtools", "sf")
-install.packages(my_packages)
 
 install.packages("socviz")
 ```
@@ -62,5 +55,5 @@ library(socviz)
 
 ## More about the Datasets and Functions
 
-The included datasets and functions are documented at
+The included datasets and functions are documented in the package and at
 <https://kjhealy.github.io/socviz/reference/>.

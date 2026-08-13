@@ -3,7 +3,7 @@ Type: Package
 Title: Utilities and Data Sets for Data Visualization
 Version: 2.0.0
 Authors@R: person("Kieran", "Healy", email = "kjhealy@gmail.com",
-                      role = c("aut", "cre"))
+                      role = c("aut", "cre", "cph"))
 Maintainer: Kieran Healy <kjhealy@gmail.com>
 Description: Supporting materials for a course and book on data visualization. It contains utility functions for graphs and several sample data sets. See Healy (2019) <ISBN 978-0691181622>.
 License: MIT + file LICENSE
@@ -17,4 +17,4 @@ BugReports: https://github.com/kjhealy/socviz/issues
 RoxygenNote: 7.3.3
 NeedsCompilation: no
 Packaged: 2026-03-16 14:52:12 UTC; kjhealy
-Author: Kieran Healy [aut, cre]
+Author: Kieran Healy [aut, cre, cph]
