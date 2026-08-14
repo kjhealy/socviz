@@ -11,7 +11,7 @@ int_to_year(x, month = "06", day = "15")
 
 \item{month}{The month to be added to the year. Months 1 to 9
 should be given as character strings, i.e. "01", "02", etc,
-and not 1 or 2o, etc.}
+and not 1 or 2, etc.}
 
 \item{day}{The day to be added to the year. Days should be given
 as character strings, i.e., "01" or "02", etc, and not 1 or 2, etc.}

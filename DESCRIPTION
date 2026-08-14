@@ -14,6 +14,6 @@ LazyData: true
 LazyDataCompression: xz
 URL: https://kjhealy.github.io/socviz/
 BugReports: https://github.com/kjhealy/socviz/issues
-RoxygenNote: 7.3.3
 NeedsCompilation: no
 Packaged: 2026-03-16 14:52:12 UTC; kjhealy
+Config/roxygen2/version: 8.1.0
