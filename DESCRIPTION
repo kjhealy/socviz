@@ -17,4 +17,3 @@ BugReports: https://github.com/kjhealy/socviz/issues
 RoxygenNote: 7.3.3
 NeedsCompilation: no
 Packaged: 2026-03-16 14:52:12 UTC; kjhealy
-Author: Kieran Healy [aut, cre, cph]
