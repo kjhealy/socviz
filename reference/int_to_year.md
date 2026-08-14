@@ -17,7 +17,7 @@ int_to_year(x, month = "06", day = "15")
 - month:
 
   The month to be added to the year. Months 1 to 9 should be given as
-  character strings, i.e. "01", "02", etc, and not 1 or 2o, etc.
+  character strings, i.e. "01", "02", etc, and not 1 or 2, etc.
 
 - day:
 
