@@ -15,3 +15,4 @@ claude.md
 ^_pkgdown\.yml$
 ^pkgdown$
 .Rhistory
+^CRAN-SUBMISSION$
