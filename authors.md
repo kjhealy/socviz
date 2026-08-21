@@ -8,7 +8,7 @@
 ## Citation
 
 Source:
-[`inst/CITATION`](https://github.com/kjhealy/socviz/blob/main/inst/CITATION)
+[`inst/CITATION`](https://github.com/kjhealy/socviz/blob/v2.0.0/inst/CITATION)
 
 Kieran Healy. Data Visualization: A Practical Introduction. Princeton
 University Press, Princeton, 2026.
