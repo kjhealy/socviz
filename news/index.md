@@ -1,5 +1,7 @@
 # Changelog
 
+## socviz (development version)
+
 ## socviz 2.0.0
 
 CRAN release: 2026-08-21
