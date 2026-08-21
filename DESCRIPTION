@@ -12,7 +12,7 @@ Imports: ggplot2 (>= 4.0.0), graphics, grid, magrittr, systemfonts, tibble
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
-URL: https://kjhealy.github.io/socviz/
+URL: https://kjhealy.github.io/socviz/, https://github.com/kjhealy/socviz
 BugReports: https://github.com/kjhealy/socviz/issues
 NeedsCompilation: no
 Packaged: 2026-03-16 14:52:12 UTC; kjhealy
