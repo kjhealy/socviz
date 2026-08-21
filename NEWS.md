@@ -1,4 +1,6 @@
 # socviz 2.0.0
 
-* Added ACS and election datasets for version 2.0 release
-* Removed defunct datasets and functions for version 2.0 release
+* New version of package to accompany the second edition of [_Data Visualization: a practical introduction_](https://socviz.co)
+* Added ACS and election datasets.
+* Removed some defunct datasets and functions.
+* Fixed issues with documentation.
