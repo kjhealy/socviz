@@ -688,7 +688,7 @@
 #'   \item{year}{Year (character)}
 #'   \item{n}{Number of pedestrians}
 #' }
-#' @details Each row is a day of the year between January 1st 2009 and December 31st 2023. The `n` column is the number of pedestrians in the United States who were involved in a motor vehicle crash that day, where the event resulted in a fatality and where the pedestrian was aged between 0 and 17 years old. The person killed is not necessarily the pedestrian.
+#' @details Each row is a day of the year between January 1st 2009 and December 31st 2023. February 29th has a row in every year; `n` is `NA` for it in the twelve years that were not leap years. The `n` column is the number of pedestrians in the United States who were involved in a motor vehicle crash that day, where the event resulted in a fatality and where the pedestrian was aged between 0 and 17 years old. The person killed is not necessarily the pedestrian.
 #' @author Kieran Healy
 #' @source National Highway Traffic Safety Administration (NHTSA) Motor Vehicle Crash Data Querying and Reporting
 "farsinvolved"

@@ -1,7 +1,7 @@
 Package: socviz
 Type: Package
 Title: Utilities and Data Sets for Data Visualization
-Version: 2.0.0.9000
+Version: 2.0.1
 Authors@R: person("Kieran", "Healy", email = "kjhealy@gmail.com",
                       role = c("aut", "cre", "cph"))
 Maintainer: Kieran Healy <kjhealy@gmail.com>
@@ -16,4 +16,4 @@ URL: https://kjhealy.github.io/socviz/, https://github.com/kjhealy/socviz
 BugReports: https://github.com/kjhealy/socviz/issues
 NeedsCompilation: no
 Packaged: 2026-03-16 14:52:12 UTC; kjhealy
-Config/roxygen2/version: 8.1.0
+Config/roxygen2/version: 8.1.1

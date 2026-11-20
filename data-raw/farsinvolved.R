@@ -13,7 +13,17 @@ dfinvolved <- fars_involved <- readxl::read_xlsx(here(
   fill(month) |>
   pivot_longer(cols = `2009`:`2023`, names_to = "year", values_to = "n") |>
   filter(day %nin% "Total") |>
-  filter(month %nin% "Total")
+  filter(month %nin% "Total") |>
+  ## The sheet has a row for February 29 in every year, with a count of
+  ## zero in the years that had no such day. Those counts are missing,
+  ## not zero.
+  mutate(
+    n = if_else(
+      is.na(lubridate::ymd(paste(year, month, day), quiet = TRUE)),
+      NA,
+      n
+    )
+  )
 
 farsinvolved <- dfinvolved
 

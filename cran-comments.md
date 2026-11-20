@@ -1,9 +1,9 @@
 ## Version update
-Package updated for the second edition of the book it accompanies. 
+Patch release that fixes an error in one dataset.
 
 ## Test environments
 
-* Local MacOS install, R 4.6.1 on Tahoe 26.6.2 (25G83)
+* Local MacOS install, R 4.6.1 on Golden Gate 27.2.1 (26B131)
 * Win-builder (r-release and r-devel)
 * Windows-latest on GitHub Actions platform
 * MacOS-latest on GitHub Actions platform

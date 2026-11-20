@@ -1,4 +1,6 @@
-# socviz (development version)
+# socviz 2.0.1
+
+* Fixed an error in the FARS data.
 
 # socviz 2.0.0
 
